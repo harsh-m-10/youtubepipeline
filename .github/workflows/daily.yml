@@ -21,6 +21,9 @@ jobs:
   produce:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      # GitHub forces Node 24 for JS actions from 2026-06-16; opt in now
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
       - uses: actions/checkout@v4
 
