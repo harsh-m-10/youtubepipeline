@@ -6,18 +6,18 @@ from pathlib import Path
 
 from src import config
 
-WORDS_PER_LINE = 3
+WORDS_PER_LINE = 2  # short lines: big text without escaping the frame edges
 HIGHLIGHT = "&H00FFD24D&"  # warm yellow (ASS is BGR)
 
 ASS_HEADER = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {config.VIDEO_W}
 PlayResY: {config.VIDEO_H}
-WrapStyle: 2
+WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,Montserrat,96,&H00FFFFFF,{HIGHLIGHT},&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,7,0,5,60,60,0,1
+Style: Caption,Montserrat,84,&H00FFFFFF,{HIGHLIGHT},&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,0,5,100,100,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

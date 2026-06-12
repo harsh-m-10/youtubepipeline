@@ -1,6 +1,9 @@
 """Script generation grounded in retrieved evidence, plus the verification
-pass: generate -> verify claims against evidence -> regenerate once -> abort.
-Fail-closed: a script that can't be verified never becomes a video."""
+pass: generate -> check length -> verify claims against evidence -> retry -> abort.
+Fail-closed: a script that can't be verified never becomes a video.
+
+Format note: the channel never declares a verdict — scripts argue both sides
+and end by asking viewers whether the null hypothesis survives."""
 
 import logging
 
@@ -9,6 +12,8 @@ from src.generate import evidence as evidence_mod
 from src.generate import llm
 
 log = logging.getLogger(__name__)
+
+MAX_ATTEMPTS = 3
 
 
 def _generate(candidate: dict, evidence_block: str) -> dict:
@@ -21,20 +26,16 @@ def _generate(candidate: dict, evidence_block: str) -> dict:
         evidence=evidence_block,
     )
     script = llm.complete_json(
-        system="You write tight, evidence-grounded Shorts scripts. Respond only with valid JSON.",
+        system="You write tight, evidence-grounded Shorts scripts that argue both sides. Respond only with valid JSON.",
         user=prompt,
     )
     if not script.get("beats"):
         raise RuntimeError(f"Script JSON missing beats: {list(script.keys())}")
-    # LLM sometimes phrases the verdict ("the null hypothesis is rejected") — normalize
-    verdict = str(script.get("verdict", "")).upper()
-    if "REJECT" in verdict:
-        script["verdict"] = "REJECTED"
-    elif "SURVIV" in verdict:
-        script["verdict"] = "SURVIVES"
-    else:
-        raise RuntimeError(f"Unrecognizable verdict: {script.get('verdict')!r}")
     return script
+
+
+def _word_count(script: dict) -> int:
+    return sum(len(b["text"].split()) for b in script["beats"])
 
 
 def _verify(script: dict, evidence_block: str) -> tuple[bool, list[str]]:
@@ -49,32 +50,41 @@ def _verify(script: dict, evidence_block: str) -> tuple[bool, list[str]]:
 
 
 def write_script(candidate: dict, snippets: list[dict]) -> dict:
-    """Returns the verified script dict, with sources attached. Raises if
-    verification fails twice."""
-    evidence_block = evidence_mod.format_block(snippets)
+    """Returns the verified script dict, with sources attached. Raises if no
+    attempt passes both the length floor and the fact-check."""
     if not snippets:
         raise RuntimeError("No evidence gathered — refusing to script unsupported claims")
+    evidence_block = evidence_mod.format_block(snippets)
 
-    for attempt in (1, 2):
+    last_problem = "no attempts made"
+    for attempt in range(1, MAX_ATTEMPTS + 1):
         script = _generate(candidate, evidence_block)
+        words = _word_count(script)
+        if words < config.MIN_ACCEPTABLE_WORDS:
+            last_problem = f"under-written ({words} words)"
+            log.warning("Attempt %d %s — regenerating", attempt, last_problem)
+            continue
         passed, failures = _verify(script, evidence_block)
-        if passed:
-            cited_ids = {c for b in script["beats"] for c in b.get("claims", [])}
-            script["sources"] = [
-                s for i, s in enumerate(snippets, 1) if f"E{i}" in cited_ids
-            ] or snippets[:3]
-            script["belief"] = candidate["belief"]
-            log.info("Script verified on attempt %d: %s", attempt, script["title"])
-            return script
-        log.warning("Verification failed (attempt %d): %s", attempt, failures)
+        if not passed:
+            last_problem = f"fact-check failures: {failures}"
+            log.warning("Attempt %d failed verification: %s", attempt, failures)
+            continue
+        cited_ids = {c for b in script["beats"] for c in b.get("claims", [])}
+        script["sources"] = [
+            s for i, s in enumerate(snippets, 1) if f"E{i}" in cited_ids
+        ] or snippets[:3]
+        script["belief"] = candidate["belief"]
+        log.info("Script verified on attempt %d (%d words): %s", attempt, words, script["title"])
+        return script
 
-    raise RuntimeError(f"Script failed fact-check twice; aborting run. Failures: {failures}")
+    raise RuntimeError(f"Script failed after {MAX_ATTEMPTS} attempts; last problem: {last_problem}")
 
 
 def full_description(script: dict) -> str:
     src_lines = "\n".join(f"- {s['title']}: {s['url']}" for s in script["sources"])
     return (
         f"{script['description']}\n\n"
+        "Does the null hypothesis survive or get rejected? Vote in the comments.\n\n"
         f"Sources:\n{src_lines}\n\n"
         "Narration is AI-voiced. Every claim is sourced above.\n"
         "#Shorts #NullHypothesis"

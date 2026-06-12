@@ -35,13 +35,14 @@ HISTORY_DEDUPE_WINDOW = 100  # compare against last N published hypotheses
 
 # --- Media ---
 PEXELS_API_KEY = os.getenv("PEXELS_API_KEY", "")
-TTS_VOICE = "en-US-AndrewNeural"
-TTS_RATE = "+8%"  # slightly brisk pacing suits Shorts
+TTS_VOICE = "en-US-AvaMultilingualNeural"  # energetic female voice
+TTS_RATE = "+15%"  # brisk pacing keeps Shorts retention
 VIDEO_W, VIDEO_H = 1080, 1920
 TITLE_CARD_SECONDS = 2.5
-VERDICT_CARD_SECONDS = 3.0
+END_CARD_SECONDS = 3.0
 MUSIC_VOLUME = 0.12
-TARGET_SCRIPT_WORDS = (110, 170)  # ~45-75s at Shorts narration pace
+TARGET_SCRIPT_WORDS = (150, 210)  # ~55-70s at +15% narration pace
+MIN_ACCEPTABLE_WORDS = 120  # regenerate if the LLM under-writes
 
 # --- Publishing ---
 YT_CLIENT_ID = os.getenv("YT_CLIENT_ID", "")

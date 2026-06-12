@@ -1,5 +1,5 @@
 """Background footage from Pexels (portrait, keyword-matched per beat) and
-Pillow-rendered brand cards (opening belief card, closing verdict stamp).
+Pillow-rendered brand cards (opening hypothesis card, closing vote card).
 Fallback chain: Pexels keyword -> generic queries -> plain gradient card."""
 
 import logging
@@ -49,7 +49,7 @@ def make_title_card(belief: str, out_dir: Path) -> Path:
     draw = ImageDraw.Draw(img)
     eyebrow_font, main_font = _font(54), _font(88)
 
-    draw.text((config.VIDEO_W // 2, 620), "EVERYONE BELIEVES",
+    draw.text((config.VIDEO_W // 2, 620), "TODAY'S HYPOTHESIS",
               font=eyebrow_font, fill=ACCENT, anchor="mm")
     lines = _wrap(draw, f"“{belief}”", main_font, config.VIDEO_W - 160)
     y = 800
@@ -64,18 +64,20 @@ def make_title_card(belief: str, out_dir: Path) -> Path:
     return path
 
 
-def make_verdict_card(verdict: str, out_dir: Path) -> Path:
-    rejected = verdict == "REJECTED"
+def make_question_card(out_dir: Path) -> Path:
+    """Closing card: the channel never rules — the viewer votes in the comments."""
     img = Image.new("RGB", (config.VIDEO_W, config.VIDEO_H), BG_COLOR)
     draw = ImageDraw.Draw(img)
-    draw.text((config.VIDEO_W // 2, 820), "NULL HYPOTHESIS",
-              font=_font(72), fill="white", anchor="mm")
-    draw.text((config.VIDEO_W // 2, 980), "REJECTED" if rejected else "SURVIVES",
-              font=_font(140), fill=RED if rejected else GREEN, anchor="mm")
-    draw.text((config.VIDEO_W // 2, 1160), "✗" if rejected else "✓",
-              font=_font(120), fill=RED if rejected else GREEN, anchor="mm")
+    draw.text((config.VIDEO_W // 2, 760), "DOES THE NULL HYPOTHESIS",
+              font=_font(64), fill="white", anchor="mm")
+    draw.text((config.VIDEO_W // 2, 900), "SURVIVE?",
+              font=_font(150), fill=ACCENT, anchor="mm")
+    draw.text((config.VIDEO_W // 2, 1090), "SURVIVES ✓     REJECTED ✗",
+              font=_font(60), fill=(140, 150, 170), anchor="mm")
+    draw.text((config.VIDEO_W // 2, 1240), "VOTE IN THE COMMENTS",
+              font=_font(54), fill=GREEN, anchor="mm")
 
-    path = out_dir / "verdict_card.png"
+    path = out_dir / "question_card.png"
     img.save(path)
     return path
 

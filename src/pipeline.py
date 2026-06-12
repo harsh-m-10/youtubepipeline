@@ -76,12 +76,12 @@ def run(dry_run: bool = False) -> None:
 
         stage = "visuals"
         title_card = visuals.make_title_card(script["belief"], out_dir)
-        verdict_card = visuals.make_verdict_card(script["verdict"], out_dir)
+        question_card = visuals.make_question_card(out_dir)
         clips = visuals.fetch_clips([b["visual_keyword"] for b in script["beats"]], out_dir)
 
         stage = "assemble"
         video = assemble.assemble(
-            out_dir, title_card, verdict_card, clips, beat_ends, narration, ass_file
+            out_dir, title_card, question_card, clips, beat_ends, narration, ass_file
         )
 
         if dry_run:
@@ -98,7 +98,6 @@ def run(dry_run: bool = False) -> None:
                 "date": datetime.date.today().isoformat(),
                 "belief": script["belief"],
                 "title": script["title"],
-                "verdict": script["verdict"],
                 "video_id": video_id,
                 "score": best["score"],
             }

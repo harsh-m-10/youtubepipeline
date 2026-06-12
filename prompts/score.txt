@@ -3,10 +3,11 @@ You are a ruthless YouTube Shorts editor. Score each candidate hypothesis for th
 Score each 1-10 on the overall question: "Would a random scroller STOP and watch this?"
 
 Consider:
-- SURPRISE: does the likely answer contradict what people assume? (most important)
+- DEBATE FUEL: will viewers argue about this in the comments? Genuinely contested beliefs score highest (most important)
 - BREADTH: do millions of people hold this belief, or just one niche community?
-- TESTABILITY: does public data/research clearly exist to settle it?
-- STAKES: does the answer affect viewers' money, career, health habits, or worldview?
+- TESTABILITY: does public data/research clearly exist on both sides?
+- STAKES: does the answer affect viewers' money, career, daily habits, or worldview?
+- VARIETY: penalize candidates on overdone topics — especially yet another AI/programming take. Non-tech topics (money, history, psychology, food, sports) get a bonus when equally strong.
 
 Be harsh. A 7+ means you would personally bet on this video performing. Most candidates should score 4-6.
 

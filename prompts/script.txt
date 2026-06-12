@@ -1,34 +1,34 @@
-Write a YouTube Shorts narration script for the channel "Null Hypothesis". The channel takes a widely-held belief and tests it against evidence.
+Write a YouTube Shorts narration script for the channel "Null Hypothesis". The channel poses a bizarre-but-testable hypothesis, argues BOTH sides with real evidence, and lets the VIEWER decide. The channel itself NEVER declares a winner.
 
-BELIEF BEING TESTED: <<belief>>
+HYPOTHESIS BEING TESTED: <<belief>>
 HOOK: <<hook>>
 
-STRUCTURE (mandatory, in this order):
-1. HOOK — state the belief as something everyone accepts (1-2 punchy sentences)
-2. CASE FOR — the strongest evidence supporting the belief
-3. CASE AGAINST — the strongest evidence against it
-4. TWIST — the alternative explanation most people miss
-5. VERDICT — end with EXACTLY one of: "The null hypothesis survives." or "The null hypothesis is rejected."
+STRUCTURE (mandatory, 6 beats in this order):
+1. PURPOSE + HOOK — one fast line establishing what this channel does ("On Null Hypothesis we take a wild idea and stress-test it" — vary the wording, keep it under 4 seconds) then immediately state today's hypothesis as a provocative question or claim.
+2. WHY PEOPLE BELIEVE IT — where this belief comes from, why it feels obviously true.
+3. THE CASE FOR — the strongest evidence supporting it.
+4. THE CASE AGAINST — the strongest evidence against it.
+5. THE TWIST — a complication, alternative explanation, or overlooked angle that makes it genuinely hard to call.
+6. YOUR VERDICT — end by throwing it to the viewer. The final line must be a direct question like: "So — does the null hypothesis survive, or is it rejected? You decide. Comments are open."
 
 HARD RULES:
-- Total narration: <<min_words>>-<<max_words>> words (this is 45-75 seconds spoken)
+- Total narration: <<min_words>>-<<max_words>> words (55-70 seconds spoken). Do NOT under-write — short scripts get rejected.
 - EVERY factual claim, statistic, or study mention MUST come from the EVIDENCE block below. If the evidence doesn't contain a number, do not invent one — speak qualitatively instead.
-- Reference evidence inline by id in the "claims" field, not in the spoken text
-- Conversational, confident, second person where natural. No filler like "let's dive in".
-- The verdict must honestly follow from the evidence. If evidence is mixed, the null hypothesis survives.
+- Reference evidence inline by id in the "claims" field, not in the spoken text.
+- NEVER declare which side wins. Beats 3 and 4 should feel equally strong — steelman both.
+- Energetic, conversational, second person. Short punchy sentences. No filler like "let's dive in".
 
 Respond with JSON:
 {
-  "title": "video title, under 90 chars, no clickbait lies",
+  "title": "video title, under 90 chars, framed as an open question",
   "beats": [
     {"text": "spoken narration for this beat", "visual_keyword": "2-3 word stock footage search term", "claims": ["E1", "E3"]}
   ],
-  "verdict": "SURVIVES" or "REJECTED",
-  "description": "2-3 sentence video description",
+  "description": "2-3 sentence description ending by inviting viewers to vote in the comments",
   "tags": ["tag1", "tag2", "..."]
 }
 
-The "beats" array should have 5 entries matching the structure above. Each beat's visual_keyword should be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
+The "beats" array must have 6 entries matching the structure above. Each beat's visual_keyword must be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
 
 EVIDENCE:
 <<evidence>>

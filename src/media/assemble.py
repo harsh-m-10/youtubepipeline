@@ -1,7 +1,7 @@
 """Pure-ffmpeg assembly (no MoviePy — fewer CI deps, faster).
 
 Two-pass build:
-  1. Normalize every segment (title card / beat clips / verdict card) to
+  1. Normalize every segment (title card / beat clips / end card) to
      identical 1080x1920 30fps h264 chunks with exact durations.
   2. Concat, burn ASS captions, mix delayed narration + bed music, loudnorm.
 
@@ -56,7 +56,7 @@ def _clip_segment(clip: Path, duration: float, out_name: str, cwd: Path) -> str:
 def assemble(
     out_dir: Path,
     title_card: Path,
-    verdict_card: Path,
+    end_card: Path,
     clips: list[Path | None],
     beat_ends: list[float],
     narration: Path,
@@ -75,7 +75,7 @@ def assemble(
         else:
             segments.append(_clip_segment(clip, dur, name, out_dir))
     segments.append(
-        _image_segment(verdict_card, config.VERDICT_CARD_SECONDS, "seg_verdict.mp4", out_dir)
+        _image_segment(end_card, config.END_CARD_SECONDS, "seg_end.mp4", out_dir)
     )
 
     # 2. Concat
@@ -88,7 +88,7 @@ def assemble(
     if fonts_src.exists():
         shutil.copytree(fonts_src, out_dir / "fonts", dirs_exist_ok=True)
 
-    total = config.TITLE_CARD_SECONDS + beat_ends[-1] + config.VERDICT_CARD_SECONDS
+    total = config.TITLE_CARD_SECONDS + beat_ends[-1] + config.END_CARD_SECONDS
     delay_ms = int(config.TITLE_CARD_SECONDS * 1000)
 
     music_files = sorted((config.ASSETS_DIR / "music").glob("*.mp3")) if (
