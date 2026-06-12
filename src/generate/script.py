@@ -24,8 +24,16 @@ def _generate(candidate: dict, evidence_block: str) -> dict:
         system="You write tight, evidence-grounded Shorts scripts. Respond only with valid JSON.",
         user=prompt,
     )
-    if not script.get("beats") or script.get("verdict") not in ("SURVIVES", "REJECTED"):
-        raise RuntimeError(f"Script JSON missing beats/verdict: {list(script.keys())}")
+    if not script.get("beats"):
+        raise RuntimeError(f"Script JSON missing beats: {list(script.keys())}")
+    # LLM sometimes phrases the verdict ("the null hypothesis is rejected") — normalize
+    verdict = str(script.get("verdict", "")).upper()
+    if "REJECT" in verdict:
+        script["verdict"] = "REJECTED"
+    elif "SURVIV" in verdict:
+        script["verdict"] = "SURVIVES"
+    else:
+        raise RuntimeError(f"Unrecognizable verdict: {script.get('verdict')!r}")
     return script
 
 

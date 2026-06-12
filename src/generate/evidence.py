@@ -3,6 +3,7 @@ These snippets become the ONLY allowed factual basis for the script —
 this is the hallucination guard that replaces a human fact-checker."""
 
 import logging
+import time
 
 import requests
 
@@ -13,12 +14,15 @@ log = logging.getLogger(__name__)
 
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 S2_API = "https://api.semanticscholar.org/graph/v1/paper/search"
+# Wikimedia returns 403 for generic client UAs; they require a descriptive one
+HEADERS = {"User-Agent": "NullHypothesisBot/0.1 (personal research pipeline)"}
 
 
 def _wiki_search(query: str, limit: int = 3) -> list[dict]:
     try:
         resp = requests.get(
             WIKI_API,
+            headers=HEADERS,
             params={
                 "action": "query", "format": "json", "list": "search",
                 "srsearch": query, "srlimit": limit,
@@ -31,6 +35,7 @@ def _wiki_search(query: str, limit: int = 3) -> list[dict]:
             return []
         resp = requests.get(
             WIKI_API,
+            headers=HEADERS,
             params={
                 "action": "query", "format": "json", "prop": "extracts",
                 "exintro": 1, "explaintext": 1, "exsentences": 6,
@@ -57,15 +62,23 @@ def _wiki_search(query: str, limit: int = 3) -> list[dict]:
 
 def _scholar_search(query: str, limit: int = 4) -> list[dict]:
     try:
-        resp = requests.get(
-            S2_API,
-            params={
-                "query": query,
-                "fields": "title,abstract,year,url,citationCount",
-                "limit": limit,
-            },
-            timeout=20,
-        )
+        # unauthenticated S2 shares a rate-limit pool; back off on 429
+        for attempt in range(4):
+            resp = requests.get(
+                S2_API,
+                headers=HEADERS,
+                params={
+                    "query": query,
+                    "fields": "title,abstract,year,url,citationCount",
+                    "limit": limit,
+                },
+                timeout=20,
+            )
+            if resp.status_code != 429:
+                break
+            wait = 10 * (attempt + 1)
+            log.info("Semantic Scholar rate-limited, waiting %ss", wait)
+            time.sleep(wait)
         resp.raise_for_status()
         papers = resp.json().get("data") or []
         return [
@@ -91,7 +104,9 @@ def gather(candidate: dict) -> list[dict]:
             "We need evidence FOR and AGAINST this belief:\n"
             f"BELIEF: {candidate['belief']}\n"
             f"TEST ANGLE: {candidate['test_angle']}\n\n"
-            'Give 2 Wikipedia search queries and 2 academic search queries as JSON:\n'
+            "Give 2 Wikipedia search queries and 2 academic search queries.\n"
+            "Each query must be a SHORT PLAIN keyword phrase (2-5 words), no boolean\n"
+            "operators, no quotes, no field prefixes. JSON:\n"
             '{"wikipedia": ["q1", "q2"], "academic": ["q1", "q2"]}'
         ),
         temperature=0.3,
