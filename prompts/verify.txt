@@ -1,11 +1,23 @@
-You are a fact-check gate. Below is a narration script and the evidence block it was allowed to use.
+You are a fact-check gate for a short video script. Below is the narration and the evidence block it was allowed to use.
 
-Check every factual claim, number, and study reference in the script. A claim FAILS if it states a specific fact, statistic, or study finding that is not supported by the evidence block. General framing, opinions, and the belief statement itself do not need support.
+A claim FAILS only if it asserts a SPECIFIC CHECKABLE FACT that the evidence does not support:
+- a number, statistic, percentage, or quantity
+- a named study, paper, organization, or dataset and what it found
+- a concrete historical event or date
+- a definitive causal result stated as established fact ("X was shown to cause Y")
+
+The following are ALLOWED and must NOT be flagged:
+- the belief being tested and its framing ("everyone thinks...", "you probably believe...")
+- opinions, rhetorical questions, transitions, and the verdict line
+- hedged or qualitative statements ("often", "can", "might", "tends to", "depends on")
+- common-knowledge background that no reasonable person disputes
+
+Judge the script as a whole charitably; only hard, specific, unsupported factual assertions fail.
 
 Respond with JSON:
 {
   "passed": true or false,
-  "failures": ["quote of each unsupported claim, with one sentence why it fails"]
+  "failures": ["quote of each unsupported SPECIFIC claim, with one sentence why it fails"]
 }
 
 SCRIPT:

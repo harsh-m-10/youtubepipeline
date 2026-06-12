@@ -43,14 +43,27 @@ def run(dry_run: bool = False) -> None:
             if not dry_run:
                 notify.no_video_today(best)
             return
-        best = ranked[0]
-        log.info("Selected [%.1f]: %s", best["score"], best["hook"])
-
-        stage = "evidence"
-        snippets = evidence.gather(best)
-
-        stage = "script"
-        script = script_mod.write_script(best, snippets)
+        # Try the top candidates in order: a hypothesis with thin evidence or an
+        # unverifiable script falls through to the next one instead of killing the run.
+        script, best = None, None
+        for candidate in ranked[:3]:
+            if candidate["score"] < config.MIN_SCORE_TO_PROCEED:
+                break
+            log.info("Trying [%.1f]: %s", candidate["score"], candidate["hook"])
+            stage = "evidence"
+            snippets = evidence.gather(candidate)
+            if len(snippets) < 3:
+                log.warning("Only %d evidence snippets — trying next candidate", len(snippets))
+                continue
+            stage = "script"
+            try:
+                script = script_mod.write_script(candidate, snippets)
+                best = candidate
+                break
+            except RuntimeError as exc:
+                log.warning("Scripting failed for this candidate: %s", exc)
+        if script is None:
+            raise RuntimeError("No top candidate produced a verifiable script")
         (out_dir / "script.json").write_text(
             json.dumps(script, indent=2, ensure_ascii=False), encoding="utf-8"
         )
