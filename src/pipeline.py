@@ -25,7 +25,8 @@ log = logging.getLogger("pipeline")
 def run(dry_run: bool = False) -> None:
     stage = "init"
     try:
-        out_dir = config.OUT_DIR / datetime.date.today().isoformat()
+        # timestamped run dir — multiple runs per day must not overwrite each other
+        out_dir = config.OUT_DIR / datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
         out_dir.mkdir(parents=True, exist_ok=True)
 
         stage = "source"
@@ -77,7 +78,10 @@ def run(dry_run: bool = False) -> None:
         stage = "visuals"
         title_card = visuals.make_title_card(script["belief"], out_dir)
         question_card = visuals.make_question_card(out_dir)
-        clips = visuals.fetch_clips([b["visual_keyword"] for b in script["beats"]], out_dir)
+        # clips only for the middle beats — cards cover the intro and closer
+        clips = visuals.fetch_clips(
+            [b["visual_keyword"] for b in script["beats"][1:-1]], out_dir
+        )
 
         stage = "assemble"
         video = assemble.assemble(

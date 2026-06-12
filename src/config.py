@@ -38,8 +38,9 @@ PEXELS_API_KEY = os.getenv("PEXELS_API_KEY", "")
 TTS_VOICE = "en-US-AvaMultilingualNeural"  # energetic female voice
 TTS_RATE = "+15%"  # brisk pacing keeps Shorts retention
 VIDEO_W, VIDEO_H = 1080, 1920
-TITLE_CARD_SECONDS = 2.5
-END_CARD_SECONDS = 3.0
+# Title card displays while beat 1 (intro) is narrated; the vote card displays
+# while the closing beat is narrated, then holds briefly.
+END_CARD_HOLD_SECONDS = 1.5
 MUSIC_VOLUME = 0.12
 TARGET_SCRIPT_WORDS = (150, 210)  # ~55-70s at +15% narration pace
 MIN_ACCEPTABLE_WORDS = 120  # regenerate if the LLM under-writes

@@ -62,11 +62,13 @@ def assemble(
     narration: Path,
     ass_file: Path,
 ) -> Path:
-    """Build final.mp4 in out_dir. `clips` and `beat_ends` are per-beat."""
-    # 1. Per-beat segments (None clip -> static title card as backdrop)
-    segments = [_image_segment(title_card, config.TITLE_CARD_SECONDS, "seg_title.mp4", out_dir)]
-    prev = 0.0
-    for i, (clip, end) in enumerate(zip(clips, beat_ends)):
+    """Build final.mp4 in out_dir. The title card spans the first beat (the
+    channel intro is narrated over it); `clips` cover the middle beats; the
+    vote card spans the last beat plus a short hold. `beat_ends` is per-beat."""
+    segments = [_image_segment(title_card, max(1.0, beat_ends[0]), "seg_title.mp4", out_dir)]
+    prev = beat_ends[0]
+    for i, clip in enumerate(clips):
+        end = beat_ends[i + 1]
         dur = max(0.5, end - prev)
         prev = end
         name = f"seg_{i}.mp4"
@@ -74,9 +76,8 @@ def assemble(
             segments.append(_image_segment(title_card, dur, name, out_dir))
         else:
             segments.append(_clip_segment(clip, dur, name, out_dir))
-    segments.append(
-        _image_segment(end_card, config.END_CARD_SECONDS, "seg_end.mp4", out_dir)
-    )
+    end_dur = max(0.5, beat_ends[-1] - prev) + config.END_CARD_HOLD_SECONDS
+    segments.append(_image_segment(end_card, end_dur, "seg_end.mp4", out_dir))
 
     # 2. Concat
     concat_list = out_dir / "concat.txt"
@@ -88,8 +89,7 @@ def assemble(
     if fonts_src.exists():
         shutil.copytree(fonts_src, out_dir / "fonts", dirs_exist_ok=True)
 
-    total = config.TITLE_CARD_SECONDS + beat_ends[-1] + config.END_CARD_SECONDS
-    delay_ms = int(config.TITLE_CARD_SECONDS * 1000)
+    total = beat_ends[-1] + config.END_CARD_HOLD_SECONDS
 
     music_files = sorted((config.ASSETS_DIR / "music").glob("*.mp3")) if (
         config.ASSETS_DIR / "music"
@@ -99,13 +99,12 @@ def assemble(
     if music_files:
         inputs += ["-stream_loop", "-1", "-i", str(music_files[0])]
         audio_filter = (
-            f"[1:a]adelay={delay_ms}|{delay_ms}[nar];"
             f"[2:a]volume={config.MUSIC_VOLUME},afade=t=out:st={total - 2:.2f}:d=2[mus];"
-            f"[nar][mus]amix=inputs=2:duration=first:dropout_transition=0,"
+            f"[1:a][mus]amix=inputs=2:duration=first:dropout_transition=0,"
             f"loudnorm=I=-16:TP=-1.5[aout]"
         )
     else:
-        audio_filter = f"[1:a]adelay={delay_ms}|{delay_ms},loudnorm=I=-16:TP=-1.5[aout]"
+        audio_filter = "[1:a]loudnorm=I=-16:TP=-1.5[aout]"
 
     _run(
         [*inputs,

@@ -15,18 +15,60 @@ log = logging.getLogger(__name__)
 PEXELS_VIDEO_API = "https://api.pexels.com/videos/search"
 FALLBACK_QUERIES = ["abstract background", "city timelapse", "data visualization"]
 
-BG_COLOR = (16, 20, 33)  # dark navy — channel brand
+BG_TOP = (22, 28, 48)  # dark navy gradient — channel brand
+BG_BOTTOM = (10, 12, 22)
 ACCENT = (255, 210, 77)
 RED = (235, 87, 87)
-GREEN = (76, 175, 125)
+GREEN = (86, 196, 137)
+MUTED = (150, 160, 185)
 
 
-def _font(size: int) -> ImageFont.FreeTypeFont:
-    for candidate in sorted((config.ASSETS_DIR / "fonts").glob("*.ttf")) if (
-        config.ASSETS_DIR / "fonts"
-    ).exists() else []:
-        return ImageFont.truetype(str(candidate), size)
+def _font(size: int, weight: str = "ExtraBold") -> ImageFont.FreeTypeFont:
+    fonts_dir = config.ASSETS_DIR / "fonts"
+    if fonts_dir.exists():
+        ttfs = list(fonts_dir.glob("*.ttf"))
+        preferred = [f for f in ttfs if weight.lower() in f.stem.lower()]
+        if preferred or ttfs:
+            return ImageFont.truetype(str((preferred or ttfs)[0]), size)
     return ImageFont.load_default(size)
+
+
+def _gradient_canvas() -> Image.Image:
+    """Vertical navy gradient with a subtle accent glow top-left."""
+    col = Image.new("RGB", (1, config.VIDEO_H))
+    for y in range(config.VIDEO_H):
+        t = y / config.VIDEO_H
+        col.putpixel((0, y), tuple(
+            int(a + (b - a) * t) for a, b in zip(BG_TOP, BG_BOTTOM)
+        ))
+    img = col.resize((config.VIDEO_W, config.VIDEO_H))
+    draw = ImageDraw.Draw(img, "RGBA")
+    draw.ellipse([-400, -400, 700, 700], fill=(*ACCENT, 14))
+    return img
+
+
+def _badge(draw: ImageDraw.ImageDraw, cx: int, y: int) -> None:
+    """Channel name pill."""
+    font = _font(44, "SemiBold")
+    text = "NULL HYPOTHESIS"
+    w = draw.textlength(text, font=font)
+    pad_x, pad_y = 44, 24
+    box = [cx - w / 2 - pad_x, y - pad_y - 22, cx + w / 2 + pad_x, y + pad_y + 22]
+    draw.rounded_rectangle(box, radius=46, outline=ACCENT, width=4)
+    draw.text((cx, y), text, font=font, fill=ACCENT, anchor="mm")
+
+
+def _draw_check(draw: ImageDraw.ImageDraw, cx: int, cy: int, r: int) -> None:
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=GREEN, width=8)
+    draw.line([(cx - r * 0.45, cy + r * 0.02), (cx - r * 0.12, cy + r * 0.38),
+               (cx + r * 0.5, cy - r * 0.32)], fill=GREEN, width=14, joint="curve")
+
+
+def _draw_cross(draw: ImageDraw.ImageDraw, cx: int, cy: int, r: int) -> None:
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=RED, width=8)
+    k = r * 0.42
+    draw.line([(cx - k, cy - k), (cx + k, cy + k)], fill=RED, width=14)
+    draw.line([(cx - k, cy + k), (cx + k, cy - k)], fill=RED, width=14)
 
 
 def _wrap(draw: ImageDraw.ImageDraw, text: str, font, max_w: int) -> list[str]:
@@ -45,19 +87,30 @@ def _wrap(draw: ImageDraw.ImageDraw, text: str, font, max_w: int) -> list[str]:
 
 
 def make_title_card(belief: str, out_dir: Path) -> Path:
-    img = Image.new("RGB", (config.VIDEO_W, config.VIDEO_H), BG_COLOR)
+    img = _gradient_canvas()
     draw = ImageDraw.Draw(img)
-    eyebrow_font, main_font = _font(54), _font(88)
+    cx = config.VIDEO_W // 2
 
-    draw.text((config.VIDEO_W // 2, 620), "TODAY'S HYPOTHESIS",
-              font=eyebrow_font, fill=ACCENT, anchor="mm")
-    lines = _wrap(draw, f"“{belief}”", main_font, config.VIDEO_W - 160)
-    y = 800
+    # keep everything above y~1350: the lower third belongs to burned captions
+    _badge(draw, cx, 300)
+    eyebrow = _font(46, "SemiBold")
+    draw.text((cx, 470), "T H E   H Y P O T H E S I S",
+              font=eyebrow, fill=MUTED, anchor="mm")
+    draw.line([(cx - 70, 540), (cx + 70, 540)], fill=ACCENT, width=6)
+
+    main_font = _font(88)
+    lines = _wrap(draw, belief, main_font, config.VIDEO_W - 180)
+    if len(lines) > 5:  # very long beliefs get a smaller face
+        main_font = _font(70)
+        lines = _wrap(draw, belief, main_font, config.VIDEO_W - 180)
+    line_h = int(main_font.size * 1.3)
+    y = 880 - (len(lines) - 1) * line_h // 2
     for line in lines:
-        draw.text((config.VIDEO_W // 2, y), line, font=main_font, fill="white", anchor="mm")
-        y += 110
-    draw.text((config.VIDEO_W // 2, y + 120), "— NULL HYPOTHESIS —",
-              font=eyebrow_font, fill=(140, 150, 170), anchor="mm")
+        draw.text((cx, y), line, font=main_font, fill="white", anchor="mm")
+        y += line_h
+
+    draw.text((cx, min(y + 110, 1290)), "both sides. real evidence. you decide.",
+              font=_font(44, "SemiBold"), fill=ACCENT, anchor="mm")
 
     path = out_dir / "title_card.png"
     img.save(path)
@@ -66,16 +119,27 @@ def make_title_card(belief: str, out_dir: Path) -> Path:
 
 def make_question_card(out_dir: Path) -> Path:
     """Closing card: the channel never rules — the viewer votes in the comments."""
-    img = Image.new("RGB", (config.VIDEO_W, config.VIDEO_H), BG_COLOR)
+    img = _gradient_canvas()
     draw = ImageDraw.Draw(img)
-    draw.text((config.VIDEO_W // 2, 760), "DOES THE NULL HYPOTHESIS",
-              font=_font(64), fill="white", anchor="mm")
-    draw.text((config.VIDEO_W // 2, 900), "SURVIVE?",
-              font=_font(150), fill=ACCENT, anchor="mm")
-    draw.text((config.VIDEO_W // 2, 1090), "SURVIVES ✓     REJECTED ✗",
-              font=_font(60), fill=(140, 150, 170), anchor="mm")
-    draw.text((config.VIDEO_W // 2, 1240), "VOTE IN THE COMMENTS",
-              font=_font(54), fill=GREEN, anchor="mm")
+    cx = config.VIDEO_W // 2
+
+    # keep everything above y~1350: the lower third belongs to burned captions
+    _badge(draw, cx, 300)
+    draw.text((cx, 540), "DOES THE NULL HYPOTHESIS",
+              font=_font(60), fill="white", anchor="mm")
+    draw.text((cx, 690), "SURVIVE?", font=_font(160), fill=ACCENT, anchor="mm")
+
+    # two vote options with drawn icons (no unicode glyph dependence)
+    opt_font = _font(52)
+    left, right, icon_y, r = cx - 250, cx + 250, 960, 70
+    _draw_check(draw, left, icon_y, r)
+    draw.text((left, icon_y + r + 65), "SURVIVES", font=opt_font, fill=GREEN, anchor="mm")
+    _draw_cross(draw, right, icon_y, r)
+    draw.text((right, icon_y + r + 65), "REJECTED", font=opt_font, fill=RED, anchor="mm")
+
+    draw.rounded_rectangle([cx - 410, 1210, cx + 410, 1320], radius=55, fill=ACCENT)
+    draw.text((cx, 1265), "VOTE IN THE COMMENTS",
+              font=_font(50), fill=(12, 14, 24), anchor="mm")
 
     path = out_dir / "question_card.png"
     img.save(path)
