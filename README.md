@@ -8,7 +8,7 @@ Your only job: tap "publish" on your phone when the Telegram message arrives.
 ```
 HN/Reddit → Groq (hypothesis + score) → Wikipedia/Semantic Scholar (evidence)
 → Groq (script + fact-check gate) → edge-tts (voice + word timings)
-→ Pexels + Pillow (visuals) → ffmpeg (assembly) → YouTube (private) → Telegram
+→ Pexels + Pillow (visuals) → ffmpeg (assembly) → YouTube (private) → WhatsApp
 ```
 
 ## One-time setup
@@ -28,8 +28,8 @@ REDDIT_CLIENT_SECRET=...
 YT_CLIENT_ID=...
 YT_CLIENT_SECRET=...
 YT_REFRESH_TOKEN=...
-TELEGRAM_BOT_TOKEN=...
-TELEGRAM_CHAT_ID=...
+WHATSAPP_PHONE=+91XXXXXXXXXX
+CALLMEBOT_API_KEY=...
 ```
 
 ### 2. API keys (all free)
@@ -39,7 +39,7 @@ TELEGRAM_CHAT_ID=...
 | `PEXELS_API_KEY` | pexels.com/api |
 | `REDDIT_CLIENT_*` | reddit.com/prefs/apps → create "script" app (optional — HN works alone) |
 | `YT_*` | see `scripts/get_youtube_token.py` docstring (Google Cloud + OAuth) |
-| `TELEGRAM_*` | @BotFather → new bot → token; message the bot once, get chat id from `https://api.telegram.org/bot<TOKEN>/getUpdates` |
+| `WHATSAPP_*` | CallMeBot (free): save +34 644 51 95 23 as a contact, WhatsApp it the message "I allow callmebot to send me messages", it replies with your API key |
 
 ### 3. Assets
 - `assets/fonts/` — one bold `.ttf` (e.g. Montserrat ExtraBold from Google Fonts)

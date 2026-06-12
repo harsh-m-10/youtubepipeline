@@ -49,8 +49,9 @@ YT_CLIENT_SECRET = os.getenv("YT_CLIENT_SECRET", "")
 YT_REFRESH_TOKEN = os.getenv("YT_REFRESH_TOKEN", "")
 YT_CATEGORY_ID = "27"  # Education
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+# WhatsApp alerts via CallMeBot (free personal gateway)
+WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "")  # with country code, e.g. +91XXXXXXXXXX
+CALLMEBOT_API_KEY = os.getenv("CALLMEBOT_API_KEY", "")
 
 
 def load_prompt(name: str, **kwargs) -> str:

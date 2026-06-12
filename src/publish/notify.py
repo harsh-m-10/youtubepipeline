@@ -1,6 +1,10 @@
-"""Telegram notifications: 'video ready, tap to publish' on success,
-stage + error on failure. Never raises — notification failure must not
-fail the pipeline."""
+"""WhatsApp notifications via CallMeBot (free personal-use gateway):
+'video ready, tap to publish' on success, stage + error on failure.
+Never raises — notification failure must not fail the pipeline.
+
+One-time setup (see README): add CallMeBot's number to your contacts,
+WhatsApp it "I allow callmebot to send me messages", and it replies
+with your API key."""
 
 import logging
 
@@ -12,21 +16,21 @@ log = logging.getLogger(__name__)
 
 
 def send(text: str) -> None:
-    if not (config.TELEGRAM_BOT_TOKEN and config.TELEGRAM_CHAT_ID):
-        log.warning("Telegram not configured; message was: %s", text)
+    if not (config.WHATSAPP_PHONE and config.CALLMEBOT_API_KEY):
+        log.warning("WhatsApp not configured; message was: %s", text)
         return
     try:
-        requests.post(
-            f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}/sendMessage",
-            json={
-                "chat_id": config.TELEGRAM_CHAT_ID,
+        requests.get(
+            "https://api.callmebot.com/whatsapp.php",
+            params={
+                "phone": config.WHATSAPP_PHONE,
                 "text": text,
-                "disable_web_page_preview": True,
+                "apikey": config.CALLMEBOT_API_KEY,
             },
-            timeout=20,
+            timeout=30,
         ).raise_for_status()
     except Exception as exc:
-        log.warning("Telegram send failed: %s", exc)
+        log.warning("WhatsApp send failed: %s", exc)
 
 
 def video_ready(title: str, video_id: str) -> None:
