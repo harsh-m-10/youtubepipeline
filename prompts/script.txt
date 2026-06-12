@@ -17,6 +17,7 @@ HARD RULES:
 - Reference evidence inline by id in the "claims" field, not in the spoken text.
 - NEVER declare which side wins. Beats 3 and 4 should feel equally strong — steelman both.
 - Energetic, conversational, second person. Short punchy sentences. No filler like "let's dive in".
+- NEVER say "today's hypothesis" or reference the day/date — multiple videos may publish per day. Say "the hypothesis" or "our hypothesis".
 
 Respond with JSON:
 {
