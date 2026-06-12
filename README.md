@@ -3,7 +3,7 @@
 Fully automated YouTube Shorts factory: scrapes trending discussions, generates an
 evidence-tested hypothesis, writes a fact-checked script, narrates it with TTS,
 assembles a captioned vertical video, and uploads it as **private** to YouTube.
-Your only job: tap "publish" on your phone when the Telegram message arrives.
+Your only job: tap "publish" on your phone when the WhatsApp message arrives.
 
 ```
 HN/Reddit → Groq (hypothesis + score) → Wikipedia/Semantic Scholar (evidence)
@@ -71,7 +71,7 @@ python -m src.pipeline
 - **Hallucination guard replaces the fact-checker:** the script LLM may only use
   facts from retrieved Wikipedia/Semantic Scholar snippets, and a separate
   verification pass rejects unsupported claims. Fails twice → run aborts.
-- **Fail-closed everywhere:** any stage error → Telegram alert, no upload.
+- **Fail-closed everywhere:** any stage error → WhatsApp alert, no upload.
 - **Knobs** live in `src/config.py`; **editorial voice** lives in `prompts/*.txt` —
   tune prompts without touching code.
 - Uploads carry `containsSyntheticMedia: true` (YouTube AI-voice disclosure) and

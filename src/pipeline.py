@@ -1,5 +1,5 @@
 """End-to-end orchestrator. Fail-closed: any stage failure means no upload,
-and a Telegram alert with the stage name.
+and a WhatsApp alert with the stage name.
 
 Usage:
     python -m src.pipeline             # full run (CI entrypoint)
