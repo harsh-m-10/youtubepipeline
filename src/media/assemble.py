@@ -101,10 +101,12 @@ def assemble(
         audio_filter = (
             f"[2:a]volume={config.MUSIC_VOLUME},afade=t=out:st={total - 2:.2f}:d=2[mus];"
             f"[1:a][mus]amix=inputs=2:duration=first:dropout_transition=0,"
-            f"loudnorm=I=-16:TP=-1.5[aout]"
+            f"loudnorm=I=-16:TP=-1.5,aresample=48000[aout]"
         )
     else:
-        audio_filter = "[1:a]loudnorm=I=-16:TP=-1.5[aout]"
+        # aresample: loudnorm upsamples to 96/192kHz, which many players
+        # can't decode smoothly (mid-playback audio dropouts)
+        audio_filter = "[1:a]loudnorm=I=-16:TP=-1.5,aresample=48000[aout]"
 
     _run(
         [*inputs,
