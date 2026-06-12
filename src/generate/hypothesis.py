@@ -71,6 +71,30 @@ def score_candidates(candidates: list[dict]) -> list[dict]:
     return ranked
 
 
+def is_duplicate(candidate: dict) -> bool:
+    """Focused LLM check of one candidate against publish history. More reliable
+    than the duplicate flag inside the scoring rubric, which misses rewordings."""
+    history = load_history()
+    recent = [h["belief"] for h in history[-config.HISTORY_DEDUPE_WINDOW:]]
+    if not recent:
+        return False
+    prompt = config.load_prompt(
+        "dedupe",
+        candidate=candidate["belief"],
+        history="\n".join(f"- {b}" for b in recent),
+    )
+    result = llm.complete_json(
+        system="You detect duplicate topics. Respond only with valid JSON.",
+        user=prompt,
+        temperature=0.0,
+    )
+    if result.get("duplicate"):
+        log.info("Duplicate of published topic %r: %s",
+                 result.get("matched_title"), candidate["belief"])
+        return True
+    return False
+
+
 def pick_best(threads: list[dict]) -> dict | None:
     """Full pipeline stage: generate -> score -> gate. None means no video today."""
     candidates = generate_candidates(threads)

@@ -51,6 +51,9 @@ def run(dry_run: bool = False) -> None:
             if candidate["score"] < config.MIN_SCORE_TO_PROCEED:
                 break
             log.info("Trying [%.1f]: %s", candidate["score"], candidate["hook"])
+            stage = "dedupe"
+            if hypothesis.is_duplicate(candidate):
+                continue
             stage = "evidence"
             snippets = evidence.gather(candidate)
             if len(snippets) < 3:
