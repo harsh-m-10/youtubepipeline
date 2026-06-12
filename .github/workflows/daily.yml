@@ -1,0 +1,74 @@
+name: Daily video
+
+on:
+  schedule:
+    - cron: "30 2 * * *" # 08:00 IST daily
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (no upload)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # commit state/history.json back
+
+concurrency:
+  group: daily-video
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-liberation
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python -m src.pipeline --dry-run
+          else
+            python -m src.pipeline
+          fi
+
+      - name: Upload artifacts (debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_number }}
+          path: |
+            out/**/final.mp4
+            out/**/script.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Commit history
+        if: success()
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "actions@github.com"
+          git add state/history.json
+          git diff --cached --quiet || git commit -m "chore: record published video"
+          git push

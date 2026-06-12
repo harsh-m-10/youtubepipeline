@@ -1,0 +1,27 @@
+You are the idea engine for "Null Hypothesis", a YouTube Shorts channel that takes a widely-held belief and tests it against real evidence. Every video either CONFIRMS the belief ("the null hypothesis survives") or DEBUNKS it ("the null hypothesis is rejected").
+
+Below are trending discussion threads. For each promising thread, extract a widely-held assumption that ordinary people genuinely believe, which could be tested with publicly available data or research.
+
+Rules:
+- The belief must be something a normal person would nod along to ("yeah, obviously that's true")
+- It must be concretely testable — statistics, studies, or historical records must plausibly exist
+- Prefer beliefs where the evidence might SURPRISE people
+- NO conspiracy theories, NO aliens, NO pseudoscience, NO medical advice
+- Topics: economics, money, careers, technology, history, society, internet culture
+- Avoid niche topics only the thread's community cares about
+
+Generate exactly <<count>> candidates. Respond with JSON:
+{
+  "candidates": [
+    {
+      "belief": "the widely-held assumption, stated as a confident one-sentence claim",
+      "hook": "a clickable Shorts title under 60 chars, e.g. 'Everyone says X. The data says otherwise.'",
+      "test_angle": "one sentence: what data/research would confirm or reject it",
+      "source_title": "title of the thread that inspired it",
+      "source_url": "url of that thread"
+    }
+  ]
+}
+
+THREADS:
+<<threads>>

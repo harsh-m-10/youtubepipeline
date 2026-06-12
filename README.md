@@ -1,0 +1,78 @@
+# Null Hypothesis — Automated Shorts Pipeline
+
+Fully automated YouTube Shorts factory: scrapes trending discussions, generates an
+evidence-tested hypothesis, writes a fact-checked script, narrates it with TTS,
+assembles a captioned vertical video, and uploads it as **private** to YouTube.
+Your only job: tap "publish" on your phone when the Telegram message arrives.
+
+```
+HN/Reddit → Groq (hypothesis + score) → Wikipedia/Semantic Scholar (evidence)
+→ Groq (script + fact-check gate) → edge-tts (voice + word timings)
+→ Pexels + Pillow (visuals) → ffmpeg (assembly) → YouTube (private) → Telegram
+```
+
+## One-time setup
+
+### 1. Local environment
+```bash
+python -m venv .venv && .venv\Scripts\activate   # Windows
+pip install -r requirements.txt
+# ffmpeg must be on PATH: winget install ffmpeg
+```
+Create `.env` in the repo root (never committed):
+```
+GROQ_API_KEY=...
+PEXELS_API_KEY=...
+REDDIT_CLIENT_ID=...
+REDDIT_CLIENT_SECRET=...
+YT_CLIENT_ID=...
+YT_CLIENT_SECRET=...
+YT_REFRESH_TOKEN=...
+TELEGRAM_BOT_TOKEN=...
+TELEGRAM_CHAT_ID=...
+```
+
+### 2. API keys (all free)
+| Key | Where |
+|---|---|
+| `GROQ_API_KEY` | console.groq.com → API Keys |
+| `PEXELS_API_KEY` | pexels.com/api |
+| `REDDIT_CLIENT_*` | reddit.com/prefs/apps → create "script" app (optional — HN works alone) |
+| `YT_*` | see `scripts/get_youtube_token.py` docstring (Google Cloud + OAuth) |
+| `TELEGRAM_*` | @BotFather → new bot → token; message the bot once, get chat id from `https://api.telegram.org/bot<TOKEN>/getUpdates` |
+
+### 3. Assets
+- `assets/fonts/` — one bold `.ttf` (e.g. Montserrat ExtraBold from Google Fonts)
+- `assets/music/` — 2–3 CC0/royalty-free `.mp3` background tracks (quiet, no vocals)
+
+### 4. GitHub
+Push to a **private** repo, add every `.env` key as a repo secret
+(Settings → Secrets and variables → Actions). The workflow
+(`.github/workflows/daily.yml`) runs daily at 08:00 IST and can be triggered
+manually from the Actions tab (with an optional dry-run flag).
+
+## Usage
+
+```bash
+# PHASE 0 GATE — run this first. Would you click at least 5 of the 50?
+python scripts/test_hypotheses.py
+
+# Full local dry run: produces out/<date>/final.mp4, no upload
+python -m src.pipeline --dry-run
+
+# Full run incl. upload (same thing CI does daily)
+python -m src.pipeline
+```
+
+## Design notes
+- **Quality gate replaces the editor:** 15 candidates/run are scored 1–10 by a
+  second LLM pass; if none scores ≥ 7.0 (`MIN_SCORE_TO_PROCEED` in `src/config.py`),
+  the run exits with no video. Some days produce nothing — that's intentional.
+- **Hallucination guard replaces the fact-checker:** the script LLM may only use
+  facts from retrieved Wikipedia/Semantic Scholar snippets, and a separate
+  verification pass rejects unsupported claims. Fails twice → run aborts.
+- **Fail-closed everywhere:** any stage error → Telegram alert, no upload.
+- **Knobs** live in `src/config.py`; **editorial voice** lives in `prompts/*.txt` —
+  tune prompts without touching code.
+- Uploads carry `containsSyntheticMedia: true` (YouTube AI-voice disclosure) and
+  cite all sources in the description.

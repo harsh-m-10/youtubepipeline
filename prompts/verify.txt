@@ -1,0 +1,15 @@
+You are a fact-check gate. Below is a narration script and the evidence block it was allowed to use.
+
+Check every factual claim, number, and study reference in the script. A claim FAILS if it states a specific fact, statistic, or study finding that is not supported by the evidence block. General framing, opinions, and the belief statement itself do not need support.
+
+Respond with JSON:
+{
+  "passed": true or false,
+  "failures": ["quote of each unsupported claim, with one sentence why it fails"]
+}
+
+SCRIPT:
+<<script>>
+
+EVIDENCE:
+<<evidence>>

@@ -1,0 +1,34 @@
+Write a YouTube Shorts narration script for the channel "Null Hypothesis". The channel takes a widely-held belief and tests it against evidence.
+
+BELIEF BEING TESTED: <<belief>>
+HOOK: <<hook>>
+
+STRUCTURE (mandatory, in this order):
+1. HOOK — state the belief as something everyone accepts (1-2 punchy sentences)
+2. CASE FOR — the strongest evidence supporting the belief
+3. CASE AGAINST — the strongest evidence against it
+4. TWIST — the alternative explanation most people miss
+5. VERDICT — end with EXACTLY one of: "The null hypothesis survives." or "The null hypothesis is rejected."
+
+HARD RULES:
+- Total narration: <<min_words>>-<<max_words>> words (this is 45-75 seconds spoken)
+- EVERY factual claim, statistic, or study mention MUST come from the EVIDENCE block below. If the evidence doesn't contain a number, do not invent one — speak qualitatively instead.
+- Reference evidence inline by id in the "claims" field, not in the spoken text
+- Conversational, confident, second person where natural. No filler like "let's dive in".
+- The verdict must honestly follow from the evidence. If evidence is mixed, the null hypothesis survives.
+
+Respond with JSON:
+{
+  "title": "video title, under 90 chars, no clickbait lies",
+  "beats": [
+    {"text": "spoken narration for this beat", "visual_keyword": "2-3 word stock footage search term", "claims": ["E1", "E3"]}
+  ],
+  "verdict": "SURVIVES" or "REJECTED",
+  "description": "2-3 sentence video description",
+  "tags": ["tag1", "tag2", "..."]
+}
+
+The "beats" array should have 5 entries matching the structure above. Each beat's visual_keyword should be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
+
+EVIDENCE:
+<<evidence>>
