@@ -1,17 +1,17 @@
 """Instagram Reels publishing via the official Instagram Graph API
 (graph.instagram.com, "Instagram API with Instagram Login" — no Facebook Page).
 
-Publishing a Reel needs a publicly-reachable video URL. Since the repo is
-public, we attach the MP4 to a temporary GitHub Release, hand Instagram that
-asset URL, then delete the release once publishing finishes.
+This API only accepts a publicly-reachable `video_url` (no direct byte upload),
+so we stage the MP4 on litterbox (free, no account, auto-expires in a few hours)
+which serves it with the video/mp4 content-type Instagram requires, hand IG that
+URL, poll until processing finishes, then publish.
 
 Long-lived tokens last 60 days and are refreshable; refresh_token() bumps it
-and (if GH_PAT is set) pushes the new value back into the IG_ACCESS_TOKEN
-secret so CI never goes stale. All failures are non-fatal to the caller —
-Instagram is a fail-soft cross-post, never allowed to break the YouTube path."""
+and (if GH_PAT is set) pushes the new value back into the IG_ACCESS_TOKEN secret
+so CI never goes stale. All failures are non-fatal to the caller — Instagram is
+a fail-soft cross-post, never allowed to break the YouTube path."""
 
 import logging
-import subprocess
 import time
 
 import requests
@@ -21,33 +21,24 @@ from src import config
 log = logging.getLogger(__name__)
 
 GRAPH = "https://graph.instagram.com"
+LITTERBOX = "https://litterbox.catbox.moe/resources/internals/api.php"
 
 
-def _gh_release_url(video_path, tag: str) -> str:
-    """Upload the MP4 as a GitHub release asset; return its public download URL."""
-    env_token = config.GH_PAT
-    import os
-
-    env = {**os.environ, "GH_TOKEN": env_token} if env_token else dict(os.environ)
-    gh = "gh"
-    subprocess.run(
-        [gh, "release", "create", tag, str(video_path),
-         "-R", config.GH_REPO, "-t", tag, "-n", "temp asset for IG publish"],
-        check=True, capture_output=True, text=True, env=env,
-    )
-    # Public repo asset URL pattern
-    fname = video_path.name
-    return f"https://github.com/{config.GH_REPO}/releases/download/{tag}/{fname}"
-
-
-def _gh_release_delete(tag: str) -> None:
-    import os
-
-    env = {**os.environ, "GH_TOKEN": config.GH_PAT} if config.GH_PAT else dict(os.environ)
-    subprocess.run(
-        ["gh", "release", "delete", tag, "-R", config.GH_REPO, "--yes", "--cleanup-tag"],
-        capture_output=True, text=True, env=env,
-    )
+def _stage_public_url(video_path) -> str:
+    """Upload the MP4 to litterbox and return its direct, public video/mp4 URL.
+    Auto-expires after 72h, so nothing needs cleaning up."""
+    with open(video_path, "rb") as f:
+        resp = requests.post(
+            LITTERBOX,
+            data={"reqtype": "fileupload", "time": "72h"},
+            files={"fileToUpload": ("reel.mp4", f, "video/mp4")},
+            timeout=300,
+        )
+    resp.raise_for_status()
+    url = resp.text.strip()
+    if not url.startswith("http"):
+        raise RuntimeError(f"litterbox upload failed: {url[:200]}")
+    return url
 
 
 def upload_reel(video_path, caption: str) -> str | None:
@@ -55,11 +46,9 @@ def upload_reel(video_path, caption: str) -> str | None:
     if not (config.IG_USER_ID and config.IG_ACCESS_TOKEN):
         log.warning("Instagram not configured; skipping cross-post")
         return None
-
-    tag = f"ig-{int(time.time())}"
     try:
-        video_url = _gh_release_url(video_path, tag)
-        log.info("IG: temp asset at %s", video_url)
+        video_url = _stage_public_url(video_path)
+        log.info("IG: staged video at %s", video_url)
 
         # 1. create media container
         r = requests.post(
@@ -107,8 +96,6 @@ def upload_reel(video_path, caption: str) -> str | None:
         log.warning("IG publish failed: %s %s", exc,
                     detail.text[:300] if detail is not None else "")
         return None
-    finally:
-        _gh_release_delete(tag)
 
 
 def refresh_token() -> None:

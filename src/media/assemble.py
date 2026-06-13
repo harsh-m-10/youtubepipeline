@@ -118,6 +118,7 @@ def assemble(
          "-map", "[vout]", "-map", "[aout]",
          "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-b:a", "192k",
+         "-movflags", "+faststart",  # moov atom up front for streaming/IG fetch
          "-t", f"{total:.3f}", "final.mp4"],
         out_dir,
     )
