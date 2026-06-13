@@ -14,7 +14,11 @@ from src import config
 
 log = logging.getLogger(__name__)
 
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+# force-ssl is needed to post comments and read video status/statistics
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.force-ssl",
+]
 
 
 def _service():
@@ -56,3 +60,41 @@ def upload(video_path: Path, title: str, description: str, tags: list[str]) -> s
     video_id = response["id"]
     log.info("Uploaded video id=%s (private)", video_id)
     return video_id
+
+
+def is_public(video_id: str) -> bool:
+    """True if the video has been published (comments require a public video)."""
+    resp = _service().videos().list(part="status", id=video_id).execute()
+    items = resp.get("items", [])
+    return bool(items) and items[0]["status"]["privacyStatus"] == "public"
+
+
+def post_comment(video_id: str, text: str) -> None:
+    """Post a top-level comment from the channel. Video must be public."""
+    _service().commentThreads().insert(
+        part="snippet",
+        body={
+            "snippet": {
+                "videoId": video_id,
+                "topLevelComment": {"snippet": {"textOriginal": text}},
+            }
+        },
+    ).execute()
+    log.info("Posted vote-prompt comment on %s", video_id)
+
+
+def get_stats(video_ids: list[str]) -> dict[str, dict]:
+    """Map video_id -> {views, likes, comments} for up to 50 ids per call."""
+    stats: dict[str, dict] = {}
+    svc = _service()
+    for i in range(0, len(video_ids), 50):
+        batch = video_ids[i : i + 50]
+        resp = svc.videos().list(part="statistics", id=",".join(batch)).execute()
+        for item in resp.get("items", []):
+            s = item.get("statistics", {})
+            stats[item["id"]] = {
+                "views": int(s.get("viewCount", 0)),
+                "likes": int(s.get("likeCount", 0)),
+                "comments": int(s.get("commentCount", 0)),
+            }
+    return stats

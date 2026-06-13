@@ -9,6 +9,7 @@ ffmpeg is run with cwd=out_dir and relative filenames so Windows drive-letter
 colons never need filtergraph escaping."""
 
 import logging
+import random
 import shutil
 import subprocess
 from pathlib import Path
@@ -97,7 +98,9 @@ def assemble(
 
     inputs = ["-i", "base.mp4", "-i", narration.name]
     if music_files:
-        inputs += ["-stream_loop", "-1", "-i", str(music_files[0])]
+        track = random.choice(music_files)
+        log.info("Background music: %s", track.name)
+        inputs += ["-stream_loop", "-1", "-i", str(track)]
         audio_filter = (
             f"[2:a]volume={config.MUSIC_VOLUME},afade=t=out:st={total - 2:.2f}:d=2[mus];"
             f"[1:a][mus]amix=inputs=2:duration=first:dropout_transition=0,"

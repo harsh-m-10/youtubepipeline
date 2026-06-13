@@ -82,10 +82,32 @@ def write_script(candidate: dict, snippets: list[dict]) -> dict:
 
 def full_description(script: dict) -> str:
     src_lines = "\n".join(f"- {s['title']}: {s['url']}" for s in script["sources"])
+    has_s2 = any(s.get("source") == "Semantic Scholar" for s in script["sources"])
+    s2_credit = "\nResearch via Semantic Scholar (semanticscholar.org)." if has_s2 else ""
     return (
         f"{script['description']}\n\n"
         "Does the null hypothesis survive or get rejected? Vote in the comments.\n\n"
         f"Sources:\n{src_lines}\n\n"
-        "Narration is AI-voiced. Every claim is sourced above.\n"
+        "Narration is AI-voiced. Every claim is sourced above."
+        f"{s2_credit}\n"
+        f"{config.MUSIC_CREDIT}\n"
         "#Shorts #NullHypothesis"
+    )
+
+
+def caption_for_instagram(script: dict) -> str:
+    """Instagram Reels caption: hook + description + vote CTA + sources + hashtags."""
+    src_names = ", ".join(s["title"].split(" (")[0] for s in script["sources"][:3])
+    tags = list(dict.fromkeys(  # de-dupe, preserve order
+        [t.lstrip("#").replace(" ", "") for t in script.get("hashtags", [])]
+        + config.BRAND_HASHTAGS
+    ))[: config.MAX_HASHTAGS]
+    hashtag_line = " ".join(f"#{t}" for t in tags)
+    return (
+        f"{script['description']}\n\n"
+        "Does the null hypothesis survive, or is it rejected?\n"
+        "Vote in the comments 👇\n\n"
+        f"Sources: {src_names}\n"
+        f"{config.MUSIC_CREDIT}\n\n"
+        f"{hashtag_line}"
     )

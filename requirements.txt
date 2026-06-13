@@ -6,3 +6,4 @@ Pillow>=10.0.0
 google-api-python-client>=2.100.0
 google-auth-oauthlib>=1.1.0
 python-dotenv>=1.0.0
+cryptography>=41.0.0  # local IG token helper only (self-signed redirect cert)

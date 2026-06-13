@@ -26,7 +26,8 @@ Respond with JSON:
     {"text": "spoken narration for this beat", "visual_keyword": "2-3 word stock footage search term", "claims": ["E1", "E3"]}
   ],
   "description": "2-3 sentence description ending by inviting viewers to vote in the comments",
-  "tags": ["tag1", "tag2", "..."]
+  "tags": ["tag1", "tag2", "..."],
+  "hashtags": ["10-14 topical hashtag words for Instagram, no # prefix, no spaces, lowercase, e.g. cryptocurrency, investing, personalfinance"]
 }
 
 The "beats" array must have 6 entries matching the structure above. Each beat's visual_keyword must be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").

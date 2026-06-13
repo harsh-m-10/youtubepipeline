@@ -11,6 +11,8 @@ Consider:
 
 Be harsh. A 7+ means you would personally bet on this video performing. Most candidates should score 4-6.
 
+<<calibration>>
+
 Also flag duplicates: if a candidate covers essentially the same belief as one of the PREVIOUSLY PUBLISHED titles listed below, set "duplicate": true.
 
 Respond with JSON:

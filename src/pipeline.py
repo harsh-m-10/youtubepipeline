@@ -12,14 +12,37 @@ import json
 import logging
 import sys
 
-from src import config
+from src import analytics, config
 from src.generate import evidence, hypothesis, script as script_mod
 from src.media import assemble, captions, tts, visuals
-from src.publish import notify, youtube
+from src.publish import instagram, notify, youtube
 from src.sources import reddit
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("pipeline")
+
+VOTE_COMMENT = "Cast your vote: ✅ H₀ survives or ❌ rejected. Why?"
+
+
+def _post_pending_comments() -> None:
+    """Post the vote-prompt comment on videos that have since gone public.
+    Comments can't be added while a video is private, so this runs each day."""
+    history = hypothesis.load_history()
+    changed = False
+    for entry in history:
+        if entry.get("commented") or not entry.get("video_id"):
+            continue
+        try:
+            if youtube.is_public(entry["video_id"]):
+                youtube.post_comment(entry["video_id"], VOTE_COMMENT)
+                entry["commented"] = True
+                changed = True
+        except Exception as exc:
+            log.warning("Comment sweep failed for %s: %s", entry["video_id"], exc)
+    if changed:
+        config.STATE_FILE.write_text(
+            json.dumps(history, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
 
 
 def run(dry_run: bool = False) -> None:
@@ -29,6 +52,16 @@ def run(dry_run: bool = False) -> None:
         out_dir = config.OUT_DIR / datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
         out_dir.mkdir(parents=True, exist_ok=True)
 
+        # startup maintenance (real runs only): keep IG token alive, post vote
+        # comments on now-public videos, refresh performance stats for scoring.
+        calibration = ""
+        if not dry_run:
+            stage = "maintenance"
+            instagram.refresh_token()
+            _post_pending_comments()
+            analytics.refresh_stats()
+            calibration = analytics.calibration_block()
+
         stage = "source"
         threads = reddit.fetch_all_threads()
         if not threads:
@@ -37,7 +70,7 @@ def run(dry_run: bool = False) -> None:
 
         stage = "hypothesize"
         candidates = hypothesis.generate_candidates(threads)
-        ranked = hypothesis.score_candidates(candidates)
+        ranked = hypothesis.score_candidates(candidates, calibration=calibration)
         if not ranked or ranked[0]["score"] < config.MIN_SCORE_TO_PROCEED:
             best = ranked[0]["score"] if ranked else 0.0
             log.info("No candidate cleared the bar (best %.1f) — clean exit", best)
@@ -99,6 +132,14 @@ def run(dry_run: bool = False) -> None:
         description = script_mod.full_description(script)
         video_id = youtube.upload(video, script["title"], description, script["tags"])
 
+        # Instagram cross-post — fail-soft: never roll back the YouTube upload
+        stage = "instagram"
+        ig_media_id = None
+        try:
+            ig_media_id = instagram.upload_reel(video, script_mod.caption_for_instagram(script))
+        except Exception as exc:
+            log.warning("Instagram cross-post failed (non-fatal): %s", exc)
+
         stage = "state"
         hypothesis.save_to_history(
             {
@@ -106,11 +147,15 @@ def run(dry_run: bool = False) -> None:
                 "belief": script["belief"],
                 "title": script["title"],
                 "video_id": video_id,
+                "ig_media_id": ig_media_id,
+                "commented": False,
                 "score": best["score"],
             }
         )
 
         notify.video_ready(script["title"], video_id)
+        if ig_media_id:
+            log.info("Instagram Reel published: %s", ig_media_id)
         log.info("Done: https://youtu.be/%s", video_id)
 
     except Exception as exc:

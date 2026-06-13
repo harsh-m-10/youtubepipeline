@@ -42,8 +42,9 @@ def generate_candidates(threads: list[dict], count: int = config.CANDIDATES_PER_
     return candidates
 
 
-def score_candidates(candidates: list[dict]) -> list[dict]:
-    """Attach score/duplicate/rationale to each candidate, return ranked (best first)."""
+def score_candidates(candidates: list[dict], calibration: str = "") -> list[dict]:
+    """Attach score/duplicate/rationale to each candidate, return ranked (best first).
+    `calibration` is an optional audience-performance hint (see src/analytics.py)."""
     history = load_history()
     recent_titles = [h["belief"] for h in history[-config.HISTORY_DEDUPE_WINDOW:]]
     history_text = "\n".join(f"- {t}" for t in recent_titles) or "(none yet)"
@@ -51,7 +52,9 @@ def score_candidates(candidates: list[dict]) -> list[dict]:
         f"[{i}] BELIEF: {c['belief']}\n    HOOK: {c['hook']}\n    TEST: {c['test_angle']}"
         for i, c in enumerate(candidates)
     )
-    prompt = config.load_prompt("score", history=history_text, candidates=candidates_text)
+    prompt = config.load_prompt(
+        "score", history=history_text, candidates=candidates_text, calibration=calibration
+    )
     result = llm.complete_json(
         system="You are a harsh, calibrated content editor. Respond only with valid JSON.",
         user=prompt,

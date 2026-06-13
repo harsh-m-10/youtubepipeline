@@ -20,6 +20,10 @@ LLM_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]  # primary, fal
 LLM_TEMPERATURE = 0.8
 LLM_SCORE_TEMPERATURE = 0.2  # scoring/verification should be deterministic-ish
 
+# --- Evidence ---
+S2_API_KEY = os.getenv("S2_API_KEY", "")  # Semantic Scholar; degrades to Wikipedia-only if unset
+S2_MIN_INTERVAL = 1.1  # seconds between S2 calls (their limit is 1 req/sec cumulative)
+
 # --- Sources ---
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "")
 REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "")
@@ -42,6 +46,8 @@ VIDEO_W, VIDEO_H = 1080, 1920
 # while the closing beat is narrated, then holds briefly.
 END_CARD_HOLD_SECONDS = 1.5
 MUSIC_VOLUME = 0.12
+# Music tracks are Kevin MacLeod / incompetech.com under CC BY 4.0 — credit required
+MUSIC_CREDIT = "Music by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
 TARGET_SCRIPT_WORDS = (150, 210)  # ~55-70s at +15% narration pace
 MIN_ACCEPTABLE_WORDS = 120  # regenerate if the LLM under-writes
 
@@ -50,6 +56,18 @@ YT_CLIENT_ID = os.getenv("YT_CLIENT_ID", "")
 YT_CLIENT_SECRET = os.getenv("YT_CLIENT_SECRET", "")
 YT_REFRESH_TOKEN = os.getenv("YT_REFRESH_TOKEN", "")
 YT_CATEGORY_ID = "27"  # Education
+
+# Instagram Reels via official Meta Graph API
+IG_USER_ID = os.getenv("IG_USER_ID", "")
+IG_ACCESS_TOKEN = os.getenv("IG_ACCESS_TOKEN", "")
+# Classic GitHub PAT (repo scope) so CI can push the refreshed IG token back
+# into the IG_ACCESS_TOKEN secret — keeps the 60-day token alive indefinitely.
+GH_PAT = os.getenv("GH_PAT", "")
+GH_REPO = os.getenv("GITHUB_REPOSITORY", "harsh-m-10/youtubepipeline")
+
+# Brand hashtags always appended to the Instagram caption (merged with per-video tags)
+BRAND_HASHTAGS = ["nullhypothesis", "reels", "didyouknow", "factsdaily", "debate"]
+MAX_HASHTAGS = 20
 
 # WhatsApp alerts via CallMeBot (free personal gateway)
 WHATSAPP_PHONE = os.getenv("WHATSAPP_PHONE", "")  # with country code, e.g. +91XXXXXXXXXX

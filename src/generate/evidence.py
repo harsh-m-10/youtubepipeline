@@ -17,6 +17,16 @@ S2_API = "https://api.semanticscholar.org/graph/v1/paper/search"
 # Wikimedia returns 403 for generic client UAs; they require a descriptive one
 HEADERS = {"User-Agent": "NullHypothesisBot/0.1 (personal research pipeline)"}
 
+_last_s2_call = 0.0  # module-level clock to honor S2's 1 req/sec cumulative limit
+
+
+def _s2_throttle() -> None:
+    global _last_s2_call
+    wait = config.S2_MIN_INTERVAL - (time.monotonic() - _last_s2_call)
+    if wait > 0:
+        time.sleep(wait)
+    _last_s2_call = time.monotonic()
+
 
 def _wiki_search(query: str, limit: int = 3) -> list[dict]:
     try:
@@ -61,12 +71,16 @@ def _wiki_search(query: str, limit: int = 3) -> list[dict]:
 
 
 def _scholar_search(query: str, limit: int = 4) -> list[dict]:
+    headers = dict(HEADERS)
+    if config.S2_API_KEY:
+        headers["x-api-key"] = config.S2_API_KEY
     try:
-        # unauthenticated S2 shares a rate-limit pool; back off on 429
-        for attempt in range(4):
+        # S2 allows 1 req/sec cumulative; throttle, then retry a couple times on 429
+        for attempt in range(3):
+            _s2_throttle()
             resp = requests.get(
                 S2_API,
-                headers=HEADERS,
+                headers=headers,
                 params={
                     "query": query,
                     "fields": "title,abstract,year,url,citationCount",
@@ -76,7 +90,7 @@ def _scholar_search(query: str, limit: int = 4) -> list[dict]:
             )
             if resp.status_code != 429:
                 break
-            wait = 10 * (attempt + 1)
+            wait = 2 * (attempt + 1)
             log.info("Semantic Scholar rate-limited, waiting %ss", wait)
             time.sleep(wait)
         resp.raise_for_status()

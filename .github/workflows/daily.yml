@@ -2,7 +2,9 @@ name: Daily video
 
 on:
   schedule:
-    - cron: "30 2 * * *" # 08:00 IST daily
+    # 09:17 IST — odd minute avoids the on-the-hour/half-hour scheduler stampede
+    # (GitHub scheduled runs are best-effort and get delayed in congested slots)
+    - cron: "47 3 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -47,6 +49,10 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           CALLMEBOT_API_KEY: ${{ secrets.CALLMEBOT_API_KEY }}
         run: |
