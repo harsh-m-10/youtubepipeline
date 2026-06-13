@@ -38,12 +38,15 @@ CALLMEBOT_API_KEY=...
 | `GROQ_API_KEY` | console.groq.com → API Keys |
 | `PEXELS_API_KEY` | pexels.com/api |
 | `REDDIT_CLIENT_*` | reddit.com/prefs/apps → create "script" app (optional — HN works alone) |
-| `YT_*` | see `scripts/get_youtube_token.py` docstring (Google Cloud + OAuth) |
+| `YT_*` | see `scripts/get_youtube_token.py` docstring (Google Cloud + OAuth; scopes: upload + force-ssl for auto-comments) |
+| `S2_API_KEY` | semanticscholar.org/product/api (free; richer academic evidence) |
+| `IG_*` | see `scripts/get_instagram_token.py` docstring (IG Creator account + Meta app) |
+| `GH_PAT` | github.com/settings/tokens → classic token, `repo` scope (lets CI refresh the IG token secret itself) |
 | `WHATSAPP_*` | CallMeBot (free): save +34 644 51 95 23 as a contact, WhatsApp it the message "I allow callmebot to send me messages", it replies with your API key |
 
 ### 3. Assets
 - `assets/fonts/` — one bold `.ttf` (e.g. Montserrat ExtraBold from Google Fonts)
-- `assets/music/` — 2–3 CC0/royalty-free `.mp3` background tracks (quiet, no vocals)
+- `assets/music/` — `.mp3` background tracks; bundled tracks are Kevin MacLeod / incompetech.com (CC BY 4.0, credited in every description). Random track per video.
 
 ### 4. GitHub
 Push to a **private** repo, add every `.env` key as a repo secret
