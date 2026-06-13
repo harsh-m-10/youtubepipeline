@@ -23,6 +23,7 @@ def _generate(candidate: dict, evidence_block: str) -> dict:
         hook=candidate["hook"],
         min_words=config.TARGET_SCRIPT_WORDS[0],
         max_words=config.TARGET_SCRIPT_WORDS[1],
+        floor=config.MIN_ACCEPTABLE_WORDS,
         evidence=evidence_block,
     )
     script = llm.complete_json(

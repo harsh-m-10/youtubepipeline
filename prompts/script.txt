@@ -11,7 +11,7 @@ STRUCTURE (mandatory, 5 beats in this order):
 5. CLOSER — land the fascination, then turn it over to the viewer with a direct line like: "So what do you think? Tell me in the comments." Do NOT declare a verdict.
 
 HARD RULES:
-- Total narration: <<min_words>>-<<max_words>> words (55-70 seconds spoken). Do NOT under-write — short scripts get rejected.
+- Total narration: aim for <<min_words>>-<<max_words>> words (55-70 seconds spoken). HARD MINIMUM: <<floor>> words — any script under <<floor>> words is automatically rejected and regenerated, so never go below it. Count your words and pad the REVEAL/DEEPER beats with more sourced detail if you're short.
 - EVERY factual claim, statistic, or study mention MUST come from the EVIDENCE block below. If the evidence doesn't contain a number, do not invent one — speak qualitatively instead.
 - Reference evidence inline by id in the "claims" field, not in the spoken text.
 - Stay accurate — surprising, but NEVER exaggerate beyond what the evidence supports. The fascination comes from real facts.
