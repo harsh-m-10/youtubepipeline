@@ -23,6 +23,10 @@ LLM_SCORE_TEMPERATURE = 0.2  # scoring/verification should be deterministic-ish
 # --- Evidence ---
 S2_API_KEY = os.getenv("S2_API_KEY", "")  # Semantic Scholar; degrades to Wikipedia-only if unset
 S2_MIN_INTERVAL = 1.1  # seconds between S2 calls (their limit is 1 req/sec cumulative)
+# Groq free tier caps a single request at 6000 input tokens, so the evidence
+# block fed to the script/verify prompts must stay small. Keep a balanced mix.
+MAX_EVIDENCE_SNIPPETS = 6
+EVIDENCE_SNIPPET_CHARS = 550
 
 # --- Sources ---
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "")

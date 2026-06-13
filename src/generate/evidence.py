@@ -48,7 +48,7 @@ def _wiki_search(query: str, limit: int = 3) -> list[dict]:
             headers=HEADERS,
             params={
                 "action": "query", "format": "json", "prop": "extracts",
-                "exintro": 1, "explaintext": 1, "exsentences": 6,
+                "exintro": 1, "explaintext": 1, "exsentences": 3,
                 "titles": "|".join(titles),
             },
             timeout=20,
@@ -60,7 +60,7 @@ def _wiki_search(query: str, limit: int = 3) -> list[dict]:
                 "source": "Wikipedia",
                 "title": p["title"],
                 "url": f"https://en.wikipedia.org/wiki/{p['title'].replace(' ', '_')}",
-                "snippet": p.get("extract", "").strip(),
+                "snippet": p.get("extract", "").strip()[: config.EVIDENCE_SNIPPET_CHARS],
             }
             for p in pages
             if p.get("extract")
@@ -100,7 +100,7 @@ def _scholar_search(query: str, limit: int = 4) -> list[dict]:
                 "source": "Semantic Scholar",
                 "title": f"{p['title']} ({p.get('year', 'n.d.')}, {p.get('citationCount', 0)} citations)",
                 "url": p.get("url", ""),
-                "snippet": (p.get("abstract") or "").strip()[:1200],
+                "snippet": (p.get("abstract") or "").strip()[: config.EVIDENCE_SNIPPET_CHARS],
             }
             for p in papers
             if p.get("abstract")
@@ -125,18 +125,31 @@ def gather(candidate: dict) -> list[dict]:
         ),
         temperature=0.3,
     )
-    snippets: list[dict] = []
+    wiki, scholar = [], []
     for q in result.get("wikipedia", [])[:2]:
-        snippets.extend(_wiki_search(q))
+        wiki.extend(_wiki_search(q))
     for q in result.get("academic", [])[:2]:
-        snippets.extend(_scholar_search(q))
-    # de-duplicate by url
-    seen, unique = set(), []
-    for s in snippets:
-        if s["url"] not in seen:
-            seen.add(s["url"])
-            unique.append(s)
-    log.info("Gathered %d evidence snippets", len(unique))
+        scholar.extend(_scholar_search(q))
+
+    # de-duplicate by url within each source
+    def _dedupe(items):
+        seen, out = set(), []
+        for s in items:
+            if s["url"] not in seen:
+                seen.add(s["url"])
+                out.append(s)
+        return out
+
+    wiki, scholar = _dedupe(wiki), _dedupe(scholar)
+    # Balanced mix capped at MAX_EVIDENCE_SNIPPETS to stay under the 6000-token
+    # request limit — interleave so both Wikipedia and academic sources survive.
+    half = config.MAX_EVIDENCE_SNIPPETS // 2
+    unique = wiki[:half] + scholar[: config.MAX_EVIDENCE_SNIPPETS - half]
+    if len(unique) < config.MAX_EVIDENCE_SNIPPETS:  # backfill if one source was thin
+        extra = (wiki[half:] + scholar[config.MAX_EVIDENCE_SNIPPETS - half:])
+        unique += extra[: config.MAX_EVIDENCE_SNIPPETS - len(unique)]
+    log.info("Gathered %d evidence snippets (%d wiki, %d academic)",
+             len(unique), len(wiki), len(scholar))
     return unique
 
 
