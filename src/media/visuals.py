@@ -1,5 +1,5 @@
 """Background footage from Pexels (portrait, keyword-matched per beat) and
-Pillow-rendered brand cards (opening hypothesis card, closing vote card).
+Pillow-rendered brand cards (opening topic card, closing "what do you think" card).
 Fallback chain: Pexels keyword -> generic queries -> plain gradient card."""
 
 import logging
@@ -50,7 +50,7 @@ def _gradient_canvas() -> Image.Image:
 def _badge(draw: ImageDraw.ImageDraw, cx: int, y: int) -> None:
     """Channel name pill."""
     font = _font(44, "SemiBold")
-    text = "NULL HYPOTHESIS"
+    text = "RABBIT HOLE DAILY"
     w = draw.textlength(text, font=font)
     pad_x, pad_y = 44, 24
     box = [cx - w / 2 - pad_x, y - pad_y - 22, cx + w / 2 + pad_x, y + pad_y + 22]
@@ -58,17 +58,19 @@ def _badge(draw: ImageDraw.ImageDraw, cx: int, y: int) -> None:
     draw.text((cx, y), text, font=font, fill=ACCENT, anchor="mm")
 
 
-def _draw_check(draw: ImageDraw.ImageDraw, cx: int, cy: int, r: int) -> None:
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=GREEN, width=8)
-    draw.line([(cx - r * 0.45, cy + r * 0.02), (cx - r * 0.12, cy + r * 0.38),
-               (cx + r * 0.5, cy - r * 0.32)], fill=GREEN, width=14, joint="curve")
+def _draw_spiral(draw: ImageDraw.ImageDraw, cx: int, cy: int, r: float,
+                 turns: float = 3.5, color=ACCENT, width: int = 9) -> None:
+    """Archimedean spiral narrowing to a dark center — the brand 'rabbit hole'."""
+    import math
 
-
-def _draw_cross(draw: ImageDraw.ImageDraw, cx: int, cy: int, r: int) -> None:
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=RED, width=8)
-    k = r * 0.42
-    draw.line([(cx - k, cy - k), (cx + k, cy + k)], fill=RED, width=14)
-    draw.line([(cx - k, cy + k), (cx + k, cy - k)], fill=RED, width=14)
+    pts = []
+    steps = int(turns * 60)
+    for i in range(steps + 1):
+        frac = i / steps
+        ang = turns * 2 * math.pi * frac
+        rad = r * (1 - frac)  # spiral inward
+        pts.append((cx + rad * math.cos(ang), cy + rad * math.sin(ang)))
+    draw.line(pts, fill=color, width=width, joint="curve")
 
 
 def _wrap(draw: ImageDraw.ImageDraw, text: str, font, max_w: int) -> list[str]:
@@ -94,13 +96,13 @@ def make_title_card(belief: str, out_dir: Path) -> Path:
     # keep everything above y~1350: the lower third belongs to burned captions
     _badge(draw, cx, 300)
     eyebrow = _font(46, "SemiBold")
-    draw.text((cx, 470), "T H E   H Y P O T H E S I S",
+    draw.text((cx, 470), "D I D   Y O U   K N O W ?",
               font=eyebrow, fill=MUTED, anchor="mm")
     draw.line([(cx - 70, 540), (cx + 70, 540)], fill=ACCENT, width=6)
 
     main_font = _font(88)
     lines = _wrap(draw, belief, main_font, config.VIDEO_W - 180)
-    if len(lines) > 5:  # very long beliefs get a smaller face
+    if len(lines) > 5:  # very long claims get a smaller face
         main_font = _font(70)
         lines = _wrap(draw, belief, main_font, config.VIDEO_W - 180)
     line_h = int(main_font.size * 1.3)
@@ -109,7 +111,7 @@ def make_title_card(belief: str, out_dir: Path) -> Path:
         draw.text((cx, y), line, font=main_font, fill="white", anchor="mm")
         y += line_h
 
-    draw.text((cx, min(y + 110, 1290)), "both sides. real evidence. you decide.",
+    draw.text((cx, min(y + 110, 1290)), "weird true things you didn't know",
               font=_font(44, "SemiBold"), fill=ACCENT, anchor="mm")
 
     path = out_dir / "title_card.png"
@@ -118,28 +120,21 @@ def make_title_card(belief: str, out_dir: Path) -> Path:
 
 
 def make_question_card(out_dir: Path) -> Path:
-    """Closing card: the channel never rules — the viewer votes in the comments."""
+    """Closing card: invite the viewer to share what they think (no verdict)."""
     img = _gradient_canvas()
     draw = ImageDraw.Draw(img)
     cx = config.VIDEO_W // 2
 
     # keep everything above y~1350: the lower third belongs to burned captions
     _badge(draw, cx, 300)
-    draw.text((cx, 540), "DOES THE NULL HYPOTHESIS",
-              font=_font(60), fill="white", anchor="mm")
-    draw.text((cx, 690), "SURVIVE?", font=_font(160), fill=ACCENT, anchor="mm")
+    _draw_spiral(draw, cx, 640, r=190, turns=3.5)
 
-    # two vote options with drawn icons (no unicode glyph dependence)
-    opt_font = _font(52)
-    left, right, icon_y, r = cx - 250, cx + 250, 960, 70
-    _draw_check(draw, left, icon_y, r)
-    draw.text((left, icon_y + r + 65), "SURVIVES", font=opt_font, fill=GREEN, anchor="mm")
-    _draw_cross(draw, right, icon_y, r)
-    draw.text((right, icon_y + r + 65), "REJECTED", font=opt_font, fill=RED, anchor="mm")
+    draw.text((cx, 940), "WHAT DO", font=_font(96), fill="white", anchor="mm")
+    draw.text((cx, 1050), "YOU THINK?", font=_font(120), fill=ACCENT, anchor="mm")
 
-    draw.rounded_rectangle([cx - 410, 1210, cx + 410, 1320], radius=55, fill=ACCENT)
-    draw.text((cx, 1265), "VOTE IN THE COMMENTS",
-              font=_font(50), fill=(12, 14, 24), anchor="mm")
+    draw.rounded_rectangle([cx - 430, 1180, cx + 430, 1290], radius=55, fill=ACCENT)
+    draw.text((cx, 1235), "TELL ME IN THE COMMENTS",
+              font=_font(48), fill=(12, 14, 24), anchor="mm")
 
     path = out_dir / "question_card.png"
     img.save(path)

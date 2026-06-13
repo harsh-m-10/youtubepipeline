@@ -31,7 +31,7 @@ EVIDENCE_SNIPPET_CHARS = 550
 # --- Sources ---
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "")
 REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "")
-REDDIT_USER_AGENT = "null-hypothesis-pipeline/0.1 (by /u/nullhypothesis-bot)"
+REDDIT_USER_AGENT = "rabbit-hole-daily-pipeline/0.1 (by /u/rabbitholedaily-bot)"
 SUBREDDITS = ["economics", "dataisbeautiful", "science", "AskHistorians", "personalfinance"]
 THREADS_PER_SUBREDDIT = 5
 HN_THREADS = 15
@@ -46,7 +46,7 @@ PEXELS_API_KEY = os.getenv("PEXELS_API_KEY", "")
 TTS_VOICE = "en-US-AvaMultilingualNeural"  # energetic female voice
 TTS_RATE = "+15%"  # brisk pacing keeps Shorts retention
 VIDEO_W, VIDEO_H = 1080, 1920
-# Title card displays while beat 1 (intro) is narrated; the vote card displays
+# Title card displays while beat 1 (intro) is narrated; the end card displays
 # while the closing beat is narrated, then holds briefly.
 END_CARD_HOLD_SECONDS = 1.5
 MUSIC_VOLUME = 0.12
@@ -69,8 +69,9 @@ IG_ACCESS_TOKEN = os.getenv("IG_ACCESS_TOKEN", "")
 GH_PAT = os.getenv("GH_PAT", "")
 GH_REPO = os.getenv("GITHUB_REPOSITORY", "harsh-m-10/youtubepipeline")
 
+BRAND_NAME = "Rabbit Hole Daily"
 # Brand hashtags always appended to the Instagram caption (merged with per-video tags)
-BRAND_HASHTAGS = ["nullhypothesis", "reels", "didyouknow", "factsdaily", "debate"]
+BRAND_HASHTAGS = ["rabbitholedaily", "didyouknow", "facts", "interesting", "learnsomething"]
 MAX_HASHTAGS = 20
 
 # WhatsApp alerts via CallMeBot (free personal gateway)

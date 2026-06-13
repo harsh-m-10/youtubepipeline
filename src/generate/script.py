@@ -2,8 +2,8 @@
 pass: generate -> check length -> verify claims against evidence -> retry -> abort.
 Fail-closed: a script that can't be verified never becomes a video.
 
-Format note: the channel never declares a verdict — scripts argue both sides
-and end by asking viewers whether the null hypothesis survives."""
+Format note: the channel is informatory — scripts surface a surprising true thing,
+go deeper with evidence, and end by asking viewers what they think (no verdict)."""
 
 import logging
 
@@ -26,7 +26,7 @@ def _generate(candidate: dict, evidence_block: str) -> dict:
         evidence=evidence_block,
     )
     script = llm.complete_json(
-        system="You write tight, evidence-grounded Shorts scripts that argue both sides. Respond only with valid JSON.",
+        system="You write tight, evidence-grounded, fascinating informatory Shorts scripts. Respond only with valid JSON.",
         user=prompt,
     )
     if not script.get("beats"):
@@ -86,17 +86,17 @@ def full_description(script: dict) -> str:
     s2_credit = "\nResearch via Semantic Scholar (semanticscholar.org)." if has_s2 else ""
     return (
         f"{script['description']}\n\n"
-        "Does the null hypothesis survive or get rejected? Vote in the comments.\n\n"
+        "What do you think? Tell me in the comments.\n\n"
         f"Sources:\n{src_lines}\n\n"
         "Narration is AI-voiced. Every claim is sourced above."
         f"{s2_credit}\n"
         f"{config.MUSIC_CREDIT}\n"
-        "#Shorts #NullHypothesis"
+        "#Shorts #RabbitHoleDaily"
     )
 
 
 def caption_for_instagram(script: dict) -> str:
-    """Instagram Reels caption: hook + description + vote CTA + sources + hashtags."""
+    """Instagram Reels caption: hook + description + engagement CTA + sources + hashtags."""
     src_names = ", ".join(s["title"].split(" (")[0] for s in script["sources"][:3])
     tags = list(dict.fromkeys(  # de-dupe, preserve order
         [t.lstrip("#").replace(" ", "") for t in script.get("hashtags", [])]
@@ -105,8 +105,8 @@ def caption_for_instagram(script: dict) -> str:
     hashtag_line = " ".join(f"#{t}" for t in tags)
     return (
         f"{script['description']}\n\n"
-        "Does the null hypothesis survive, or is it rejected?\n"
-        "Vote in the comments 👇\n\n"
+        "What do you think?\n"
+        "Tell me in the comments 👇\n\n"
         f"Sources: {src_names}\n"
         f"{config.MUSIC_CREDIT}\n\n"
         f"{hashtag_line}"

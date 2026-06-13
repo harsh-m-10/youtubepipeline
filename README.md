@@ -1,14 +1,15 @@
-# Null Hypothesis — Automated Shorts Pipeline
+# Rabbit Hole Daily — Automated Shorts Pipeline
 
-Fully automated YouTube Shorts factory: scrapes trending discussions, generates an
-evidence-tested hypothesis, writes a fact-checked script, narrates it with TTS,
-assembles a captioned vertical video, and uploads it as **private** to YouTube.
-Your only job: tap "publish" on your phone when the WhatsApp message arrives.
+Fully automated Shorts factory for "Rabbit Hole Daily": scrapes trending discussions,
+surfaces a weird-but-true everyday fact, writes a fact-checked informatory script,
+narrates it with TTS, assembles a captioned vertical video, and cross-posts it to
+YouTube (**private**) and Instagram Reels. Your only job: tap "publish" on your
+phone when the WhatsApp message arrives.
 
 ```
-HN/Reddit → Groq (hypothesis + score) → Wikipedia/Semantic Scholar (evidence)
+HN/Reddit → Groq (idea + score) → Wikipedia/Semantic Scholar (evidence)
 → Groq (script + fact-check gate) → edge-tts (voice + word timings)
-→ Pexels + Pillow (visuals) → ffmpeg (assembly) → YouTube (private) → WhatsApp
+→ Pexels + Pillow (visuals) → ffmpeg → YouTube (private) + Instagram Reels → WhatsApp
 ```
 
 ## One-time setup

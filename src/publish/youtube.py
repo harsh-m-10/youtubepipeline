@@ -80,7 +80,7 @@ def post_comment(video_id: str, text: str) -> None:
             }
         },
     ).execute()
-    log.info("Posted vote-prompt comment on %s", video_id)
+    log.info("Posted engagement comment on %s", video_id)
 
 
 def get_stats(video_ids: list[str]) -> dict[str, dict]:

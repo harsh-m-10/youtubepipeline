@@ -15,7 +15,7 @@ log = logging.getLogger(__name__)
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 S2_API = "https://api.semanticscholar.org/graph/v1/paper/search"
 # Wikimedia returns 403 for generic client UAs; they require a descriptive one
-HEADERS = {"User-Agent": "NullHypothesisBot/0.1 (personal research pipeline)"}
+HEADERS = {"User-Agent": "RabbitHoleDailyBot/0.1 (personal research pipeline)"}
 
 _last_s2_call = 0.0  # module-level clock to honor S2's 1 req/sec cumulative limit
 

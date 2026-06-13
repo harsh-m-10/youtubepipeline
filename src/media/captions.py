@@ -1,7 +1,7 @@
 """Word timestamps -> ASS karaoke subtitles (big word-by-word captions,
 the standard high-retention Shorts style). Narration starts at t=0, so caption
 times match word timestamps directly. Captions sit in the lower third so they
-never cover the text on the title/vote cards."""
+never cover the text on the title/end cards."""
 
 from pathlib import Path
 

@@ -21,11 +21,11 @@ from src.sources import reddit
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("pipeline")
 
-VOTE_COMMENT = "Cast your vote: ✅ H₀ survives or ❌ rejected. Why?"
+ENGAGE_COMMENT = "What do you think — does this change how you see it? 👇"
 
 
 def _post_pending_comments() -> None:
-    """Post the vote-prompt comment on videos that have since gone public.
+    """Post the engagement comment on videos that have since gone public.
     Comments can't be added while a video is private, so this runs each day."""
     history = hypothesis.load_history()
     changed = False
@@ -34,7 +34,7 @@ def _post_pending_comments() -> None:
             continue
         try:
             if youtube.is_public(entry["video_id"]):
-                youtube.post_comment(entry["video_id"], VOTE_COMMENT)
+                youtube.post_comment(entry["video_id"], ENGAGE_COMMENT)
                 entry["commented"] = True
                 changed = True
         except Exception as exc:
@@ -61,8 +61,8 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
         out_dir = config.OUT_DIR / datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
         out_dir.mkdir(parents=True, exist_ok=True)
 
-        # startup maintenance (real runs only): keep IG token alive, post vote
-        # comments on now-public videos, refresh performance stats for scoring.
+        # startup maintenance (real runs only): keep IG token alive, post
+        # engagement comments on now-public videos, refresh stats for scoring.
         calibration = ""
         if not dry_run:
             stage = "maintenance"

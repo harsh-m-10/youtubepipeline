@@ -1,36 +1,35 @@
-Write a YouTube Shorts narration script for the channel "Null Hypothesis". The channel poses a bizarre-but-testable hypothesis, argues BOTH sides with real evidence, and lets the VIEWER decide. The channel itself NEVER declares a winner.
+Write a YouTube Shorts narration script for the channel "Rabbit Hole Daily". The channel surfaces weird, surprising, TRUE things about everyday life and takes the viewer down the rabbit hole on them with real evidence. It informs and fascinates — it does not debate or declare verdicts.
 
-HYPOTHESIS BEING TESTED: <<belief>>
+TOPIC: <<belief>>
 HOOK: <<hook>>
 
-STRUCTURE (mandatory, 6 beats in this order):
-1. PURPOSE + HOOK — one fast line establishing what this channel does ("On Null Hypothesis we take a wild idea and stress-test it" — vary the wording, keep it under 4 seconds) then immediately state today's hypothesis as a provocative question or claim.
-2. WHY PEOPLE BELIEVE IT — where this belief comes from, why it feels obviously true.
-3. THE CASE FOR — the strongest evidence supporting it.
-4. THE CASE AGAINST — the strongest evidence against it.
-5. THE TWIST — a complication, alternative explanation, or overlooked angle that makes it genuinely hard to call.
-6. YOUR VERDICT — end by throwing it to the viewer. The final line must be a direct question like: "So — does the null hypothesis survive, or is it rejected? You decide. Comments are open."
+STRUCTURE (mandatory, 5 beats in this order):
+1. HOOK — drop the viewer straight into the weird thing. A fast brand cue ("Welcome to the rabbit hole" — vary the wording, under 4 seconds) then state the surprising claim or question that makes them go "wait, what?".
+2. THE SURFACE — what most people assume, or the everyday version of this thing they never think twice about.
+3. THE REVEAL — the surprising, sourced truth that flips it.
+4. DEEPER — go one layer further: an even more surprising or counterintuitive sourced detail. "The rabbit hole goes deeper."
+5. CLOSER — land the fascination, then turn it over to the viewer with a direct line like: "So what do you think? Tell me in the comments." Do NOT declare a verdict.
 
 HARD RULES:
 - Total narration: <<min_words>>-<<max_words>> words (55-70 seconds spoken). Do NOT under-write — short scripts get rejected.
 - EVERY factual claim, statistic, or study mention MUST come from the EVIDENCE block below. If the evidence doesn't contain a number, do not invent one — speak qualitatively instead.
 - Reference evidence inline by id in the "claims" field, not in the spoken text.
-- NEVER declare which side wins. Beats 3 and 4 should feel equally strong — steelman both.
-- Energetic, conversational, second person. Short punchy sentences. No filler like "let's dive in".
-- NEVER say "today's hypothesis" or reference the day/date — multiple videos may publish per day. Say "the hypothesis" or "our hypothesis".
+- Stay accurate — surprising, but NEVER exaggerate beyond what the evidence supports. The fascination comes from real facts.
+- Energetic, curious, conversational, second person. Short punchy sentences. No filler like "let's dive in".
+- NEVER reference the day or date — multiple videos may publish per day.
 
 Respond with JSON:
 {
-  "title": "video title, under 90 chars, framed as an open question",
+  "title": "video title, under 90 chars, curiosity-driven",
   "beats": [
     {"text": "spoken narration for this beat", "visual_keyword": "2-3 word stock footage search term", "claims": ["E1", "E3"]}
   ],
-  "description": "2-3 sentence description ending by inviting viewers to vote in the comments",
+  "description": "2-3 sentence description ending by inviting viewers to share what they think in the comments",
   "tags": ["tag1", "tag2", "..."],
-  "hashtags": ["10-14 topical hashtag words for Instagram, no # prefix, no spaces, lowercase, e.g. cryptocurrency, investing, personalfinance"]
+  "hashtags": ["10-14 topical hashtag words for Instagram, no # prefix, no spaces, lowercase, e.g. history, psychology, didyouknow"]
 }
 
-The "beats" array must have 6 entries matching the structure above. Each beat's visual_keyword must be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
+The "beats" array must have exactly 5 entries matching the structure above. Each beat's visual_keyword must be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
 
 EVIDENCE:
 <<evidence>>

@@ -65,7 +65,7 @@ def assemble(
 ) -> Path:
     """Build final.mp4 in out_dir. The title card spans the first beat (the
     channel intro is narrated over it); `clips` cover the middle beats; the
-    vote card spans the last beat plus a short hold. `beat_ends` is per-beat."""
+    end card spans the last beat plus a short hold. `beat_ends` is per-beat."""
     segments = [_image_segment(title_card, max(1.0, beat_ends[0]), "seg_title.mp4", out_dir)]
     prev = beat_ends[0]
     for i, clip in enumerate(clips):
