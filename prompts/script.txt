@@ -29,7 +29,7 @@ Respond with JSON:
   "hashtags": ["10-14 topical hashtag words for Instagram, no # prefix, no spaces, lowercase, e.g. history, psychology, didyouknow"]
 }
 
-The "beats" array must have exactly 5 entries matching the structure above. Each beat's visual_keyword must be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
+The "beats" array must have exactly 5 entries matching the structure above. Each beat should be 3-5 full sentences (~30-45 words) so the total clears the word floor. Each beat's visual_keyword must be concrete and filmable (e.g. "city traffic aerial", not "economic uncertainty").
 
 EVIDENCE:
 <<evidence>>

@@ -16,7 +16,7 @@ log = logging.getLogger(__name__)
 MAX_ATTEMPTS = 3
 
 
-def _generate(candidate: dict, evidence_block: str) -> dict:
+def _generate(candidate: dict, evidence_block: str, feedback: str = "") -> dict:
     prompt = config.load_prompt(
         "script",
         belief=candidate["belief"],
@@ -26,6 +26,8 @@ def _generate(candidate: dict, evidence_block: str) -> dict:
         floor=config.MIN_ACCEPTABLE_WORDS,
         evidence=evidence_block,
     )
+    if feedback:
+        prompt += f"\n\nIMPORTANT — fix this from your previous attempt:\n{feedback}"
     script = llm.complete_json(
         system="You write tight, evidence-grounded, fascinating informatory Shorts scripts. Respond only with valid JSON.",
         user=prompt,
@@ -46,6 +48,7 @@ def _verify(script: dict, evidence_block: str) -> tuple[bool, list[str]]:
         system="You are a strict fact-check gate. Respond only with valid JSON.",
         user=prompt,
         temperature=config.LLM_SCORE_TEMPERATURE,
+        model=config.LLM_SMALL_MODEL,
     )
     return bool(result.get("passed")), result.get("failures", [])
 
@@ -58,17 +61,29 @@ def write_script(candidate: dict, snippets: list[dict]) -> dict:
     evidence_block = evidence_mod.format_block(snippets)
 
     last_problem = "no attempts made"
+    feedback = ""
     for attempt in range(1, MAX_ATTEMPTS + 1):
-        script = _generate(candidate, evidence_block)
+        script = _generate(candidate, evidence_block, feedback)
         words = _word_count(script)
         if words < config.MIN_ACCEPTABLE_WORDS:
             last_problem = f"under-written ({words} words)"
             log.warning("Attempt %d %s — regenerating", attempt, last_problem)
+            feedback = (
+                f"Your last script was only {words} words — far too short. Write at "
+                f"least {config.MIN_ACCEPTABLE_WORDS} words (aim for {config.TARGET_SCRIPT_WORDS[0]}+). "
+                "Expand the REVEAL and DEEPER beats with more sourced detail and "
+                "fuller sentences. Do NOT drop below the floor again."
+            )
             continue
         passed, failures = _verify(script, evidence_block)
         if not passed:
             last_problem = f"fact-check failures: {failures}"
             log.warning("Attempt %d failed verification: %s", attempt, failures)
+            feedback = (
+                "Some claims were not supported by the evidence. Remove or rephrase "
+                "these so every statement is backed by the EVIDENCE block (keep the "
+                f"length at {config.MIN_ACCEPTABLE_WORDS}+ words): {failures}"
+            )
             continue
         cited_ids = {c for b in script["beats"] for c in b.get("claims", [])}
         script["sources"] = [

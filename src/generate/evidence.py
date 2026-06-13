@@ -124,6 +124,7 @@ def gather(candidate: dict) -> list[dict]:
             '{"wikipedia": ["q1", "q2"], "academic": ["q1", "q2"]}'
         ),
         temperature=0.3,
+        model=config.LLM_SMALL_MODEL,
     )
     wiki, scholar = [], []
     for q in result.get("wikipedia", [])[:2]:

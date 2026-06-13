@@ -59,6 +59,7 @@ def score_candidates(candidates: list[dict], calibration: str = "") -> list[dict
         system="You are a harsh, calibrated content editor. Respond only with valid JSON.",
         user=prompt,
         temperature=config.LLM_SCORE_TEMPERATURE,
+        model=config.LLM_SMALL_MODEL,
     )
     by_index = {s["index"]: s for s in result.get("scores", [])}
     for i, c in enumerate(candidates):
@@ -90,6 +91,7 @@ def is_duplicate(candidate: dict) -> bool:
         system="You detect duplicate topics. Respond only with valid JSON.",
         user=prompt,
         temperature=0.0,
+        model=config.LLM_SMALL_MODEL,
     )
     if result.get("duplicate"):
         log.info("Duplicate of published topic %r: %s",

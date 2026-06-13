@@ -12,6 +12,8 @@ so CI never goes stale. All failures are non-fatal to the caller — Instagram i
 a fail-soft cross-post, never allowed to break the YouTube path."""
 
 import logging
+import os
+import subprocess
 import time
 
 import requests
@@ -117,8 +119,6 @@ def refresh_token() -> None:
             return
         log.info("IG: token refreshed, valid ~%d more days", expires_days)
         if config.GH_PAT:
-            import os
-
             env = {**os.environ, "GH_TOKEN": config.GH_PAT}
             proc = subprocess.run(
                 ["gh", "secret", "set", "IG_ACCESS_TOKEN", "-R", config.GH_REPO],

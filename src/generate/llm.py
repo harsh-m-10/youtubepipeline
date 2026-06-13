@@ -19,8 +19,21 @@ def _get_client() -> Groq:
     if _client is None:
         if not config.GROQ_API_KEY:
             raise RuntimeError("GROQ_API_KEY is not set")
-        _client = Groq(api_key=config.GROQ_API_KEY)
+        # max_retries=0: we own the retry/backoff logic below (no nested SDK retries)
+        _client = Groq(api_key=config.GROQ_API_KEY, max_retries=0)
     return _client
+
+
+def _retry_after(exc: RateLimitError) -> float:
+    """Seconds Groq asks us to wait, from the Retry-After header. Falls back to
+    a full TPM window when the header is missing — short waits just thrash."""
+    try:
+        hdr = exc.response.headers.get("retry-after")
+        if hdr is not None:
+            return min(float(hdr) + 2, config.LLM_MAX_RATE_WAIT)
+    except Exception:
+        pass
+    return config.LLM_MAX_RATE_WAIT
 
 
 def complete(
@@ -29,14 +42,18 @@ def complete(
     json_mode: bool = True,
     temperature: float = config.LLM_TEMPERATURE,
     max_tokens: int = 4096,
+    model: str | None = None,
 ) -> str:
-    """Single completion with retry across models. Returns raw text."""
+    """Single completion. Tries `model` first (default: the big model), then the
+    others as fallback. On rate limits, waits the server-suggested time."""
+    models = [model] + [m for m in config.LLM_MODELS if m != model] if model \
+        else list(config.LLM_MODELS)
     last_exc: Exception | None = None
-    for model in config.LLM_MODELS:
+    for m in models:
         for attempt in range(3):
             try:
                 resp = _get_client().chat.completions.create(
-                    model=model,
+                    model=m,
                     messages=[
                         {"role": "system", "content": system},
                         {"role": "user", "content": user},
@@ -48,12 +65,12 @@ def complete(
                 return resp.choices[0].message.content
             except RateLimitError as exc:
                 last_exc = exc
-                wait = 15 * (attempt + 1)
-                log.warning("Rate limited on %s, waiting %ss", model, wait)
+                wait = _retry_after(exc)
+                log.warning("Rate limited on %s, waiting %.0fs", m, wait)
                 time.sleep(wait)
             except APIError as exc:
                 last_exc = exc
-                log.warning("API error on %s: %s", model, exc)
+                log.warning("API error on %s: %s", m, exc)
                 break  # try next model
     raise RuntimeError(f"All LLM attempts failed: {last_exc}")
 
@@ -63,10 +80,12 @@ def complete_json(
     user: str,
     temperature: float = config.LLM_TEMPERATURE,
     max_tokens: int = 4096,
+    model: str | None = None,
 ) -> dict:
     """Completion parsed as JSON, with one reparse-retry on malformed output."""
     for attempt in range(2):
-        raw = complete(system, user, json_mode=True, temperature=temperature, max_tokens=max_tokens)
+        raw = complete(system, user, json_mode=True, temperature=temperature,
+                       max_tokens=max_tokens, model=model)
         try:
             return json.loads(raw)
         except json.JSONDecodeError:

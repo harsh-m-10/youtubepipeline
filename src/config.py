@@ -16,9 +16,16 @@ ASSETS_DIR = ROOT / "assets"
 
 # --- LLM ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-LLM_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]  # primary, fallback
+# Groq free tier is 6000 tokens/min PER MODEL (separate buckets). Route quality
+# calls (idea + script generation) to the big model and mechanical calls
+# (scoring, verification, dedupe, evidence queries) to the small one — this
+# spreads load across two TPM buckets and roughly halves rate-limit stalls.
+LLM_MODEL = "llama-3.3-70b-versatile"     # quality
+LLM_SMALL_MODEL = "llama-3.1-8b-instant"  # mechanical
+LLM_MODELS = [LLM_MODEL, LLM_SMALL_MODEL]  # fallback order
 LLM_TEMPERATURE = 0.8
 LLM_SCORE_TEMPERATURE = 0.2  # scoring/verification should be deterministic-ish
+LLM_MAX_RATE_WAIT = 65  # cap a single rate-limit wait (TPM window is ~60s)
 
 # --- Evidence ---
 S2_API_KEY = os.getenv("S2_API_KEY", "")  # Semantic Scholar; degrades to Wikipedia-only if unset
