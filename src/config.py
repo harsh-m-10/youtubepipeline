@@ -53,7 +53,7 @@ MUSIC_VOLUME = 0.12
 # Music tracks are Kevin MacLeod / incompetech.com under CC BY 4.0 — credit required
 MUSIC_CREDIT = "Music by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
 TARGET_SCRIPT_WORDS = (150, 210)  # ~55-70s at +15% narration pace
-MIN_ACCEPTABLE_WORDS = 150  # regenerate if the LLM under-writes
+MIN_ACCEPTABLE_WORDS = 130  # regenerate if the LLM under-writes
 
 # --- Publishing ---
 YT_CLIENT_ID = os.getenv("YT_CLIENT_ID", "")
