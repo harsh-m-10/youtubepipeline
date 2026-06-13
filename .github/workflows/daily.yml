@@ -2,9 +2,12 @@ name: Daily video
 
 on:
   schedule:
-    # 09:17 IST — odd minute avoids the on-the-hour/half-hour scheduler stampede
-    # (GitHub scheduled runs are best-effort and get delayed in congested slots)
-    - cron: "47 3 * * *"
+    # GitHub scheduled runs are best-effort and frequently dropped, so we give
+    # the day several uncongested fire-times. The pipeline's --scheduled guard
+    # ensures only ONE video is produced per day no matter how many fire.
+    - cron: "47 3 * * *"   # 09:17 IST
+    - cron: "23 5 * * *"   # 10:53 IST
+    - cron: "11 8 * * *"   # 13:41 IST
   workflow_dispatch:
     inputs:
       dry_run:
@@ -58,6 +61,8 @@ jobs:
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             python -m src.pipeline --dry-run
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            python -m src.pipeline --scheduled
           else
             python -m src.pipeline
           fi

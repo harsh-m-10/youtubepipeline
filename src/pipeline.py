@@ -45,9 +45,18 @@ def _post_pending_comments() -> None:
         )
 
 
-def run(dry_run: bool = False) -> None:
+def run(dry_run: bool = False, scheduled: bool = False) -> None:
     stage = "init"
     try:
+        # Scheduled runs fire multiple times/day (fallback crons for reliability)
+        # but should yield only ONE video — skip if today already produced one.
+        # Manual dispatch ignores this guard, so the user can still make extras.
+        if scheduled:
+            today = datetime.date.today().isoformat()
+            if any(h.get("date") == today for h in hypothesis.load_history()):
+                log.info("A video was already produced today (%s) — scheduled run exits", today)
+                return
+
         # timestamped run dir — multiple runs per day must not overwrite each other
         out_dir = config.OUT_DIR / datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -169,4 +178,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true",
                         help="produce the video locally but skip upload/history/notify")
-    run(dry_run=parser.parse_args().dry_run)
+    parser.add_argument("--scheduled", action="store_true",
+                        help="cron-triggered: skip if a video was already produced today")
+    args = parser.parse_args()
+    run(dry_run=args.dry_run, scheduled=args.scheduled)
