@@ -31,7 +31,16 @@
     "title": "Giant Fungus",
     "video_id": "QL53Ho89Ydg",
     "ig_media_id": "17880211647453758",
-    "commented": false,
+    "commented": true,
     "score": 9.9
+  },
+  {
+    "date": "2026-06-14",
+    "belief": "The first video game console was the Magnavox Odyssey, released in 1972.",
+    "title": "First Gaming Console",
+    "video_id": "JQBAc7EXWQU",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 8.8
   }
 ]
