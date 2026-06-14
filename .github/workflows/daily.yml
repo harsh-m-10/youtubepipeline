@@ -2,12 +2,14 @@ name: Daily video
 
 on:
   schedule:
-    # GitHub scheduled runs are best-effort and frequently dropped, so we give
-    # the day several uncongested fire-times. The pipeline's --scheduled guard
-    # ensures only ONE video is produced per day no matter how many fire.
-    - cron: "47 3 * * *"   # 09:17 IST
-    - cron: "23 5 * * *"   # 10:53 IST
-    - cron: "11 8 * * *"   # 13:41 IST
+    # Evening IST publishing window (IST = UTC+5:30). GitHub scheduled runs are
+    # best-effort and frequently dropped, so we give the evening several
+    # uncongested fire-times; the pipeline's --scheduled guard ensures only ONE
+    # video is produced per day no matter how many fire.
+    - cron: "53 10 * * *"  # 16:23 IST
+    - cron: "11 12 * * *"  # 17:41 IST
+    - cron: "17 13 * * *"  # 18:47 IST
+    - cron: "33 14 * * *"  # 20:03 IST
   workflow_dispatch:
     inputs:
       dry_run:

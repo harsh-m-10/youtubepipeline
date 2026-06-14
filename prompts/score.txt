@@ -7,7 +7,8 @@ Consider:
 - SHAREABILITY: would someone tag a friend or repeat this fact at dinner?
 - TESTABILITY: does public data/research/records clearly back it up?
 - BREADTH: is this about something millions of people encounter, or a niche curiosity?
-- VARIETY: penalize candidates on overdone topics — especially yet another AI/programming take. Non-tech topics (money, history, psychology, food, sports) get a bonus when equally strong.
+- VARIETY: penalize candidates on overdone topics — especially yet another AI/programming take. Everyday topics (history, words, food, money, psychology, brands, animals, sports) get a bonus when equally strong.
+- EVERYDAY VIBE: this is a fun "did you know?" channel, NOT science news. Heavily penalize (score ≤3) anything that reads like a research paper or medical/clinical/dense-science topic — diseases, cancer, drug trials, niche biology/physics/chemistry findings. Favor relatable facts a normal person would repeat to a friend.
 
 Be harsh. A 7+ means you would personally bet on this video performing. Most candidates should score 4-6.
 
