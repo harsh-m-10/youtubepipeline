@@ -41,6 +41,36 @@ def _word_count(script: dict) -> int:
     return sum(len(b["text"].split()) for b in script["beats"])
 
 
+_STOP = {"the", "a", "an", "and", "but", "or", "of", "to", "in", "on", "for", "is",
+         "are", "was", "were", "it", "its", "this", "that", "these", "those", "with",
+         "as", "at", "by", "be", "been", "you", "your", "they", "their", "we", "our",
+         "not", "so", "more", "than", "from", "have", "has", "had", "can", "will"}
+
+
+def _repetitive(script: dict, threshold: float = 0.3) -> str | None:
+    """Detect near-duplicate sentences across the narration (the 'said the same
+    thing 3 times' failure). Returns the offending pair, or None. Pure-Python,
+    no LLM call — Jaccard overlap of content words."""
+    import re
+
+    text = " ".join(b["text"] for b in script["beats"])
+    sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    sets = []
+    for s in sents:
+        words = {w for w in re.findall(r"[a-z0-9]+", s.lower())
+                 if w not in _STOP and (len(w) > 2 or w.isdigit())}
+        sets.append((s, words))
+    for i in range(len(sets)):
+        for j in range(i + 1, len(sets)):
+            a, b = sets[i][1], sets[j][1]
+            if len(a) < 5 or len(b) < 5:
+                continue
+            overlap = len(a & b) / len(a | b)
+            if overlap >= threshold:
+                return f"'{sets[i][0]}' vs '{sets[j][0]}'"
+    return None
+
+
 def _verify(script: dict, evidence_block: str) -> tuple[bool, list[str]]:
     narration = "\n".join(b["text"] for b in script["beats"])
     prompt = config.load_prompt("verify", script=narration, evidence=evidence_block)
@@ -60,8 +90,20 @@ def write_script(candidate: dict, snippets: list[dict]) -> dict:
         raise RuntimeError("No evidence gathered — refusing to script unsupported claims")
     evidence_block = evidence_mod.format_block(snippets)
 
+    def _finalize(s: dict) -> dict:
+        cited_ids = {c for b in s["beats"] for c in b.get("claims", [])}
+        s["sources"] = [
+            snip for i, snip in enumerate(snippets, 1) if f"E{i}" in cited_ids
+        ] or snippets[:3]
+        s["belief"] = candidate["belief"]
+        return s
+
     last_problem = "no attempts made"
     feedback = ""
+    # A script that clears the HARD gates (length + fact-check) is publishable.
+    # Repetition is a soft quality preference: we retry for a cleaner take, but
+    # never fail the whole run over it — a slightly repetitive video beats none.
+    best_publishable: dict | None = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         script = _generate(candidate, evidence_block, feedback)
         words = _word_count(script)
@@ -69,10 +111,12 @@ def write_script(candidate: dict, snippets: list[dict]) -> dict:
             last_problem = f"under-written ({words} words)"
             log.warning("Attempt %d %s — regenerating", attempt, last_problem)
             feedback = (
-                f"Your last script was only {words} words — far too short. Write at "
-                f"least {config.MIN_ACCEPTABLE_WORDS} words (aim for {config.TARGET_SCRIPT_WORDS[0]}+). "
-                "Expand the REVEAL and DEEPER beats with more sourced detail and "
-                "fuller sentences. Do NOT drop below the floor again."
+                f"Your last script was only {words} words — too short. Reach at least "
+                f"{config.MIN_ACCEPTABLE_WORDS} words by adding NEW distinct facts or real "
+                "context from the evidence (history, scale, who/why). Do NOT repeat or "
+                "reword points you already made — repetition is rejected. If the evidence "
+                "truly lacks more distinct material, that's fine, but use every distinct "
+                "fact it does contain."
             )
             continue
         passed, failures = _verify(script, evidence_block)
@@ -85,13 +129,25 @@ def write_script(candidate: dict, snippets: list[dict]) -> dict:
                 f"length at {config.MIN_ACCEPTABLE_WORDS}+ words): {failures}"
             )
             continue
-        cited_ids = {c for b in script["beats"] for c in b.get("claims", [])}
-        script["sources"] = [
-            s for i, s in enumerate(snippets, 1) if f"E{i}" in cited_ids
-        ] or snippets[:3]
-        script["belief"] = candidate["belief"]
+        # passed the hard gates — keep as fallback
+        if best_publishable is None:
+            best_publishable = _finalize(dict(script))
+        dup = _repetitive(script)
+        if dup:
+            last_problem = f"repetitive ({dup})"
+            log.warning("Attempt %d repetitive — retrying for a cleaner take: %s", attempt, dup)
+            feedback = (
+                "Your last script repeated the same point in different words: "
+                f"{dup}. Rewrite so every sentence says something NEW. Replace the "
+                "repeated sentence with a different sourced fact, or cut it."
+            )
+            continue
         log.info("Script verified on attempt %d (%d words): %s", attempt, words, script["title"])
-        return script
+        return _finalize(script)
+
+    if best_publishable is not None:
+        log.warning("Using best publishable script despite repetition (%s)", last_problem)
+        return best_publishable
 
     raise RuntimeError(f"Script failed after {MAX_ATTEMPTS} attempts; last problem: {last_problem}")
 

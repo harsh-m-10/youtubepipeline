@@ -100,10 +100,28 @@ def upload_reel(video_path, caption: str) -> str | None:
         return None
 
 
+_REFRESH_STAMP = config.STATE_FILE.parent / "ig_token_refreshed.txt"
+_REFRESH_EVERY_DAYS = 10  # tokens last 60d; refresh occasionally, not every run
+
+
+def _refresh_due() -> bool:
+    """Instagram rejects refreshing a token younger than 24h, and we run several
+    times a day — so only refresh every ~10 days (tracked in a state file)."""
+    import datetime
+
+    if not _REFRESH_STAMP.exists():
+        return True
+    try:
+        last = datetime.date.fromisoformat(_REFRESH_STAMP.read_text().strip())
+        return (datetime.date.today() - last).days >= _REFRESH_EVERY_DAYS
+    except Exception:
+        return True
+
+
 def refresh_token() -> None:
-    """Refresh the 60-day long-lived token and push it back into the GitHub
-    secret (needs GH_PAT). Safe to call every run; no-op if unconfigured."""
-    if not config.IG_ACCESS_TOKEN:
+    """Refresh the 60-day long-lived token (at most every ~10 days) and push it
+    back into the GitHub secret (needs GH_PAT). No-op if unconfigured."""
+    if not config.IG_ACCESS_TOKEN or not _refresh_due():
         return
     try:
         r = requests.get(
@@ -118,6 +136,8 @@ def refresh_token() -> None:
         if not new_token:
             return
         log.info("IG: token refreshed, valid ~%d more days", expires_days)
+        import datetime
+        _REFRESH_STAMP.write_text(datetime.date.today().isoformat())
         if config.GH_PAT:
             env = {**os.environ, "GH_TOKEN": config.GH_PAT}
             proc = subprocess.run(

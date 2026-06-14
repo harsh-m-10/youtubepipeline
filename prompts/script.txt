@@ -3,15 +3,16 @@ Write a YouTube Shorts narration script for the channel "Rabbit Hole Daily". The
 TOPIC: <<belief>>
 HOOK: <<hook>>
 
-STRUCTURE (mandatory, 5 beats in this order):
-1. HOOK — drop the viewer straight into the weird thing. A fast brand cue ("Welcome to the rabbit hole" — vary the wording, under 4 seconds) then state the surprising claim or question that makes them go "wait, what?".
-2. THE SURFACE — what most people assume, or the everyday version of this thing they never think twice about.
-3. THE REVEAL — the surprising, sourced truth that flips it.
-4. DEEPER — go one layer further: an even more surprising or counterintuitive sourced detail. "The rabbit hole goes deeper."
-5. CLOSER — land the fascination, then turn it over to the viewer with a direct line like: "So what do you think? Tell me in the comments." Do NOT declare a verdict.
+STRUCTURE (mandatory, 5 beats in this order). EACH BEAT MUST DELIVER A DIFFERENT PIECE OF INFORMATION — five beats means five distinct things to say:
+1. HOOK — a fast brand cue ("Welcome to the rabbit hole" — vary the wording, under 4 seconds) then state the surprising claim/question that makes them go "wait, what?".
+2. THE SURFACE — what most people assume or the everyday version they never think twice about. (the misconception — NOT the answer yet)
+3. THE REVEAL — the core surprising sourced truth that flips it. (the main payoff)
+4. DEEPER — a SECOND, genuinely NEW surprising fact or detail from the evidence — NOT a restatement of beat 3. If the evidence has no distinct second fact, give real context (history, scale, who/why) that adds new information. Never just reword the reveal.
+5. CLOSER — one fresh closing thought, then a direct line like "So what do you think? Tell me in the comments." Do NOT declare a verdict.
 
 HARD RULES:
-- Total narration: aim for <<min_words>>-<<max_words>> words (55-70 seconds spoken). HARD MINIMUM: <<floor>> words — any script under <<floor>> words is automatically rejected and regenerated, so never go below it. Count your words and pad the REVEAL/DEEPER beats with more sourced detail if you're short.
+- NO REPETITION. Never restate the same fact, point, or sentence in different words. Each sentence must add something new. If you run out of distinct sourced material, write a SHORTER script — do NOT pad by repeating. A repetitive script is rejected.
+- Length: aim for <<min_words>>-<<max_words>> words (~55-70s). HARD MINIMUM <<floor>> words, HARD MAXIMUM <<max_words>> words. Hit the length with MORE DISTINCT facts, never with repetition.
 - EVERY factual claim, statistic, or study mention MUST come from the EVIDENCE block below. If the evidence doesn't contain a number, do not invent one — speak qualitatively instead.
 - Reference evidence inline by id in the "claims" field, not in the spoken text.
 - Stay accurate — surprising, but NEVER exaggerate beyond what the evidence supports. The fascination comes from real facts.
