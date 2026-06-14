@@ -85,6 +85,14 @@ jobs:
         run: |
           git config user.name "pipeline-bot"
           git config user.email "actions@github.com"
-          git add state/history.json
-          git diff --cached --quiet || git commit -m "chore: record published video"
-          git push
+          # persist all state the pipeline updates (dedupe history, perf stats,
+          # IG token refresh stamp); skip if nothing changed
+          git add state/history.json state/performance.json state/ig_token_refreshed.txt 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: record published video"
+          # remote may have moved during the long run — rebase then push, retry a few times
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push attempt $i failed, retrying..."; sleep 5
+          done
+          echo "could not push history after retries" >&2; exit 1

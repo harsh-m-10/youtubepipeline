@@ -58,83 +58,95 @@ def _upload_0x0(data: bytes) -> str:
     return r.text.strip()
 
 
-def _stage_public_url(video_path) -> str:
+_STAGE_HOSTS = (("litterbox", _upload_litterbox),
+                ("catbox", _upload_catbox),
+                ("0x0", _upload_0x0))
+
+
+def _stage_public_url(video_path, start: int = 0) -> str:
     """Upload the MP4 to a free public host that serves video/mp4 (Instagram
-    requires a fetchable URL). Tries several hosts since any one can be flaky."""
+    requires a fetchable URL). Tries several hosts since any one can be flaky.
+    `start` rotates which host is tried first, so retries use a different one."""
     with open(video_path, "rb") as f:
         data = f.read()
     last_exc = None
-    for name, fn in (("litterbox", _upload_litterbox),
-                     ("catbox", _upload_catbox),
-                     ("0x0", _upload_0x0)):
-        for attempt in range(2):
-            try:
-                url = fn(data)
-                if url.startswith("http"):
-                    return url
-                last_exc = RuntimeError(f"{name} returned: {url[:150]}")
-            except Exception as exc:
-                last_exc = exc
-                log.warning("Staging host %s failed (try %d): %s", name, attempt + 1, exc)
-                time.sleep(3)
+    n = len(_STAGE_HOSTS)
+    for i in range(n):
+        name, fn = _STAGE_HOSTS[(start + i) % n]
+        try:
+            url = fn(data)
+            if url.startswith("http"):
+                return url
+            last_exc = RuntimeError(f"{name} returned: {url[:150]}")
+        except Exception as exc:
+            last_exc = exc
+            log.warning("Staging host %s failed: %s", name, exc)
     raise RuntimeError(f"All staging hosts failed: {last_exc}")
 
 
-def upload_reel(video_path, caption: str) -> str | None:
-    """Publish a Reel. Returns the IG media id, or None on failure (fail-soft)."""
+def _publish_once(video_url: str, caption: str) -> str:
+    """One container -> poll -> publish cycle. Raises on any failure."""
+    r = requests.post(
+        f"{GRAPH}/{config.IG_USER_ID}/media",
+        data={
+            "media_type": "REELS",
+            "video_url": video_url,
+            "caption": caption[:2200],
+            "access_token": config.IG_ACCESS_TOKEN,
+        },
+        timeout=60,
+    )
+    r.raise_for_status()
+    container_id = r.json()["id"]
+
+    for _ in range(30):  # poll up to ~5 min
+        time.sleep(10)
+        s = requests.get(
+            f"{GRAPH}/{container_id}",
+            params={"fields": "status_code", "access_token": config.IG_ACCESS_TOKEN},
+            timeout=30,
+        ).json()
+        code = s.get("status_code")
+        if code == "FINISHED":
+            break
+        if code == "ERROR":
+            raise RuntimeError(f"IG container processing error: {s}")
+        log.info("IG: container %s...", code)
+    else:
+        raise RuntimeError("IG container never reached FINISHED")
+
+    p = requests.post(
+        f"{GRAPH}/{config.IG_USER_ID}/media_publish",
+        data={"creation_id": container_id, "access_token": config.IG_ACCESS_TOKEN},
+        timeout=60,
+    )
+    p.raise_for_status()
+    return p.json()["id"]
+
+
+def upload_reel(video_path, caption: str, attempts: int = 3) -> str | None:
+    """Publish a Reel. Returns the IG media id, or None on failure (fail-soft).
+    IG container processing errors are usually transient, so retry the whole
+    flow, re-staging on a different host each time."""
     if not (config.IG_USER_ID and config.IG_ACCESS_TOKEN):
         log.warning("Instagram not configured; skipping cross-post")
         return None
-    try:
-        video_url = _stage_public_url(video_path)
-        log.info("IG: staged video at %s", video_url)
-
-        # 1. create media container
-        r = requests.post(
-            f"{GRAPH}/{config.IG_USER_ID}/media",
-            data={
-                "media_type": "REELS",
-                "video_url": video_url,
-                "caption": caption[:2200],
-                "access_token": config.IG_ACCESS_TOKEN,
-            },
-            timeout=60,
-        )
-        r.raise_for_status()
-        container_id = r.json()["id"]
-
-        # 2. poll until Instagram finishes ingesting the video
-        for _ in range(30):  # up to ~5 min
-            time.sleep(10)
-            s = requests.get(
-                f"{GRAPH}/{container_id}",
-                params={"fields": "status_code", "access_token": config.IG_ACCESS_TOKEN},
-                timeout=30,
-            ).json()
-            code = s.get("status_code")
-            if code == "FINISHED":
-                break
-            if code == "ERROR":
-                raise RuntimeError(f"IG container processing error: {s}")
-            log.info("IG: container %s...", code)
-        else:
-            raise RuntimeError("IG container never reached FINISHED")
-
-        # 3. publish
-        p = requests.post(
-            f"{GRAPH}/{config.IG_USER_ID}/media_publish",
-            data={"creation_id": container_id, "access_token": config.IG_ACCESS_TOKEN},
-            timeout=60,
-        )
-        p.raise_for_status()
-        media_id = p.json()["id"]
-        log.info("IG: published Reel media_id=%s", media_id)
-        return media_id
-    except Exception as exc:
-        detail = getattr(exc, "response", None)
-        log.warning("IG publish failed: %s %s", exc,
-                    detail.text[:300] if detail is not None else "")
-        return None
+    last_exc = None
+    for attempt in range(attempts):
+        try:
+            video_url = _stage_public_url(video_path, start=attempt)
+            log.info("IG: staged video at %s (attempt %d)", video_url, attempt + 1)
+            media_id = _publish_once(video_url, caption)
+            log.info("IG: published Reel media_id=%s", media_id)
+            return media_id
+        except Exception as exc:
+            last_exc = exc
+            detail = getattr(exc, "response", None)
+            log.warning("IG publish attempt %d failed: %s %s", attempt + 1, exc,
+                        detail.text[:200] if detail is not None else "")
+            time.sleep(5)
+    log.warning("IG publish failed after %d attempts: %s", attempts, last_exc)
+    return None
 
 
 _REFRESH_STAMP = config.STATE_FILE.parent / "ig_token_refreshed.txt"
