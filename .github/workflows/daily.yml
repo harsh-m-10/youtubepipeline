@@ -78,7 +78,7 @@ jobs:
             out/**/final.mp4
             out/**/script.json
           if-no-files-found: ignore
-          retention-days: 7
+          retention-days: 3  # debug copy; auto-deletes (video already lives on YouTube)
 
       - name: Commit history
         if: success()
