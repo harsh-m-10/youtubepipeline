@@ -23,24 +23,61 @@ from src import config
 log = logging.getLogger(__name__)
 
 GRAPH = "https://graph.instagram.com"
-LITTERBOX = "https://litterbox.catbox.moe/resources/internals/api.php"
+
+
+def _upload_litterbox(data: bytes) -> str:
+    r = requests.post(
+        "https://litterbox.catbox.moe/resources/internals/api.php",
+        data={"reqtype": "fileupload", "time": "72h"},
+        files={"fileToUpload": ("reel.mp4", data, "video/mp4")},
+        timeout=300,
+    )
+    r.raise_for_status()
+    return r.text.strip()
+
+
+def _upload_catbox(data: bytes) -> str:
+    r = requests.post(
+        "https://catbox.moe/user/api.php",
+        data={"reqtype": "fileupload"},
+        files={"fileToUpload": ("reel.mp4", data, "video/mp4")},
+        timeout=300,
+    )
+    r.raise_for_status()
+    return r.text.strip()
+
+
+def _upload_0x0(data: bytes) -> str:
+    r = requests.post(
+        "https://0x0.st",
+        files={"file": ("reel.mp4", data, "video/mp4")},
+        headers={"User-Agent": "RabbitHoleDailyBot/0.1"},
+        timeout=300,
+    )
+    r.raise_for_status()
+    return r.text.strip()
 
 
 def _stage_public_url(video_path) -> str:
-    """Upload the MP4 to litterbox and return its direct, public video/mp4 URL.
-    Auto-expires after 72h, so nothing needs cleaning up."""
+    """Upload the MP4 to a free public host that serves video/mp4 (Instagram
+    requires a fetchable URL). Tries several hosts since any one can be flaky."""
     with open(video_path, "rb") as f:
-        resp = requests.post(
-            LITTERBOX,
-            data={"reqtype": "fileupload", "time": "72h"},
-            files={"fileToUpload": ("reel.mp4", f, "video/mp4")},
-            timeout=300,
-        )
-    resp.raise_for_status()
-    url = resp.text.strip()
-    if not url.startswith("http"):
-        raise RuntimeError(f"litterbox upload failed: {url[:200]}")
-    return url
+        data = f.read()
+    last_exc = None
+    for name, fn in (("litterbox", _upload_litterbox),
+                     ("catbox", _upload_catbox),
+                     ("0x0", _upload_0x0)):
+        for attempt in range(2):
+            try:
+                url = fn(data)
+                if url.startswith("http"):
+                    return url
+                last_exc = RuntimeError(f"{name} returned: {url[:150]}")
+            except Exception as exc:
+                last_exc = exc
+                log.warning("Staging host %s failed (try %d): %s", name, attempt + 1, exc)
+                time.sleep(3)
+    raise RuntimeError(f"All staging hosts failed: {last_exc}")
 
 
 def upload_reel(video_path, caption: str) -> str | None:
