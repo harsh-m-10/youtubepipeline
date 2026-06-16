@@ -58,7 +58,16 @@
     "title": "Email's Hidden Past",
     "video_id": "HUUZgX_GWyg",
     "ig_media_id": "18091522976620439",
-    "commented": false,
+    "commented": true,
     "score": 9.8
+  },
+  {
+    "date": "2026-06-16",
+    "belief": "The popular font 'Comic Sans' was created by a Microsoft designer in just one weekend.",
+    "title": "The Accidental Font",
+    "video_id": "s7L_ZoXeEww",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 9.0
   }
 ]
