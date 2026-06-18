@@ -76,7 +76,16 @@
     "title": "QWERTY Secret",
     "video_id": "XCqnlCjS_jk",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 9.5
+  },
+  {
+    "date": "2026-06-18",
+    "belief": "The first computer bug was an actual insect that got stuck in the Harvard Mark II computer in 1947.",
+    "title": "The First Computer Bug",
+    "video_id": "aTt-HXisi4g",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 9.0
   }
 ]
