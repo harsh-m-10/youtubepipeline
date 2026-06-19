@@ -85,6 +85,15 @@
     "title": "The First Computer Bug",
     "video_id": "aTt-HXisi4g",
     "ig_media_id": null,
+    "commented": true,
+    "score": 9.0
+  },
+  {
+    "date": "2026-06-19",
+    "belief": "The popular social media platform 'Facebook' was initially called 'Facemash' and was intended for users to compare the photos of two students and vote on which one was more attractive.",
+    "title": "Facebook's Dark Secret",
+    "video_id": "IzjVZ7g5QV4",
+    "ig_media_id": null,
     "commented": false,
     "score": 9.0
   }
