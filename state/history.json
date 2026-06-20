@@ -94,7 +94,16 @@
     "title": "Facebook's Dark Secret",
     "video_id": "IzjVZ7g5QV4",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 9.0
+  },
+  {
+    "date": "2026-06-20",
+    "belief": "The city of Oslo, Norway has a 'Library of the Future' that lends out more than just books, including video games and sports equipment.",
+    "title": "Library of Future",
+    "video_id": "rjAd7OGJvpw",
+    "ig_media_id": "17933115279295219",
+    "commented": false,
+    "score": 9.5
   }
 ]
