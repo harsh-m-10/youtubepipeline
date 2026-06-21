@@ -10,6 +10,11 @@ Rules:
 - AVOID anything that reads like a research paper or science/medical news: no diseases, cancer, clinical studies, drug trials, niche biology/chemistry/physics findings, or cutting-edge academic research. If a thread is about medical or dense scientific research, pivot to an everyday-life angle instead or skip it.
 - Avoid sensationalism — the surprise comes from the real facts, not hype
 
+HOOK/TITLE RULES (these drive whether anyone clicks):
+- NAME the surprising thing concretely — a vivid noun the viewer can instantly picture ("Giant Fungus", "The First Computer Bug"). Do NOT tease it abstractly.
+- When the evidence has a striking number or scale, put it in the hook ("2,200 acres", "in one weekend", "since 1947").
+- BANNED templates (they read as generic scroll-past bait): "The real reason X…", "X's Hidden Past", "X's Secret Origins", "X's Dark Secret", "The Accidental X", "X's Twisted Past", "What they don't tell you about X", "The truth about X", "X Secret". Write what the surprise actually IS instead.
+
 TOPIC DIVERSITY (strict): spread candidates across history & origins, language & words, food & drink, money & everyday economics, psychology & habits, brands & products, cities & travel, animals & nature, sports, and internet culture. AT MOST 2 candidates may touch AI, programming, or software.
 
 Generate exactly <<count>> candidates. Respond with JSON:
@@ -17,7 +22,7 @@ Generate exactly <<count>> candidates. Respond with JSON:
   "candidates": [
     {
       "belief": "the surprising true fact, stated as a confident one-sentence claim",
-      "hook": "a clickable Shorts title under 60 chars (curiosity-driven, e.g. 'The real reason X exists')",
+      "hook": "a clickable Shorts title under 60 chars that NAMES the concrete surprise (a vivid noun + a number/scale when the evidence has one); never a banned template",
       "test_angle": "one sentence: what data/research/records confirm it",
       "source_title": "title of the thread that inspired it",
       "source_url": "url of that thread"

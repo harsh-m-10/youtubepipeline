@@ -79,14 +79,18 @@ def is_duplicate(candidate: dict) -> bool:
     """Focused LLM check of one candidate against publish history. More reliable
     than the duplicate flag inside the scoring rubric, which misses rewordings."""
     history = load_history()
-    recent = [h["belief"] for h in history[-config.HISTORY_DEDUPE_WINDOW:]]
+    recent = history[-config.HISTORY_DEDUPE_WINDOW:]
     if not recent:
         return False
-    prompt = config.load_prompt(
-        "dedupe",
-        candidate=candidate["belief"],
-        history="\n".join(f"- {b}" for b in recent),
+    # show the model each past video's title AND belief so it catches repeats
+    # that were merely reframed (e.g. "Twitter's Twisted Past" vs "...Secret Origins")
+    hist_lines = "\n".join(
+        f"- {h.get('title', '')} — {h['belief']}" for h in recent
     )
+    cand = candidate["belief"]
+    if candidate.get("hook"):
+        cand = f"{cand} (titled: {candidate['hook']})"
+    prompt = config.load_prompt("dedupe", candidate=cand, history=hist_lines)
     result = llm.complete_json(
         system="You detect duplicate topics. Respond only with valid JSON.",
         user=prompt,

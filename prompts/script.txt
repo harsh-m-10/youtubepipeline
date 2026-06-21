@@ -21,7 +21,7 @@ HARD RULES:
 
 Respond with JSON:
 {
-  "title": "video title, under 90 chars, curiosity-driven",
+  "title": "video title under 90 chars that NAMES the concrete surprise (vivid noun + a number/scale from the evidence when there is one). BANNED: 'X's Hidden Past', 'X's Secret Origins', 'X's Dark Secret', 'The Accidental X', 'The real reason X', 'X Secret', 'The truth about X' — say what the surprise IS, don't tease it",
   "beats": [
     {"text": "spoken narration for this beat", "visual_keyword": "2-3 word stock footage search term", "claims": ["E1", "E3"]}
   ],

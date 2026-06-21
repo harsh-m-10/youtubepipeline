@@ -2,7 +2,9 @@ You are a strict duplicate detector for a video channel. Decide whether the CAND
 
 It is a DUPLICATE if a viewer who saw the earlier video would feel they already know this one — same underlying claim, even if reworded, reframed, narrowed, or flipped to its negation (e.g. "crypto beats stocks" vs "putting money in cryptocurrency outperforms the stock market" vs "stocks are safer than crypto" are ALL the same topic).
 
-It is NOT a duplicate merely because it shares a broad domain (two different beliefs about money are fine).
+It is ALSO a duplicate if it centers on the SAME specific subject, event, person, product, or origin story as an earlier one, even from a different angle or with a different fun fact (e.g. "Twitter was first called twttr" vs "Twitter's secret origins" → SAME; "the first computer bug was a literal moth" vs "where the term debugging came from" → SAME; any second video about the founding/origin of the same company → SAME). When the core subject matches, mark it duplicate.
+
+It is NOT a duplicate merely because it shares a broad domain (two DIFFERENT companies' origins, or two different beliefs about money, are fine).
 
 Respond with JSON:
 {
@@ -13,5 +15,5 @@ Respond with JSON:
 CANDIDATE:
 <<candidate>>
 
-PREVIOUSLY PUBLISHED BELIEFS:
+PREVIOUSLY PUBLISHED (title — belief):
 <<history>>
