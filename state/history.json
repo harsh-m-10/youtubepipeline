@@ -103,7 +103,16 @@
     "title": "Library of Future",
     "video_id": "rjAd7OGJvpw",
     "ig_media_id": "17933115279295219",
-    "commented": false,
+    "commented": true,
     "score": 9.5
+  },
+  {
+    "date": "2026-06-21",
+    "belief": "The first webcam was created to monitor a coffee pot, so researchers could avoid getting up to find an empty pot.",
+    "title": "First Webcam",
+    "video_id": "t4ecca0WRPg",
+    "ig_media_id": "17959813694961273",
+    "commented": false,
+    "score": 9.8
   }
 ]
