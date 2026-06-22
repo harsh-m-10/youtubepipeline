@@ -112,7 +112,16 @@
     "title": "First Webcam",
     "video_id": "t4ecca0WRPg",
     "ig_media_id": "17959813694961273",
-    "commented": false,
+    "commented": true,
     "score": 9.8
+  },
+  {
+    "date": "2026-06-22",
+    "belief": "The first vending machine was invented in the 1st century AD by the Greek mathematician Hero of Alexandria, and it dispensed holy water.",
+    "title": "2,000-Year-Old Holy Water Vending Machine",
+    "video_id": "1KYRaVxaPRk",
+    "ig_media_id": "18110779729856288",
+    "commented": false,
+    "score": 9.0
   }
 ]
