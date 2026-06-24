@@ -121,7 +121,7 @@
     "title": "2,000-Year-Old Holy Water Vending Machine",
     "video_id": "1KYRaVxaPRk",
     "ig_media_id": "18110779729856288",
-    "commented": false,
+    "commented": true,
     "score": 9.0
   },
   {
@@ -130,6 +130,15 @@
     "title": "40-Day Quarantine",
     "video_id": "xcI_kgYGlRA",
     "ig_media_id": "17975016387100557",
+    "commented": false,
+    "score": 9.0
+  },
+  {
+    "date": "2026-06-24",
+    "belief": "The world's largest waterfall, by volume of water, is actually located underwater and is called the Denmark Strait Cataract.",
+    "title": "Underwater Denmark Strait Cataract",
+    "video_id": "ztea75lUNe4",
+    "ig_media_id": "18367103296231124",
     "commented": false,
     "score": 9.0
   }
