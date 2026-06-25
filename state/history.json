@@ -130,7 +130,7 @@
     "title": "40-Day Quarantine",
     "video_id": "xcI_kgYGlRA",
     "ig_media_id": "17975016387100557",
-    "commented": false,
+    "commented": true,
     "score": 9.0
   },
   {
@@ -141,5 +141,14 @@
     "ig_media_id": "18367103296231124",
     "commented": false,
     "score": 9.0
+  },
+  {
+    "date": "2026-06-25",
+    "belief": "The popular video game Half-Life 2 can be played entirely in a web browser.",
+    "title": "Half-Life 2 in Browser",
+    "video_id": "I9flBu-uuV0",
+    "ig_media_id": "18107949772785183",
+    "commented": false,
+    "score": 8.0
   }
 ]
