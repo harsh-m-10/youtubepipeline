@@ -139,7 +139,7 @@
     "title": "Underwater Denmark Strait Cataract",
     "video_id": "ztea75lUNe4",
     "ig_media_id": "18367103296231124",
-    "commented": false,
+    "commented": true,
     "score": 9.0
   },
   {
@@ -150,5 +150,14 @@
     "ig_media_id": "18107949772785183",
     "commented": false,
     "score": 8.0
+  },
+  {
+    "date": "2026-06-26",
+    "belief": "The famous logo of the Nike brand was designed by a graphic design student for just $35 in 1971.",
+    "title": "35 Dollar Nike Logo",
+    "video_id": "nyQOUUp-x8Y",
+    "ig_media_id": "17931872229342196",
+    "commented": false,
+    "score": 9.0
   }
 ]
