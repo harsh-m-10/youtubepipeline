@@ -124,6 +124,7 @@ def get_watchtime(start_date: str = "2026-06-01") -> dict[str, dict]:
         endDate=datetime.date.today().isoformat(),
         metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
         dimensions="video",
+        sort="-estimatedMinutesWatched",  # the per-video report requires a sort
         maxResults=200,
     ).execute()
     out: dict[str, dict] = {}
