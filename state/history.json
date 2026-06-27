@@ -148,7 +148,7 @@
     "title": "Half-Life 2 in Browser",
     "video_id": "I9flBu-uuV0",
     "ig_media_id": "18107949772785183",
-    "commented": false,
+    "commented": true,
     "score": 8.0
   },
   {
@@ -157,7 +157,16 @@
     "title": "35 Dollar Nike Logo",
     "video_id": "nyQOUUp-x8Y",
     "ig_media_id": "17931872229342196",
-    "commented": false,
+    "commented": true,
     "score": 9.0
+  },
+  {
+    "date": "2026-06-27",
+    "belief": "The first computer-generated music was created in 1950 by the CSIRAC computer in Australia.",
+    "title": "First Computer Music 1950",
+    "video_id": "g6ZF3ZXni0I",
+    "ig_media_id": "18105825278009165",
+    "commented": false,
+    "score": 8.0
   }
 ]
