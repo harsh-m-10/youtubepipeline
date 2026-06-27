@@ -14,24 +14,34 @@ from src import config
 
 log = logging.getLogger(__name__)
 
-# force-ssl is needed to post comments and read video status/statistics
+# force-ssl: post comments + read video status/statistics.
+# yt-analytics.readonly: read watch time / retention (YouTube Analytics API).
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.force-ssl",
+    "https://www.googleapis.com/auth/yt-analytics.readonly",
 ]
 
 
-def _service():
+def _credentials():
+    # NOTE: do NOT pass scopes= here. On refresh, google-auth would request
+    # exactly those scopes, and Google rejects the refresh (invalid_scope) if the
+    # token wasn't granted all of them. Omitting scopes returns whatever the token
+    # actually has — so adding yt-analytics.readonly to SCOPES (for the re-auth
+    # script) can't break the live upload/stats path before re-auth happens.
     creds = Credentials(
         token=None,
         refresh_token=config.YT_REFRESH_TOKEN,
         token_uri="https://oauth2.googleapis.com/token",
         client_id=config.YT_CLIENT_ID,
         client_secret=config.YT_CLIENT_SECRET,
-        scopes=SCOPES,
     )
     creds.refresh(Request())
-    return build("youtube", "v3", credentials=creds)
+    return creds
+
+
+def _service():
+    return build("youtube", "v3", credentials=_credentials())
 
 
 def upload(video_path: Path, title: str, description: str, tags: list[str]) -> str:
@@ -98,3 +108,30 @@ def get_stats(video_ids: list[str]) -> dict[str, dict]:
                 "comments": int(s.get("commentCount", 0)),
             }
     return stats
+
+
+def get_watchtime(start_date: str = "2026-06-01") -> dict[str, dict]:
+    """Map video_id -> watch-time metrics via the YouTube Analytics API.
+    Needs the yt-analytics.readonly scope; raises if the token lacks it (the
+    caller treats that as "not available yet"). Retention is the real Shorts
+    signal — avg_view_pct = % of the video the average viewer watched."""
+    import datetime
+
+    ya = build("youtubeAnalytics", "v2", credentials=_credentials())
+    resp = ya.reports().query(
+        ids="channel==MINE",
+        startDate=start_date,
+        endDate=datetime.date.today().isoformat(),
+        metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
+        dimensions="video",
+        maxResults=200,
+    ).execute()
+    out: dict[str, dict] = {}
+    for row in resp.get("rows", []):
+        vid, _views, minutes, avg_sec, avg_pct = row
+        out[vid] = {
+            "minutes_watched": round(float(minutes), 1),
+            "avg_view_sec": round(float(avg_sec), 1),
+            "avg_view_pct": round(float(avg_pct), 1),
+        }
+    return out
