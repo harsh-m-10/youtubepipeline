@@ -10,7 +10,7 @@
     "avg_view_pct": 62.0
   },
   "QL53Ho89Ydg": {
-    "views": 33,
+    "views": 34,
     "likes": 2,
     "comments": 1,
     "title": "Giant Fungus",
@@ -96,11 +96,11 @@
     "title": "2,000-Year-Old Holy Water Vending Machine",
     "date": "2026-06-22",
     "minutes_watched": 2.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 21.5
+    "avg_view_sec": 17.0,
+    "avg_view_pct": 19.4
   },
   "xcI_kgYGlRA": {
-    "views": 5,
+    "views": 6,
     "likes": 0,
     "comments": 1,
     "title": "40-Day Quarantine",
@@ -110,34 +110,47 @@
     "avg_view_pct": 10.2
   },
   "ztea75lUNe4": {
-    "views": 23,
+    "views": 24,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
     "date": "2026-06-24",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 38.1
+    "minutes_watched": 4.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 41.0
   },
   "I9flBu-uuV0": {
-    "views": 174,
-    "likes": 3,
+    "views": 263,
+    "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
-    "date": "2026-06-25"
+    "date": "2026-06-25",
+    "minutes_watched": 6.0,
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 24.5
   },
   "nyQOUUp-x8Y": {
-    "views": 25,
+    "views": 26,
     "likes": 1,
     "comments": 1,
     "title": "35 Dollar Nike Logo",
-    "date": "2026-06-26"
+    "date": "2026-06-26",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 15,
+    "views": 20,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
     "date": "2026-06-27"
+  },
+  "0HyCUdWbXwM": {
+    "views": 148,
+    "likes": 3,
+    "comments": 0,
+    "title": "20-Story Shuttle",
+    "date": "2026-06-28"
   }
 }
