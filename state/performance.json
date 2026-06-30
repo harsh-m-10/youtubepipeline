@@ -90,7 +90,7 @@
     "avg_view_pct": 87.3
   },
   "1KYRaVxaPRk": {
-    "views": 40,
+    "views": 41,
     "likes": 1,
     "comments": 1,
     "title": "2,000-Year-Old Holy Water Vending Machine",
@@ -120,14 +120,14 @@
     "avg_view_pct": 41.0
   },
   "I9flBu-uuV0": {
-    "views": 262,
+    "views": 265,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 6.0,
-    "avg_view_sec": 14.0,
-    "avg_view_pct": 24.5
+    "minutes_watched": 9.0,
+    "avg_view_sec": 17.0,
+    "avg_view_pct": 29.2
   },
   "nyQOUUp-x8Y": {
     "views": 26,
@@ -144,13 +144,23 @@
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
-    "date": "2026-06-27"
+    "date": "2026-06-27",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 45.9
   },
   "0HyCUdWbXwM": {
-    "views": 149,
+    "views": 150,
     "likes": 3,
     "comments": 1,
     "title": "20-Story Shuttle",
     "date": "2026-06-28"
+  },
+  "8OXatvNyq4o": {
+    "views": 33,
+    "likes": 1,
+    "comments": 0,
+    "title": "Coca-Cola's Brain Tonic Roots",
+    "date": "2026-06-29"
   }
 }
