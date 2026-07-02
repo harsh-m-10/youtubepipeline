@@ -10,7 +10,7 @@
     "avg_view_pct": 62.0
   },
   "QL53Ho89Ydg": {
-    "views": 34,
+    "views": 35,
     "likes": 2,
     "comments": 1,
     "title": "Giant Fungus",
@@ -116,11 +116,11 @@
     "title": "Underwater Denmark Strait Cataract",
     "date": "2026-06-24",
     "minutes_watched": 4.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 41.0
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 268,
+    "views": 270,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 20,
+    "views": 22,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -164,13 +164,23 @@
     "likes": 1,
     "comments": 1,
     "title": "Coca-Cola's Brain Tonic Roots",
-    "date": "2026-06-29"
+    "date": "2026-06-29",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 58.4
   },
   "13a7J0X0KNs": {
-    "views": 55,
+    "views": 59,
     "likes": 1,
     "comments": 1,
     "title": "Zombie Ant Fungus",
     "date": "2026-06-30"
+  },
+  "TxZRddEMadU": {
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "title": "Sticky Rice in Great Wall Mortar",
+    "date": "2026-07-01"
   }
 }
