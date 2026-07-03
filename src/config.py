@@ -47,7 +47,11 @@ HN_THREADS = 15
 
 # --- Hypothesis generation ---
 CANDIDATES_PER_RUN = 15
-MIN_SCORE_TO_PROCEED = 7.0
+# Recalibrated 2026-07-03: gpt-oss-20b actually follows the "most candidates
+# score 4-6" instruction (llama-8b inflated everything to 8-10), so a 7.0 gate
+# starved the channel — best-of-day hovered at 7.0-7.5 with many no-video runs.
+# 6.0 = "solid, publishable" on the new scale; the gate still blocks bad batches.
+MIN_SCORE_TO_PROCEED = 6.0
 HISTORY_DEDUPE_WINDOW = 100  # compare against last N published hypotheses
 
 # --- Media ---

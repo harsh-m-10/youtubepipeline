@@ -154,6 +154,28 @@ def gather(candidate: dict) -> list[dict]:
     return unique
 
 
+def supports(candidate: dict, snippets: list[dict]) -> bool:
+    """True if the gathered evidence actually backs the candidate's core claim.
+    The hypothesis generator states beliefs confidently whether or not they are
+    real; topically-adjacent snippets used to slip through because the script
+    verifier exempted the belief itself. This gate kills invented facts before
+    any script tokens are spent on them."""
+    prompt = config.load_prompt(
+        "support", claim=candidate["belief"], evidence=format_block(snippets)
+    )
+    result = llm.complete_json(
+        system="You are a strict pre-production fact-check gate. Respond only with valid JSON.",
+        user=prompt,
+        temperature=config.LLM_SCORE_TEMPERATURE,
+        model=config.LLM_SMALL_MODEL,
+    )
+    if not result.get("supported"):
+        log.warning("Belief not backed by evidence (%s): %s",
+                    result.get("reason", "no reason given"), candidate["belief"])
+        return False
+    return True
+
+
 def format_block(snippets: list[dict]) -> str:
     return "\n\n".join(
         f"[E{i}] ({s['source']}) {s['title']}\nURL: {s['url']}\n{s['snippet']}"

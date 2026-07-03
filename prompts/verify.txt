@@ -6,9 +6,11 @@ A claim FAILS only if it asserts a SPECIFIC CHECKABLE FACT that the evidence doe
 - a concrete historical event or date
 - a definitive causal result stated as established fact ("X was shown to cause Y")
 
+The central surprising claim of the video is NOT exempt: if the evidence never states the main fact the video is built on, the script FAILS.
+
 The following are ALLOWED and must NOT be flagged:
-- the belief being tested and its framing ("everyone thinks...", "you probably believe...")
-- opinions, rhetorical questions, transitions, and the verdict line
+- framing and setup ("everyone thinks...", "you probably believe...")
+- opinions, rhetorical questions, transitions, and the closing question
 - hedged or qualitative statements ("often", "can", "might", "tends to", "depends on")
 - common-knowledge background that no reasonable person disputes
 

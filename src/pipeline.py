@@ -86,10 +86,11 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
             if not dry_run:
                 notify.no_video_today(best)
             return
-        # Try the top candidates in order: a hypothesis with thin evidence or an
-        # unverifiable script falls through to the next one instead of killing the run.
+        # Try the top candidates in order: a hypothesis with thin/unsupporting
+        # evidence or an unverifiable script falls through to the next one instead
+        # of killing the run. Five deep because the support gate rejects freely.
         script, best = None, None
-        for candidate in ranked[:3]:
+        for candidate in ranked[:5]:
             if candidate["score"] < config.MIN_SCORE_TO_PROCEED:
                 break
             log.info("Trying [%.1f]: %s", candidate["score"], candidate["hook"])
@@ -100,6 +101,11 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
             snippets = evidence.gather(candidate)
             if len(snippets) < 3:
                 log.warning("Only %d evidence snippets — trying next candidate", len(snippets))
+                continue
+            # the belief itself may be hallucinated — require the evidence to
+            # state the core fact, not just cover the same topic
+            if not evidence.supports(candidate, snippets):
+                log.warning("Evidence doesn't back the claim — trying next candidate")
                 continue
             stage = "script"
             try:

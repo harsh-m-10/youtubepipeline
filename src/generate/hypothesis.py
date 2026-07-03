@@ -61,7 +61,14 @@ def score_candidates(candidates: list[dict], calibration: str = "") -> list[dict
         temperature=config.LLM_SCORE_TEMPERATURE,
         model=config.LLM_SMALL_MODEL,
     )
-    by_index = {s["index"]: s for s in result.get("scores", [])}
+    # coerce indices: models sometimes emit "index": "0" (string), which would
+    # silently zero every score and read as "no candidate cleared the bar"
+    by_index = {}
+    for s in result.get("scores", []):
+        try:
+            by_index[int(s["index"])] = s
+        except (KeyError, TypeError, ValueError):
+            continue
     for i, c in enumerate(candidates):
         s = by_index.get(i, {})
         c["score"] = float(s.get("score", 0))
