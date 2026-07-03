@@ -36,8 +36,8 @@
     "title": "The Accidental Font",
     "date": "2026-06-16",
     "minutes_watched": 5.0,
-    "avg_view_sec": 167.0,
-    "avg_view_pct": 246.5
+    "avg_view_sec": 113.0,
+    "avg_view_pct": 166.3
   },
   "XCqnlCjS_jk": {
     "views": 15,
@@ -120,14 +120,14 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 270,
+    "views": 272,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 18.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 38.1
+    "minutes_watched": 19.0,
+    "avg_view_sec": 23.0,
+    "avg_view_pct": 39.2
   },
   "nyQOUUp-x8Y": {
     "views": 26,
@@ -174,13 +174,9 @@
     "likes": 1,
     "comments": 1,
     "title": "Zombie Ant Fungus",
-    "date": "2026-06-30"
-  },
-  "TxZRddEMadU": {
-    "views": 1,
-    "likes": 0,
-    "comments": 1,
-    "title": "Sticky Rice in Great Wall Mortar",
-    "date": "2026-07-01"
+    "date": "2026-06-30",
+    "minutes_watched": 7.0,
+    "avg_view_sec": 27.0,
+    "avg_view_pct": 39.8
   }
 }
