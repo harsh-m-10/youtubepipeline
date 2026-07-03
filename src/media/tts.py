@@ -3,6 +3,7 @@ Timestamps drive the karaoke captions, so caption sync is exact by construction.
 
 import asyncio
 import logging
+import subprocess
 from pathlib import Path
 
 import edge_tts
@@ -10,6 +11,27 @@ import edge_tts
 from src import config
 
 log = logging.getLogger(__name__)
+
+MAX_ATTEMPTS = 3
+# Fastest plausible speaking rate at +15%: ~4 words/sec. A narration shorter
+# than words/4 seconds means the edge-tts stream died mid-synthesis (the
+# "15-second video that loses its voice" failure), not that the voice was quick.
+MAX_WORDS_PER_SECOND = 4.0
+# The mp3's real duration must roughly match the last word boundary; audio much
+# shorter than the boundaries means the stream sent timings but dropped audio.
+MAX_AUDIO_BOUNDARY_GAP = 1.5
+
+
+def _audio_duration(path: Path) -> float:
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True,
+    )
+    try:
+        return float(out.stdout.strip())
+    except ValueError:
+        return 0.0
 
 
 async def _synthesize(text: str, mp3_path: Path) -> list[dict]:
@@ -41,9 +63,31 @@ def narrate(beats: list[dict], out_dir: Path) -> tuple[Path, list[dict], list[fl
 
     # Join beats with sentence pause; track word counts to find beat boundaries.
     full_text = " ".join(b["text"].strip() for b in beats)
-    words = asyncio.run(_synthesize(full_text, mp3_path))
+    n_words = len(full_text.split())
+    min_duration = n_words / MAX_WORDS_PER_SECOND
+
+    # edge-tts streams can die mid-synthesis (CI network flakes / endpoint
+    # throttling), leaving a truncated mp3 that still "succeeds". Validate the
+    # result against the script length and retry; fail closed rather than
+    # shipping a video whose voice cuts out halfway.
+    words: list[dict] = []
+    problem = "no attempts made"
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        words = asyncio.run(_synthesize(full_text, mp3_path))
+        if not words:
+            problem = "no word boundaries"
+        elif words[-1]["end"] < min_duration:
+            problem = (f"narration {words[-1]['end']:.1f}s is too short for "
+                       f"{n_words} words (expected >={min_duration:.1f}s) - truncated stream")
+        elif (gap := words[-1]["end"] - _audio_duration(mp3_path)) > MAX_AUDIO_BOUNDARY_GAP:
+            problem = (f"audio is {gap:.1f}s shorter than the last word boundary "
+                       f"({words[-1]['end']:.1f}s) - stream dropped audio chunks")
+        else:
+            break
+        log.warning("TTS attempt %d invalid: %s", attempt, problem)
+        words = []
     if not words:
-        raise RuntimeError("TTS produced no word boundaries")
+        raise RuntimeError(f"TTS failed after {MAX_ATTEMPTS} attempts: {problem}")
 
     # Map each beat to its end time by cumulative word count.
     beat_ends: list[float] = []

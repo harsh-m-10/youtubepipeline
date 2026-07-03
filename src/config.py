@@ -20,9 +20,10 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 # calls (idea + script generation) to the big model and mechanical calls
 # (scoring, verification, dedupe, evidence queries) to the small one — this
 # spreads load across two TPM buckets and roughly halves rate-limit stalls.
-LLM_MODEL = "llama-3.3-70b-versatile"     # quality
-# llama-3.1-8b-instant is being decommissioned by Groq (final date 2026-08-16);
-# gpt-oss-20b is Groq's recommended successor (separate TPM bucket, JSON mode OK).
+# llama-3.3-70b-versatile and llama-3.1-8b-instant are both decommissioned by
+# Groq on 2026-08-16 (per console.groq.com/docs/deprecations); gpt-oss-120b/20b
+# are the recommended successors. Still two separate TPM buckets, JSON mode OK.
+LLM_MODEL = "openai/gpt-oss-120b"         # quality
 LLM_SMALL_MODEL = "openai/gpt-oss-20b"    # mechanical
 LLM_MODELS = [LLM_MODEL, LLM_SMALL_MODEL]  # fallback order
 LLM_TEMPERATURE = 0.8
