@@ -115,7 +115,15 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
             except RuntimeError as exc:
                 log.warning("Scripting failed for this candidate: %s", exc)
         if script is None:
-            raise RuntimeError("No top candidate produced a verifiable script")
+            # Not an error: the evidence/verification gates rejecting every
+            # candidate is the system working. A later cron retries with fresh
+            # threads; alert as a quiet day, not a pipeline failure.
+            log.info("No top candidate survived the evidence gates — clean exit")
+            if not dry_run:
+                notify.no_video_today(
+                    ranked[0]["score"], reason="all top candidates failed evidence checks"
+                )
+            return
         (out_dir / "script.json").write_text(
             json.dumps(script, indent=2, ensure_ascii=False), encoding="utf-8"
         )

@@ -45,5 +45,5 @@ def pipeline_failed(stage: str, error: str) -> None:
     send(f"❌ Pipeline failed at stage '{stage}':\n{error[:500]}")
 
 
-def no_video_today(best_score: float) -> None:
-    send(f"😴 No video today — best hypothesis scored {best_score:.1f}, below the bar.")
+def no_video_today(best_score: float, reason: str = "below the bar") -> None:
+    send(f"😴 No video today — best hypothesis scored {best_score:.1f}, {reason}.")
