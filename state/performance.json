@@ -120,14 +120,14 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 272,
+    "views": 275,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 19.0,
+    "minutes_watched": 20.0,
     "avg_view_sec": 23.0,
-    "avg_view_pct": 39.2
+    "avg_view_pct": 39.3
   },
   "nyQOUUp-x8Y": {
     "views": 26,
@@ -146,8 +146,8 @@
     "title": "First Computer Music 1950",
     "date": "2026-06-27",
     "minutes_watched": 1.0,
-    "avg_view_sec": 18.0,
-    "avg_view_pct": 34.8
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 42.3
   },
   "0HyCUdWbXwM": {
     "views": 152,
@@ -176,7 +176,14 @@
     "title": "Zombie Ant Fungus",
     "date": "2026-06-30",
     "minutes_watched": 7.0,
-    "avg_view_sec": 27.0,
-    "avg_view_pct": 39.8
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 35.3
+  },
+  "BaLVuZvGUFQ": {
+    "views": 40,
+    "likes": 1,
+    "comments": 1,
+    "title": "Octopus: The Three‑Hearted Marine Marvel",
+    "date": "2026-07-03"
   }
 }
