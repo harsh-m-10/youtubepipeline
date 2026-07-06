@@ -120,7 +120,7 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 275,
+    "views": 279,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -184,13 +184,23 @@
     "likes": 1,
     "comments": 1,
     "title": "Octopus: The Three‑Hearted Marine Marvel",
-    "date": "2026-07-03"
+    "date": "2026-07-03",
+    "minutes_watched": 4.0,
+    "avg_view_sec": 33.0,
+    "avg_view_pct": 58.2
   },
   "ZVfqoOHgbPI": {
-    "views": 55,
+    "views": 56,
     "likes": 1,
     "comments": 1,
     "title": "The 1839 Misspelling That Made ‘OK’ the World’s Most Used Word",
     "date": "2026-07-04"
+  },
+  "uOfLKchs2qM": {
+    "views": 32,
+    "likes": 1,
+    "comments": 0,
+    "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
+    "date": "2026-07-05"
   }
 }
