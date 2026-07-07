@@ -120,7 +120,7 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 279,
+    "views": 280,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -150,7 +150,7 @@
     "avg_view_pct": 52.7
   },
   "0HyCUdWbXwM": {
-    "views": 153,
+    "views": 154,
     "likes": 3,
     "comments": 1,
     "title": "20-Story Shuttle",
@@ -170,7 +170,7 @@
     "avg_view_pct": 58.4
   },
   "13a7J0X0KNs": {
-    "views": 60,
+    "views": 61,
     "likes": 1,
     "comments": 1,
     "title": "Zombie Ant Fungus",
@@ -194,13 +194,23 @@
     "likes": 1,
     "comments": 1,
     "title": "The 1839 Misspelling That Made ‘OK’ the World’s Most Used Word",
-    "date": "2026-07-04"
+    "date": "2026-07-04",
+    "minutes_watched": 4.0,
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 24.1
   },
   "uOfLKchs2qM": {
-    "views": 32,
+    "views": 33,
     "likes": 1,
-    "comments": 0,
+    "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
     "date": "2026-07-05"
+  },
+  "NEbhdrZkUlI": {
+    "views": 16,
+    "likes": 0,
+    "comments": 0,
+    "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
+    "date": "2026-07-06"
   }
 }
