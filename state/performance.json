@@ -110,7 +110,7 @@
     "avg_view_pct": 10.2
   },
   "ztea75lUNe4": {
-    "views": 24,
+    "views": 25,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -120,14 +120,14 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 281,
+    "views": 282,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
     "minutes_watched": 20.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 37.2
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 36.7
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -200,34 +200,47 @@
     "avg_view_pct": 24.1
   },
   "uOfLKchs2qM": {
-    "views": 34,
+    "views": 35,
     "likes": 0,
     "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
     "date": "2026-07-05",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 31.3
+    "minutes_watched": 3.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 28.0
   },
   "NEbhdrZkUlI": {
     "views": 28,
     "likes": 1,
     "comments": 1,
     "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
-    "date": "2026-07-06"
+    "date": "2026-07-06",
+    "minutes_watched": 4.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 27.3
   },
   "vT2UbZtkYNY": {
-    "views": 3,
+    "views": 4,
     "likes": 0,
     "comments": 1,
     "title": "Mona Lisa’s Missing Eyebrows: The Real Reason They Vanished",
-    "date": "2026-07-07"
+    "date": "2026-07-07",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 9.0,
+    "avg_view_pct": 13.2
   },
   "UhxskXsy4C8": {
-    "views": 16,
+    "views": 17,
     "likes": 1,
-    "comments": 0,
+    "comments": 1,
     "title": "The Pocket Watch Pocket: How 1870s Jeans Got Their Tiny Timekeeper",
     "date": "2026-07-08"
+  },
+  "23-GYHdpzBM": {
+    "views": 33,
+    "likes": 1,
+    "comments": 0,
+    "title": "Robot’s Forced‑Labor Origin Revealed",
+    "date": "2026-07-09"
   }
 }
