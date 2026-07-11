@@ -120,7 +120,7 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 282,
+    "views": 286,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -216,8 +216,8 @@
     "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
     "date": "2026-07-06",
     "minutes_watched": 4.0,
-    "avg_view_sec": 18.0,
-    "avg_view_pct": 27.3
+    "avg_view_sec": 17.0,
+    "avg_view_pct": 26.2
   },
   "vT2UbZtkYNY": {
     "views": 4,
@@ -230,17 +230,27 @@
     "avg_view_pct": 13.2
   },
   "UhxskXsy4C8": {
-    "views": 17,
+    "views": 20,
     "likes": 1,
     "comments": 1,
     "title": "The Pocket Watch Pocket: How 1870s Jeans Got Their Tiny Timekeeper",
-    "date": "2026-07-08"
+    "date": "2026-07-08",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 50.0,
+    "avg_view_pct": 89.3
   },
   "23-GYHdpzBM": {
     "views": 33,
     "likes": 1,
-    "comments": 0,
+    "comments": 1,
     "title": "Robot’s Forced‑Labor Origin Revealed",
     "date": "2026-07-09"
+  },
+  "zdsPuZ09Cvk": {
+    "views": 4,
+    "likes": 0,
+    "comments": 0,
+    "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
+    "date": "2026-07-10"
   }
 }
