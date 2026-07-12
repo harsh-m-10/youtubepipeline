@@ -120,14 +120,14 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 286,
+    "views": 287,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 20.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 36.7
+    "minutes_watched": 21.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 37.1
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -140,14 +140,14 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 23,
+    "views": 24,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
     "date": "2026-06-27",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 28.0,
-    "avg_view_pct": 52.7
+    "minutes_watched": 3.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 54.5
   },
   "0HyCUdWbXwM": {
     "views": 154,
@@ -226,8 +226,8 @@
     "title": "Mona Lisa’s Missing Eyebrows: The Real Reason They Vanished",
     "date": "2026-07-07",
     "minutes_watched": 0.0,
-    "avg_view_sec": 9.0,
-    "avg_view_pct": 13.2
+    "avg_view_sec": 11.0,
+    "avg_view_pct": 16.5
   },
   "UhxskXsy4C8": {
     "views": 20,
@@ -244,7 +244,10 @@
     "likes": 1,
     "comments": 1,
     "title": "Robot’s Forced‑Labor Origin Revealed",
-    "date": "2026-07-09"
+    "date": "2026-07-09",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 33.2
   },
   "zdsPuZ09Cvk": {
     "views": 4,
@@ -252,5 +255,12 @@
     "comments": 1,
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
     "date": "2026-07-10"
+  },
+  "h4ajaSLBEYQ": {
+    "views": 5,
+    "likes": 2,
+    "comments": 0,
+    "title": "Flamingos Gather in a Flamboyance – The Pink Parade’s Fiery Name",
+    "date": "2026-07-11"
   }
 }
