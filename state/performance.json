@@ -110,7 +110,7 @@
     "avg_view_pct": 10.2
   },
   "ztea75lUNe4": {
-    "views": 25,
+    "views": 26,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -120,14 +120,14 @@
     "avg_view_pct": 38.1
   },
   "I9flBu-uuV0": {
-    "views": 287,
+    "views": 289,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 21.0,
+    "minutes_watched": 22.0,
     "avg_view_sec": 22.0,
-    "avg_view_pct": 37.1
+    "avg_view_pct": 37.2
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -200,14 +200,14 @@
     "avg_view_pct": 24.1
   },
   "uOfLKchs2qM": {
-    "views": 35,
+    "views": 36,
     "likes": 0,
     "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
     "date": "2026-07-05",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 28.0
+    "minutes_watched": 2.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 29.7
   },
   "NEbhdrZkUlI": {
     "views": 28,
@@ -236,11 +236,11 @@
     "title": "The Pocket Watch Pocket: How 1870s Jeans Got Their Tiny Timekeeper",
     "date": "2026-07-08",
     "minutes_watched": 1.0,
-    "avg_view_sec": 50.0,
-    "avg_view_pct": 89.3
+    "avg_view_sec": 34.0,
+    "avg_view_pct": 59.8
   },
   "23-GYHdpzBM": {
-    "views": 34,
+    "views": 35,
     "likes": 1,
     "comments": 1,
     "title": "Robot’s Forced‑Labor Origin Revealed",
@@ -250,17 +250,27 @@
     "avg_view_pct": 33.2
   },
   "zdsPuZ09Cvk": {
-    "views": 4,
+    "views": 5,
     "likes": 0,
     "comments": 1,
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
-    "date": "2026-07-10"
+    "date": "2026-07-10",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 51.1
   },
   "h4ajaSLBEYQ": {
-    "views": 5,
-    "likes": 2,
-    "comments": 0,
+    "views": 28,
+    "likes": 3,
+    "comments": 1,
     "title": "Flamingos Gather in a Flamboyance – The Pink Parade’s Fiery Name",
     "date": "2026-07-11"
+  },
+  "3S6XoXmPE6o": {
+    "views": 1508,
+    "likes": 18,
+    "comments": 1,
+    "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
+    "date": "2026-07-12"
   }
 }
