@@ -126,8 +126,8 @@
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
     "minutes_watched": 22.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 37.2
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 36.5
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -200,8 +200,8 @@
     "avg_view_pct": 24.1
   },
   "uOfLKchs2qM": {
-    "views": 36,
-    "likes": 0,
+    "views": 37,
+    "likes": 1,
     "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
     "date": "2026-07-05",
@@ -245,12 +245,12 @@
     "comments": 1,
     "title": "Robot’s Forced‑Labor Origin Revealed",
     "date": "2026-07-09",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 33.2
+    "minutes_watched": 3.0,
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 39.5
   },
   "zdsPuZ09Cvk": {
-    "views": 5,
+    "views": 6,
     "likes": 0,
     "comments": 1,
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
@@ -260,17 +260,27 @@
     "avg_view_pct": 51.1
   },
   "h4ajaSLBEYQ": {
-    "views": 28,
+    "views": 35,
     "likes": 3,
     "comments": 1,
     "title": "Flamingos Gather in a Flamboyance – The Pink Parade’s Fiery Name",
-    "date": "2026-07-11"
+    "date": "2026-07-11",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 59.0,
+    "avg_view_pct": 95.6
   },
   "3S6XoXmPE6o": {
-    "views": 1508,
-    "likes": 18,
-    "comments": 1,
+    "views": 1534,
+    "likes": 19,
+    "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
     "date": "2026-07-12"
+  },
+  "uupcNfpsLXA": {
+    "views": 18,
+    "likes": 1,
+    "comments": 0,
+    "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
+    "date": "2026-07-13"
   }
 }
