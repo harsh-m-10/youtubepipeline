@@ -116,8 +116,8 @@
     "title": "Underwater Denmark Strait Cataract",
     "date": "2026-06-24",
     "minutes_watched": 4.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 38.1
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 41.6
   },
   "I9flBu-uuV0": {
     "views": 289,
@@ -127,7 +127,7 @@
     "date": "2026-06-25",
     "minutes_watched": 22.0,
     "avg_view_sec": 21.0,
-    "avg_view_pct": 36.5
+    "avg_view_pct": 36.0
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 24,
+    "views": 25,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -170,7 +170,7 @@
     "avg_view_pct": 58.4
   },
   "13a7J0X0KNs": {
-    "views": 61,
+    "views": 62,
     "likes": 1,
     "comments": 1,
     "title": "Zombie Ant Fungus",
@@ -256,8 +256,8 @@
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
     "date": "2026-07-10",
     "minutes_watched": 0.0,
-    "avg_view_sec": 26.0,
-    "avg_view_pct": 51.1
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 32.3
   },
   "h4ajaSLBEYQ": {
     "views": 35,
@@ -265,22 +265,32 @@
     "comments": 1,
     "title": "Flamingos Gather in a Flamboyance – The Pink Parade’s Fiery Name",
     "date": "2026-07-11",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 59.0,
-    "avg_view_pct": 95.6
+    "minutes_watched": 5.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 47.8
   },
   "3S6XoXmPE6o": {
-    "views": 1534,
+    "views": 1538,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
-    "date": "2026-07-12"
+    "date": "2026-07-12",
+    "minutes_watched": 324.0,
+    "avg_view_sec": 36.0,
+    "avg_view_pct": 56.4
   },
   "uupcNfpsLXA": {
-    "views": 18,
-    "likes": 1,
-    "comments": 0,
+    "views": 30,
+    "likes": 2,
+    "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
     "date": "2026-07-13"
+  },
+  "2JqdgE0hcgI": {
+    "views": 34,
+    "likes": 2,
+    "comments": 1,
+    "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
+    "date": "2026-07-14"
   }
 }
