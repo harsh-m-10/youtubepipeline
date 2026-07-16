@@ -50,6 +50,13 @@ def complete(
         else list(config.LLM_MODELS)
     last_exc: Exception | None = None
     for m in models:
+        # gpt-oss are reasoning models: their hidden chain-of-thought counts
+        # against max_tokens. At the default effort it can eat ~3500 of the
+        # 4096 budget and truncate the JSON mid-string. Low effort is plenty
+        # for these tasks (the pipeline ran on non-reasoning llamas before),
+        # and max_tokens can't be raised — Groq charges prompt+max_tokens
+        # against the TPM limit up front, so a bigger cap 429s every request.
+        extra = {"reasoning_effort": "low"} if "gpt-oss" in m else {}
         for attempt in range(3):
             try:
                 resp = _get_client().chat.completions.create(
@@ -61,7 +68,11 @@ def complete(
                     temperature=temperature,
                     max_tokens=max_tokens,
                     response_format={"type": "json_object"} if json_mode else None,
+                    **extra,
                 )
+                if resp.choices[0].finish_reason == "length":
+                    log.warning("Output truncated at max_tokens on %s "
+                                "(reasoning consumed the budget?)", m)
                 return resp.choices[0].message.content
             except RateLimitError as exc:
                 last_exc = exc

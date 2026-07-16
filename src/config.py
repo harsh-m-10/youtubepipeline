@@ -16,7 +16,8 @@ ASSETS_DIR = ROOT / "assets"
 
 # --- LLM ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-# Groq free tier is 6000 tokens/min PER MODEL (separate buckets). Route quality
+# Groq free tier is ~8000 tokens/min PER MODEL (separate buckets), and a
+# request's prompt+max_tokens is charged against it up front. Route quality
 # calls (idea + script generation) to the big model and mechanical calls
 # (scoring, verification, dedupe, evidence queries) to the small one — this
 # spreads load across two TPM buckets and roughly halves rate-limit stalls.
