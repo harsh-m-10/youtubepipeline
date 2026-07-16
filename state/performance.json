@@ -30,7 +30,7 @@
     "avg_view_pct": 147.2
   },
   "s7L_ZoXeEww": {
-    "views": 8,
+    "views": 9,
     "likes": 1,
     "comments": 2,
     "title": "The Accidental Font",
@@ -110,7 +110,7 @@
     "avg_view_pct": 10.2
   },
   "ztea75lUNe4": {
-    "views": 26,
+    "views": 27,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -120,7 +120,7 @@
     "avg_view_pct": 41.6
   },
   "I9flBu-uuV0": {
-    "views": 289,
+    "views": 291,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -205,9 +205,9 @@
     "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
     "date": "2026-07-05",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 29.7
+    "minutes_watched": 3.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 33.1
   },
   "NEbhdrZkUlI": {
     "views": 28,
@@ -246,8 +246,8 @@
     "title": "Robot’s Forced‑Labor Origin Revealed",
     "date": "2026-07-09",
     "minutes_watched": 3.0,
-    "avg_view_sec": 24.0,
-    "avg_view_pct": 39.5
+    "avg_view_sec": 23.0,
+    "avg_view_pct": 38.3
   },
   "zdsPuZ09Cvk": {
     "views": 6,
@@ -265,32 +265,42 @@
     "comments": 1,
     "title": "Flamingos Gather in a Flamboyance – The Pink Parade’s Fiery Name",
     "date": "2026-07-11",
-    "minutes_watched": 5.0,
-    "avg_view_sec": 29.0,
-    "avg_view_pct": 47.8
+    "minutes_watched": 9.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1538,
+    "views": 1536,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
     "date": "2026-07-12",
-    "minutes_watched": 324.0,
-    "avg_view_sec": 36.0,
-    "avg_view_pct": 56.4
+    "minutes_watched": 344.0,
+    "avg_view_sec": 35.0,
+    "avg_view_pct": 55.3
   },
   "uupcNfpsLXA": {
-    "views": 30,
-    "likes": 2,
-    "comments": 1,
-    "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
-    "date": "2026-07-13"
-  },
-  "2JqdgE0hcgI": {
     "views": 34,
     "likes": 2,
     "comments": 1,
+    "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
+    "date": "2026-07-13",
+    "minutes_watched": 3.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 41.5
+  },
+  "2JqdgE0hcgI": {
+    "views": 45,
+    "likes": 3,
+    "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
     "date": "2026-07-14"
+  },
+  "kczxPnzBTRg": {
+    "views": 9,
+    "likes": 3,
+    "comments": 0,
+    "title": "Goodbye’s secret prayer: From ‘God be with ye’ to today’s farewell",
+    "date": "2026-07-15"
   }
 }
