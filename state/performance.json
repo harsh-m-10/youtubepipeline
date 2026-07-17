@@ -280,27 +280,37 @@
     "avg_view_pct": 55.3
   },
   "uupcNfpsLXA": {
-    "views": 34,
+    "views": 35,
     "likes": 2,
     "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
     "date": "2026-07-13",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 41.5
+    "minutes_watched": 6.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 36.9
   },
   "2JqdgE0hcgI": {
-    "views": 43,
+    "views": 48,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
-    "date": "2026-07-14"
+    "date": "2026-07-14",
+    "minutes_watched": 7.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 58.5
   },
   "kczxPnzBTRg": {
-    "views": 12,
+    "views": 14,
     "likes": 3,
     "comments": 1,
     "title": "Goodbye’s secret prayer: From ‘God be with ye’ to today’s farewell",
     "date": "2026-07-15"
+  },
+  "ZKipyq_zOLM": {
+    "views": 3,
+    "likes": 1,
+    "comments": 0,
+    "title": "The 1978 Spam Email That Launched $13 Million Sales",
+    "date": "2026-07-16"
   }
 }
