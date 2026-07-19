@@ -20,7 +20,7 @@
     "avg_view_pct": 68.0
   },
   "HUUZgX_GWyg": {
-    "views": 14,
+    "views": 15,
     "likes": 1,
     "comments": 1,
     "title": "Email's Hidden Past",
@@ -36,11 +36,11 @@
     "title": "The Accidental Font",
     "date": "2026-06-16",
     "minutes_watched": 5.0,
-    "avg_view_sec": 113.0,
-    "avg_view_pct": 166.3
+    "avg_view_sec": 85.0,
+    "avg_view_pct": 126.4
   },
   "XCqnlCjS_jk": {
-    "views": 15,
+    "views": 17,
     "likes": 0,
     "comments": 1,
     "title": "QWERTY Secret",
@@ -50,7 +50,7 @@
     "avg_view_pct": 36.2
   },
   "aTt-HXisi4g": {
-    "views": 54,
+    "views": 55,
     "likes": 1,
     "comments": 1,
     "title": "The First Computer Bug",
@@ -90,7 +90,7 @@
     "avg_view_pct": 87.3
   },
   "1KYRaVxaPRk": {
-    "views": 45,
+    "views": 48,
     "likes": 1,
     "comments": 1,
     "title": "2,000-Year-Old Holy Water Vending Machine",
@@ -100,7 +100,7 @@
     "avg_view_pct": 19.4
   },
   "xcI_kgYGlRA": {
-    "views": 9,
+    "views": 13,
     "likes": 0,
     "comments": 1,
     "title": "40-Day Quarantine",
@@ -120,7 +120,7 @@
     "avg_view_pct": 42.3
   },
   "I9flBu-uuV0": {
-    "views": 291,
+    "views": 294,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 28,
+    "views": 29,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -150,7 +150,7 @@
     "avg_view_pct": 54.5
   },
   "0HyCUdWbXwM": {
-    "views": 157,
+    "views": 159,
     "likes": 3,
     "comments": 1,
     "title": "20-Story Shuttle",
@@ -160,7 +160,7 @@
     "avg_view_pct": 39.7
   },
   "8OXatvNyq4o": {
-    "views": 54,
+    "views": 57,
     "likes": 1,
     "comments": 1,
     "title": "Coca-Cola's Brain Tonic Roots",
@@ -190,7 +190,7 @@
     "avg_view_pct": 58.2
   },
   "ZVfqoOHgbPI": {
-    "views": 56,
+    "views": 57,
     "likes": 1,
     "comments": 1,
     "title": "The 1839 Misspelling That Made ‘OK’ the World’s Most Used Word",
@@ -210,7 +210,7 @@
     "avg_view_pct": 33.1
   },
   "NEbhdrZkUlI": {
-    "views": 28,
+    "views": 29,
     "likes": 1,
     "comments": 1,
     "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
@@ -240,7 +240,7 @@
     "avg_view_pct": 59.8
   },
   "23-GYHdpzBM": {
-    "views": 35,
+    "views": 37,
     "likes": 1,
     "comments": 1,
     "title": "Robot’s Forced‑Labor Origin Revealed",
@@ -250,7 +250,7 @@
     "avg_view_pct": 38.3
   },
   "zdsPuZ09Cvk": {
-    "views": 10,
+    "views": 12,
     "likes": 0,
     "comments": 1,
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
@@ -270,7 +270,7 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1537,
+    "views": 1539,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
@@ -290,7 +290,7 @@
     "avg_view_pct": 41.5
   },
   "2JqdgE0hcgI": {
-    "views": 48,
+    "views": 51,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -300,27 +300,37 @@
     "avg_view_pct": 48.3
   },
   "kczxPnzBTRg": {
-    "views": 18,
+    "views": 19,
     "likes": 3,
     "comments": 1,
     "title": "Goodbye’s secret prayer: From ‘God be with ye’ to today’s farewell",
     "date": "2026-07-15",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 0.0,
-    "avg_view_pct": 0.0
+    "minutes_watched": 3.0,
+    "avg_view_sec": 54.0,
+    "avg_view_pct": 103.5
   },
   "ZKipyq_zOLM": {
-    "views": 5,
+    "views": 6,
     "likes": 1,
     "comments": 1,
     "title": "The 1978 Spam Email That Launched $13 Million Sales",
-    "date": "2026-07-16"
+    "date": "2026-07-16",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 39.0,
+    "avg_view_pct": 58.5
   },
   "qSWAzMLQhOQ": {
-    "views": 9,
-    "likes": 1,
+    "views": 19,
+    "likes": 2,
     "comments": 1,
     "title": "Coca‑Cola’s Original Cocaine Ingredient Until 1904",
     "date": "2026-07-17"
+  },
+  "sby2mvbAuE0": {
+    "views": 6,
+    "likes": 1,
+    "comments": 0,
+    "title": "Karaoke Means ‘Empty Orchestra’ – The Word’s True Origin",
+    "date": "2026-07-18"
   }
 }
