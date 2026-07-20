@@ -150,7 +150,7 @@
     "avg_view_pct": 54.5
   },
   "0HyCUdWbXwM": {
-    "views": 159,
+    "views": 160,
     "likes": 3,
     "comments": 1,
     "title": "20-Story Shuttle",
@@ -210,7 +210,7 @@
     "avg_view_pct": 33.1
   },
   "NEbhdrZkUlI": {
-    "views": 29,
+    "views": 30,
     "likes": 1,
     "comments": 1,
     "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
@@ -290,7 +290,7 @@
     "avg_view_pct": 41.5
   },
   "2JqdgE0hcgI": {
-    "views": 51,
+    "views": 52,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -305,9 +305,9 @@
     "comments": 1,
     "title": "Goodbye’s secret prayer: From ‘God be with ye’ to today’s farewell",
     "date": "2026-07-15",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 54.0,
-    "avg_view_pct": 103.5
+    "minutes_watched": 4.0,
+    "avg_view_sec": 38.0,
+    "avg_view_pct": 72.4
   },
   "ZKipyq_zOLM": {
     "views": 6,
@@ -320,17 +320,27 @@
     "avg_view_pct": 58.5
   },
   "qSWAzMLQhOQ": {
-    "views": 19,
+    "views": 20,
     "likes": 2,
     "comments": 1,
     "title": "Coca‑Cola’s Original Cocaine Ingredient Until 1904",
-    "date": "2026-07-17"
+    "date": "2026-07-17",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 43.0,
+    "avg_view_pct": 86.0
   },
   "sby2mvbAuE0": {
-    "views": 6,
+    "views": 9,
     "likes": 1,
-    "comments": 0,
+    "comments": 1,
     "title": "Karaoke Means ‘Empty Orchestra’ – The Word’s True Origin",
     "date": "2026-07-18"
+  },
+  "BTCnvYtoVOc": {
+    "views": 16,
+    "likes": 0,
+    "comments": 0,
+    "title": "The 1791 Bet That Invented the Word “Quiz”",
+    "date": "2026-07-19"
   }
 }
