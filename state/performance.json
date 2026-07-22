@@ -216,8 +216,8 @@
     "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
     "date": "2026-07-06",
     "minutes_watched": 4.0,
-    "avg_view_sec": 17.0,
-    "avg_view_pct": 26.2
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 25.1
   },
   "vT2UbZtkYNY": {
     "views": 7,
@@ -270,7 +270,7 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1545,
+    "views": 1546,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
@@ -290,7 +290,7 @@
     "avg_view_pct": 41.5
   },
   "2JqdgE0hcgI": {
-    "views": 56,
+    "views": 54,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -320,14 +320,14 @@
     "avg_view_pct": 58.5
   },
   "qSWAzMLQhOQ": {
-    "views": 29,
+    "views": 31,
     "likes": 2,
     "comments": 1,
     "title": "Coca‑Cola’s Original Cocaine Ingredient Until 1904",
     "date": "2026-07-17",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 14.0,
-    "avg_view_pct": 28.3
+    "minutes_watched": 2.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 37.0
   },
   "sby2mvbAuE0": {
     "views": 11,
@@ -335,22 +335,32 @@
     "comments": 1,
     "title": "Karaoke Means ‘Empty Orchestra’ – The Word’s True Origin",
     "date": "2026-07-18",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 39.0,
-    "avg_view_pct": 70.6
+    "minutes_watched": 2.0,
+    "avg_view_sec": 43.0,
+    "avg_view_pct": 76.8
   },
   "BTCnvYtoVOc": {
     "views": 31,
     "likes": 0,
     "comments": 1,
     "title": "The 1791 Bet That Invented the Word “Quiz”",
-    "date": "2026-07-19"
+    "date": "2026-07-19",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 30.8
   },
   "G9cXC08q0Bk": {
-    "views": 14,
+    "views": 15,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "How a Gambling Earl Invented the Sandwich",
     "date": "2026-07-20"
+  },
+  "zbf2sntbWs8": {
+    "views": 2,
+    "likes": 1,
+    "comments": 0,
+    "title": "The 1938 Chocolate Chip Cookie Recipe That Started a Nation",
+    "date": "2026-07-21"
   }
 }
