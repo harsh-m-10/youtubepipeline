@@ -37,7 +37,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
       - name: Install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-liberation
@@ -69,16 +68,18 @@ jobs:
             python -m src.pipeline
           fi
 
-      - name: Upload artifacts (debugging)
-        if: always()
+      # NB: do NOT upload final.mp4 here. The video already lives on YouTube
+      # (private) for review, and artifact storage is billed against the
+      # account's 0.5 GB Actions quota — a daily 20-40 MB mp4 fills it fast.
+      # Only the tiny script.json is kept, and only on failure, for debugging.
+      - name: Upload script for debugging
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: video-${{ github.run_number }}
-          path: |
-            out/**/final.mp4
-            out/**/script.json
+          name: script-${{ github.run_number }}
+          path: out/**/script.json
           if-no-files-found: ignore
-          retention-days: 3  # debug copy; auto-deletes (video already lives on YouTube)
+          retention-days: 2
 
       - name: Commit history
         if: success()
