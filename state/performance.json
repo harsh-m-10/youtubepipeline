@@ -90,14 +90,14 @@
     "avg_view_pct": 87.3
   },
   "1KYRaVxaPRk": {
-    "views": 57,
+    "views": 58,
     "likes": 1,
     "comments": 1,
     "title": "2,000-Year-Old Holy Water Vending Machine",
     "date": "2026-06-22",
     "minutes_watched": 3.0,
-    "avg_view_sec": 11.0,
-    "avg_view_pct": 12.4
+    "avg_view_sec": 10.0,
+    "avg_view_pct": 11.5
   },
   "xcI_kgYGlRA": {
     "views": 22,
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 29,
+    "views": 30,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -176,8 +176,8 @@
     "title": "Zombie Ant Fungus",
     "date": "2026-06-30",
     "minutes_watched": 7.0,
-    "avg_view_sec": 24.0,
-    "avg_view_pct": 35.3
+    "avg_view_sec": 23.0,
+    "avg_view_pct": 33.4
   },
   "BaLVuZvGUFQ": {
     "views": 30,
@@ -368,5 +368,12 @@
     "minutes_watched": 0.0,
     "avg_view_sec": 44.0,
     "avg_view_pct": 81.5
+  },
+  "04IkmwBVt_c": {
+    "views": 11,
+    "likes": 0,
+    "comments": 0,
+    "title": "85‑Letter Hill Name: The World’s Longest Place Name",
+    "date": "2026-07-24"
   }
 }
