@@ -270,14 +270,14 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1547,
+    "views": 1549,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
     "date": "2026-07-12",
-    "minutes_watched": 344.0,
+    "minutes_watched": 345.0,
     "avg_view_sec": 35.0,
-    "avg_view_pct": 55.0
+    "avg_view_pct": 54.9
   },
   "uupcNfpsLXA": {
     "views": 35,
@@ -290,7 +290,7 @@
     "avg_view_pct": 41.5
   },
   "2JqdgE0hcgI": {
-    "views": 55,
+    "views": 56,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -366,14 +366,21 @@
     "title": "The 1938 Chocolate Chip Cookie Recipe That Started a Nation",
     "date": "2026-07-21",
     "minutes_watched": 0.0,
-    "avg_view_sec": 44.0,
-    "avg_view_pct": 81.5
+    "avg_view_sec": 23.0,
+    "avg_view_pct": 44.3
   },
   "04IkmwBVt_c": {
     "views": 11,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "85‑Letter Hill Name: The World’s Longest Place Name",
     "date": "2026-07-24"
+  },
+  "2SmA7fjX3MM": {
+    "views": 14,
+    "likes": 0,
+    "comments": 0,
+    "title": "The First :-) Posted in 1982",
+    "date": "2026-07-25"
   }
 }
