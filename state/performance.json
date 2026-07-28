@@ -120,7 +120,7 @@
     "avg_view_pct": 42.3
   },
   "I9flBu-uuV0": {
-    "views": 295,
+    "views": 296,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -270,14 +270,14 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1550,
+    "views": 1551,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
     "date": "2026-07-12",
-    "minutes_watched": 345.0,
+    "minutes_watched": 346.0,
     "avg_view_sec": 35.0,
-    "avg_view_pct": 54.9
+    "avg_view_pct": 55.0
   },
   "uupcNfpsLXA": {
     "views": 35,
@@ -330,7 +330,7 @@
     "avg_view_pct": 38.6
   },
   "sby2mvbAuE0": {
-    "views": 12,
+    "views": 13,
     "likes": 1,
     "comments": 1,
     "title": "Karaoke Means ‘Empty Orchestra’ – The Word’s True Origin",
@@ -384,6 +384,16 @@
     "likes": 0,
     "comments": 1,
     "title": "The First :-) Posted in 1982",
-    "date": "2026-07-25"
+    "date": "2026-07-25",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 52.1
+  },
+  "fF9TVIF8b2o": {
+    "views": 16,
+    "likes": 1,
+    "comments": 0,
+    "title": "Mercury‑Poisoned Hatters Made 'Mad as a Hatter' Real",
+    "date": "2026-07-27"
   }
 }

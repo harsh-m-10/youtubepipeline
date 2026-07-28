@@ -409,7 +409,16 @@
     "title": "Mercury‑Poisoned Hatters Made 'Mad as a Hatter' Real",
     "video_id": "fF9TVIF8b2o",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-07-28",
+    "belief": "The tiny “pips” on a die are arranged so that opposite faces always add up to seven.",
+    "title": "Why Every Die’s Opposite Sides Add Up to Seven",
+    "video_id": "5_5amgUATAk",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]
