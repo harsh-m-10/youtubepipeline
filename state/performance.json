@@ -110,7 +110,7 @@
     "avg_view_pct": 4.5
   },
   "ztea75lUNe4": {
-    "views": 27,
+    "views": 28,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 30,
+    "views": 32,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -270,7 +270,7 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1551,
+    "views": 1553,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
@@ -386,14 +386,21 @@
     "title": "The First :-) Posted in 1982",
     "date": "2026-07-25",
     "minutes_watched": 2.0,
-    "avg_view_sec": 26.0,
-    "avg_view_pct": 52.1
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 48.3
   },
   "fF9TVIF8b2o": {
     "views": 16,
     "likes": 1,
-    "comments": 0,
+    "comments": 1,
     "title": "Mercury‑Poisoned Hatters Made 'Mad as a Hatter' Real",
     "date": "2026-07-27"
+  },
+  "5_5amgUATAk": {
+    "views": 47,
+    "likes": 1,
+    "comments": 0,
+    "title": "Why Every Die’s Opposite Sides Add Up to Seven",
+    "date": "2026-07-28"
   }
 }
