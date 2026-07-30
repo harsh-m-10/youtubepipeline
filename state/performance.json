@@ -390,11 +390,14 @@
     "avg_view_pct": 48.3
   },
   "fF9TVIF8b2o": {
-    "views": 16,
+    "views": 17,
     "likes": 1,
     "comments": 1,
     "title": "Mercury‑Poisoned Hatters Made 'Mad as a Hatter' Real",
-    "date": "2026-07-27"
+    "date": "2026-07-27",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 38.9
   },
   "5_5amgUATAk": {
     "views": 47,
@@ -402,5 +405,12 @@
     "comments": 1,
     "title": "Why Every Die’s Opposite Sides Add Up to Seven",
     "date": "2026-07-28"
+  },
+  "N_JQdFlAxLM": {
+    "views": 6,
+    "likes": 1,
+    "comments": 0,
+    "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
+    "date": "2026-07-29"
   }
 }
