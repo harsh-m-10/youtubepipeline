@@ -429,5 +429,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-07-30",
+    "belief": "The first commercial chewing gum was sold in 1848 and was made from spruce tree sap.",
+    "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
+    "video_id": "TdcXDyvSlgk",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
