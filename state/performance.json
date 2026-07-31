@@ -120,14 +120,14 @@
     "avg_view_pct": 42.3
   },
   "I9flBu-uuV0": {
-    "views": 296,
+    "views": 297,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
     "minutes_watched": 24.0,
     "avg_view_sec": 22.0,
-    "avg_view_pct": 37.4
+    "avg_view_pct": 37.1
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 32,
+    "views": 33,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -404,13 +404,23 @@
     "likes": 1,
     "comments": 1,
     "title": "Why Every Die’s Opposite Sides Add Up to Seven",
-    "date": "2026-07-28"
+    "date": "2026-07-28",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 11.0,
+    "avg_view_pct": 25.1
   },
   "N_JQdFlAxLM": {
-    "views": 6,
+    "views": 5,
     "likes": 1,
     "comments": 1,
     "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
     "date": "2026-07-29"
+  },
+  "TdcXDyvSlgk": {
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
+    "date": "2026-07-30"
   }
 }
