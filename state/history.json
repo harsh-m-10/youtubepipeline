@@ -438,5 +438,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-07-31",
+    "belief": "The first recorded recipe for pizza Margherita was created in 1889 to honor Queen Margherita of Savoy.",
+    "title": "Royal Pizza Margherita: The 1889 Tribute That Shaped Italy",
+    "video_id": "mVyGPr8owQs",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
