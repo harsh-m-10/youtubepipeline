@@ -125,9 +125,9 @@
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 24.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 37.1
+    "minutes_watched": 23.0,
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 35.9
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -146,8 +146,8 @@
     "title": "First Computer Music 1950",
     "date": "2026-06-27",
     "minutes_watched": 3.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 42.5
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 38.0
   },
   "0HyCUdWbXwM": {
     "views": 161,
@@ -350,7 +350,7 @@
     "avg_view_pct": 37.3
   },
   "G9cXC08q0Bk": {
-    "views": 15,
+    "views": 16,
     "likes": 0,
     "comments": 1,
     "title": "How a Gambling Earl Invented the Sandwich",
@@ -410,7 +410,7 @@
     "avg_view_pct": 25.1
   },
   "N_JQdFlAxLM": {
-    "views": 6,
+    "views": 7,
     "likes": 1,
     "comments": 1,
     "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
@@ -427,10 +427,17 @@
     "date": "2026-07-30"
   },
   "mVyGPr8owQs": {
-    "views": 15,
+    "views": 20,
     "likes": 0,
     "comments": 1,
     "title": "Royal Pizza Margherita: The 1889 Tribute That Shaped Italy",
     "date": "2026-07-31"
+  },
+  "U9SkGWOQ-6E": {
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "title": "Bluetooth Named After a Unifying Viking King",
+    "date": "2026-08-01"
   }
 }
