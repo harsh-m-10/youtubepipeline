@@ -120,14 +120,14 @@
     "avg_view_pct": 40.1
   },
   "I9flBu-uuV0": {
-    "views": 298,
+    "views": 299,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
     "minutes_watched": 23.0,
     "avg_view_sec": 21.0,
-    "avg_view_pct": 35.9
+    "avg_view_pct": 35.3
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 33,
+    "views": 34,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -424,20 +424,33 @@
     "likes": 1,
     "comments": 1,
     "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
-    "date": "2026-07-30"
+    "date": "2026-07-30",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 68.0,
+    "avg_view_pct": 90.7
   },
   "mVyGPr8owQs": {
-    "views": 20,
+    "views": 27,
     "likes": 0,
     "comments": 1,
     "title": "Royal Pizza Margherita: The 1889 Tribute That Shaped Italy",
-    "date": "2026-07-31"
+    "date": "2026-07-31",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "U9SkGWOQ-6E": {
     "views": 0,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Bluetooth Named After a Unifying Viking King",
     "date": "2026-08-01"
+  },
+  "GlniMCD6dm8": {
+    "views": 4,
+    "likes": 1,
+    "comments": 0,
+    "title": "London’s 1868 Manual Traffic Light – The First Ever Signal",
+    "date": "2026-08-02"
   }
 }
