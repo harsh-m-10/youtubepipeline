@@ -483,5 +483,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-08-08",
+    "belief": "Bananas are berries, while strawberries are not.",
+    "title": "Bananas Are True Berries, Strawberries Aren’t",
+    "video_id": "cvBOxWCq7Hw",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]

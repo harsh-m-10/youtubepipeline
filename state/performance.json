@@ -50,7 +50,7 @@
     "avg_view_pct": 36.2
   },
   "aTt-HXisi4g": {
-    "views": 55,
+    "views": 56,
     "likes": 1,
     "comments": 1,
     "title": "The First Computer Bug",
@@ -110,7 +110,7 @@
     "avg_view_pct": 4.5
   },
   "ztea75lUNe4": {
-    "views": 28,
+    "views": 29,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -160,7 +160,7 @@
     "avg_view_pct": 38.8
   },
   "8OXatvNyq4o": {
-    "views": 63,
+    "views": 64,
     "likes": 1,
     "comments": 1,
     "title": "Coca-Cola's Brain Tonic Roots",
@@ -180,7 +180,7 @@
     "avg_view_pct": 33.4
   },
   "BaLVuZvGUFQ": {
-    "views": 30,
+    "views": 31,
     "likes": 1,
     "comments": 1,
     "title": "Octopus: The Three‑Hearted Marine Marvel",
@@ -200,7 +200,7 @@
     "avg_view_pct": 24.1
   },
   "uOfLKchs2qM": {
-    "views": 37,
+    "views": 38,
     "likes": 1,
     "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
@@ -240,7 +240,7 @@
     "avg_view_pct": 59.8
   },
   "23-GYHdpzBM": {
-    "views": 37,
+    "views": 38,
     "likes": 1,
     "comments": 1,
     "title": "Robot’s Forced‑Labor Origin Revealed",
@@ -270,7 +270,7 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1557,
+    "views": 1558,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
@@ -280,7 +280,7 @@
     "avg_view_pct": 55.0
   },
   "uupcNfpsLXA": {
-    "views": 35,
+    "views": 36,
     "likes": 2,
     "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
@@ -330,7 +330,7 @@
     "avg_view_pct": 38.6
   },
   "sby2mvbAuE0": {
-    "views": 13,
+    "views": 14,
     "likes": 1,
     "comments": 1,
     "title": "Karaoke Means ‘Empty Orchestra’ – The Word’s True Origin",
@@ -360,7 +360,7 @@
     "avg_view_pct": 30.7
   },
   "zbf2sntbWs8": {
-    "views": 2,
+    "views": 3,
     "likes": 2,
     "comments": 1,
     "title": "The 1938 Chocolate Chip Cookie Recipe That Started a Nation",
@@ -400,7 +400,7 @@
     "avg_view_pct": 33.4
   },
   "5_5amgUATAk": {
-    "views": 49,
+    "views": 50,
     "likes": 1,
     "comments": 1,
     "title": "Why Every Die’s Opposite Sides Add Up to Seven",
@@ -416,8 +416,8 @@
     "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
     "date": "2026-07-29",
     "minutes_watched": 1.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 36.3
+    "avg_view_sec": 25.0,
+    "avg_view_pct": 47.9
   },
   "TdcXDyvSlgk": {
     "views": 2,
@@ -430,7 +430,7 @@
     "avg_view_pct": 90.7
   },
   "mVyGPr8owQs": {
-    "views": 30,
+    "views": 31,
     "likes": 0,
     "comments": 1,
     "title": "Royal Pizza Margherita: The 1889 Tribute That Shaped Italy",
@@ -447,7 +447,7 @@
     "date": "2026-08-01"
   },
   "GlniMCD6dm8": {
-    "views": 8,
+    "views": 9,
     "likes": 1,
     "comments": 1,
     "title": "London’s 1868 Manual Traffic Light – The First Ever Signal",
@@ -457,7 +457,7 @@
     "avg_view_pct": 8.2
   },
   "K-Dm5ajIMLc": {
-    "views": 19,
+    "views": 20,
     "likes": 0,
     "comments": 1,
     "title": "Nice Once Meant Foolish – The Forgotten Origin of a Common Word",
@@ -467,10 +467,13 @@
     "avg_view_pct": 34.9
   },
   "Mmk3QcTB6ck": {
-    "views": 21,
+    "views": 22,
     "likes": 0,
     "comments": 1,
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
-    "date": "2026-08-05"
+    "date": "2026-08-05",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 40.7
   }
 }
