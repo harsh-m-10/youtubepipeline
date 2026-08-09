@@ -492,5 +492,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 7.0
+  },
+  {
+    "date": "2026-08-09",
+    "belief": "The first recorded use of a barcode on a product was on a pack of Wrigley's gum in 1974.",
+    "title": "The First Barcode Ever Scanned Was on a Pack of Gum",
+    "video_id": "oa4IYFgDRbc",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]
