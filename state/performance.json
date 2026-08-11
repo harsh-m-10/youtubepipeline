@@ -110,7 +110,7 @@
     "avg_view_pct": 4.5
   },
   "ztea75lUNe4": {
-    "views": 29,
+    "views": 30,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -477,11 +477,14 @@
     "avg_view_pct": 40.7
   },
   "cvBOxWCq7Hw": {
-    "views": 141,
+    "views": 142,
     "likes": 0,
     "comments": 1,
     "title": "Bananas Are True Berries, Strawberries Aren’t",
-    "date": "2026-08-08"
+    "date": "2026-08-08",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 41.0
   },
   "oa4IYFgDRbc": {
     "views": 25,
