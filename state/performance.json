@@ -110,7 +110,7 @@
     "avg_view_pct": 4.5
   },
   "ztea75lUNe4": {
-    "views": 30,
+    "views": 31,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -120,7 +120,7 @@
     "avg_view_pct": 40.1
   },
   "I9flBu-uuV0": {
-    "views": 300,
+    "views": 306,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -467,7 +467,7 @@
     "avg_view_pct": 46.8
   },
   "Mmk3QcTB6ck": {
-    "views": 22,
+    "views": 23,
     "likes": 0,
     "comments": 1,
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
@@ -482,15 +482,25 @@
     "comments": 1,
     "title": "Bananas Are True Berries, Strawberries Aren’t",
     "date": "2026-08-08",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 41.0
+    "minutes_watched": 9.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 42.3
   },
   "oa4IYFgDRbc": {
     "views": 25,
     "likes": 0,
     "comments": 1,
     "title": "The First Barcode Ever Scanned Was on a Pack of Gum",
-    "date": "2026-08-09"
+    "date": "2026-08-09",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 9.0,
+    "avg_view_pct": 21.1
+  },
+  "KiRjhwg8mbk": {
+    "views": 303,
+    "likes": 3,
+    "comments": 0,
+    "title": "Why the £ Symbol Is Actually an L from the Roman Libra",
+    "date": "2026-08-11"
   }
 }
