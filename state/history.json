@@ -528,5 +528,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.5
+  },
+  {
+    "date": "2026-08-16",
+    "belief": "A single U.S. dollar bill contains a thread of polymer that glows under ultraviolet light.",
+    "title": "Glowing Polymer Thread Hidden in U.S. Bills",
+    "video_id": "GnK9PJwHu8M",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]
