@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 34,
+    "views": 35,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -507,7 +507,7 @@
     "date": "2026-08-11",
     "minutes_watched": 58.0,
     "avg_view_sec": 23.0,
-    "avg_view_pct": 45.1
+    "avg_view_pct": 44.9
   },
   "SYtbI4V0jOk": {
     "views": 4,
@@ -520,14 +520,17 @@
     "avg_view_pct": 0.0
   },
   "vfLSCvviLyE": {
-    "views": 42,
+    "views": 43,
     "likes": 0,
     "comments": 1,
     "title": "The M in M&M's: Two Real Surnames",
-    "date": "2026-08-15"
+    "date": "2026-08-15",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 24.7
   },
   "GnK9PJwHu8M": {
-    "views": 13,
+    "views": 11,
     "likes": 1,
     "comments": 1,
     "title": "Glowing Polymer Thread Hidden in U.S. Bills",
