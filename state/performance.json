@@ -120,7 +120,7 @@
     "avg_view_pct": 40.9
   },
   "I9flBu-uuV0": {
-    "views": 307,
+    "views": 308,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -520,17 +520,17 @@
     "avg_view_pct": 0.0
   },
   "vfLSCvviLyE": {
-    "views": 43,
+    "views": 41,
     "likes": 0,
     "comments": 1,
     "title": "The M in M&M's: Two Real Surnames",
     "date": "2026-08-15",
-    "minutes_watched": 0.0,
+    "minutes_watched": 1.0,
     "avg_view_sec": 10.0,
-    "avg_view_pct": 20.1
+    "avg_view_pct": 19.3
   },
   "GnK9PJwHu8M": {
-    "views": 11,
+    "views": 12,
     "likes": 1,
     "comments": 1,
     "title": "Glowing Polymer Thread Hidden in U.S. Bills",
@@ -538,5 +538,12 @@
     "minutes_watched": 1.0,
     "avg_view_sec": 28.0,
     "avg_view_pct": 61.1
+  },
+  "bYy-9hlYy5Y": {
+    "views": 3,
+    "likes": 0,
+    "comments": 0,
+    "title": "IKEA’s Swedish Place‑Name Product Tags Explained",
+    "date": "2026-08-19"
   }
 }
