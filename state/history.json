@@ -555,5 +555,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-08-21",
+    "belief": "The Eiffel Tower was originally intended to be a temporary structure for 20 years.",
+    "title": "Eiffel Tower’s 20‑Year Deadline",
+    "video_id": "XrGVcPMCsTQ",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]
