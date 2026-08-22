@@ -120,7 +120,7 @@
     "avg_view_pct": 40.9
   },
   "I9flBu-uuV0": {
-    "views": 308,
+    "views": 309,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -544,13 +544,23 @@
     "likes": 0,
     "comments": 1,
     "title": "IKEA’s Swedish Place‑Name Product Tags Explained",
-    "date": "2026-08-19"
+    "date": "2026-08-19",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 5.0,
+    "avg_view_pct": 7.8
   },
   "bBYeXy90LzM": {
-    "views": 5,
+    "views": 15,
     "likes": 0,
     "comments": 1,
     "title": "Why US Dollar Bills Aren’t Paper But Cotton‑Linen Fabric",
     "date": "2026-08-20"
+  },
+  "XrGVcPMCsTQ": {
+    "views": 2,
+    "likes": 0,
+    "comments": 0,
+    "title": "Eiffel Tower’s 20‑Year Deadline",
+    "date": "2026-08-21"
   }
 }
