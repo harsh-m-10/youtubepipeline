@@ -38,6 +38,19 @@ S2_MIN_INTERVAL = 1.1  # seconds between S2 calls (their limit is 1 req/sec cumu
 # block fed to the script/verify prompts must stay small. Keep a balanced mix.
 MAX_EVIDENCE_SNIPPETS = 6
 EVIDENCE_SNIPPET_CHARS = 550
+# Support is scored 0-10 (see prompts/support.txt), not a pass/fail veto.
+# The pipeline publishes the best-supported candidate of the day; only those
+# the evidence actively CONTRADICTS (or has nothing on) fall below this floor
+# and are skipped. Kept low on purpose: an unconfirmed-but-not-refuted fact is
+# publishable, a refuted myth is not. Raising the score gate to zero videos was
+# the failure this replaces.
+MIN_SUPPORT_SCORE = 4.0
+# How many top-ranked candidates to run through evidence before giving up for
+# the day. We stop early the moment one scores STRONG (see pipeline). Kept
+# generous because dedupe (63+ videos of history) and myth-rejection thin the
+# pool fast — a narrow window leaves nothing to publish on an ordinary day.
+EVIDENCE_CANDIDATE_LIMIT = 8
+STRONG_SUPPORT_SCORE = 8.0  # a candidate this well-supported is used immediately
 
 # --- Sources ---
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "")

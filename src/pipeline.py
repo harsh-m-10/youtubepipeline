@@ -86,13 +86,18 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
             if not dry_run:
                 notify.no_video_today(best)
             return
-        # Try the top candidates in order: a hypothesis with thin/unsupporting
-        # evidence or an unverifiable script falls through to the next one instead
-        # of killing the run. Five deep because the support gate rejects freely.
-        script, best = None, None
-        for candidate in ranked[:5]:
-            if candidate["score"] < config.MIN_SCORE_TO_PROCEED:
-                break
+        # Gather evidence for the top candidates and rank them by how well the
+        # evidence SUPPORTS the claim (0-10), not a pass/fail veto. We publish
+        # the best-supported candidate of the day; only claims the evidence
+        # actively contradicts (score < MIN_SUPPORT_SCORE) are dropped. A
+        # strongly-supported candidate short-circuits the search.
+        # The day already cleared the quality bar (ranked[0] >= MIN_SCORE above).
+        # Now evaluate the top ideas by support regardless of each one's own
+        # score — a well-sourced 5.5 beats a 7.0 that turns out to be a myth or
+        # a duplicate. Score picks the pool; evidence picks the winner.
+        stage = "evidence"
+        scored: list[tuple[float, dict, list[dict], str]] = []
+        for candidate in ranked[: config.EVIDENCE_CANDIDATE_LIMIT]:
             log.info("Trying [%.1f]: %s", candidate["score"], candidate["hook"])
             stage = "dedupe"
             if hypothesis.is_duplicate(candidate):
@@ -102,11 +107,21 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
             if len(snippets) < 3:
                 log.warning("Only %d evidence snippets — trying next candidate", len(snippets))
                 continue
-            # the belief itself may be hallucinated — require the evidence to
-            # state the core fact, not just cover the same topic
-            if not evidence.supports(candidate, snippets):
-                log.warning("Evidence doesn't back the claim — trying next candidate")
+            support, reason = evidence.support_score(candidate, snippets)
+            if support < config.MIN_SUPPORT_SCORE:
+                log.warning("Evidence contradicts/does not cover the claim "
+                            "(support %.0f, %s) — skipping", support, reason)
                 continue
+            scored.append((support, candidate, snippets, reason))
+            if support >= config.STRONG_SUPPORT_SCORE:
+                break  # well-supported enough; no need to keep searching
+
+        # Best-supported first; scripting failures fall through to the next.
+        script, best = None, None
+        for support, candidate, snippets, reason in sorted(
+            scored, key=lambda t: t[0], reverse=True
+        ):
+            log.info("Scripting best-supported [support %.0f]: %s", support, candidate["hook"])
             stage = "script"
             try:
                 script = script_mod.write_script(candidate, snippets)
@@ -115,13 +130,13 @@ def run(dry_run: bool = False, scheduled: bool = False) -> None:
             except RuntimeError as exc:
                 log.warning("Scripting failed for this candidate: %s", exc)
         if script is None:
-            # Not an error: the evidence/verification gates rejecting every
-            # candidate is the system working. A later cron retries with fresh
-            # threads; alert as a quiet day, not a pipeline failure.
-            log.info("No top candidate survived the evidence gates — clean exit")
+            # Nothing survived: every top candidate was either contradicted by
+            # its evidence or couldn't be scripted. A later cron retries with
+            # fresh threads; alert as a quiet day, not a pipeline failure.
+            log.info("No candidate had non-contradicted evidence — clean exit")
             if not dry_run:
                 notify.no_video_today(
-                    ranked[0]["score"], reason="all top candidates failed evidence checks"
+                    ranked[0]["score"], reason="no candidate's claim was backed by evidence"
                 )
             return
         (out_dir / "script.json").write_text(

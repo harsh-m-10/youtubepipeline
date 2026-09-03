@@ -254,26 +254,31 @@ def gather(candidate: dict) -> list[dict]:
     return unique
 
 
-def supports(candidate: dict, snippets: list[dict]) -> bool:
-    """True if the gathered evidence actually backs the candidate's core claim.
-    The hypothesis generator states beliefs confidently whether or not they are
-    real; topically-adjacent snippets used to slip through because the script
-    verifier exempted the belief itself. This gate kills invented facts before
-    any script tokens are spent on them."""
+def support_score(candidate: dict, snippets: list[dict]) -> tuple[float, str]:
+    """Rate 0-10 how well the evidence backs the candidate's core claim.
+    8-10 = a snippet states the fact; 4-7 = consistent but not stated;
+    0-3 = the evidence CONTRADICTS it (a myth) or there's nothing relevant.
+
+    A score, not a veto: requiring evidence to verbatim-state every surprising
+    fact starved the channel for weeks (true-but-not-Wikipedia-phrased facts
+    scored a hard fail). The pipeline now publishes the best-supported
+    candidate and only hard-blocks the ones the evidence actively refutes."""
     prompt = config.load_prompt(
         "support", claim=candidate["belief"], evidence=format_block(snippets)
     )
     result = llm.complete_json(
-        system="You are a strict pre-production fact-check gate. Respond only with valid JSON.",
+        system="You are a calibrated pre-production fact-check gate. Respond only with valid JSON.",
         user=prompt,
         temperature=config.LLM_SCORE_TEMPERATURE,
         model=config.LLM_SMALL_MODEL,
     )
-    if not result.get("supported"):
-        log.warning("Belief not backed by evidence (%s): %s",
-                    result.get("reason", "no reason given"), candidate["belief"])
-        return False
-    return True
+    try:
+        score = float(result.get("support", 0))
+    except (TypeError, ValueError):
+        score = 0.0
+    reason = result.get("reason", "no reason given")
+    log.info("Support %.0f/10 (%s): %s", score, reason, candidate["belief"])
+    return score, reason
 
 
 def format_block(snippets: list[dict]) -> str:

@@ -6,7 +6,7 @@ A claim FAILS only if it asserts a SPECIFIC CHECKABLE FACT that the evidence doe
 - a concrete historical event or date
 - a definitive causal result stated as established fact ("X was shown to cause Y")
 
-The central surprising claim of the video is NOT exempt: if the evidence never states the main fact the video is built on, the script FAILS.
+About the central surprising claim (the video's premise): do NOT fail the script merely because the evidence does not restate it word-for-word — an unconfirmed premise is allowed. BUT if a snippet CONTRADICTS the premise (the evidence shows it's a myth or the real story differs), the script FAILS. Never let a refuted claim through.
 
 The following are ALLOWED and must NOT be flagged:
 - framing and setup ("everyone thinks...", "you probably believe...")
