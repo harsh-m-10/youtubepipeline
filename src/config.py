@@ -62,11 +62,13 @@ HN_THREADS = 15
 
 # --- Hypothesis generation ---
 CANDIDATES_PER_RUN = 15
-# Recalibrated 2026-07-03: gpt-oss-20b actually follows the "most candidates
-# score 4-6" instruction (llama-8b inflated everything to 8-10), so a 7.0 gate
-# starved the channel — best-of-day hovered at 7.0-7.5 with many no-video runs.
-# 6.0 = "solid, publishable" on the new scale; the gate still blocks bad batches.
-MIN_SCORE_TO_PROCEED = 6.0
+# Recalibrated 2026-09-03: gpt-oss-20b scores harshly and whole batches top out
+# at 5.0, so a 6.0 hard-exit skipped those days entirely (no video Aug 21 -> Sep 3).
+# This is now only a "is the batch total garbage?" floor — the real quality/safety
+# gates are dedupe, the 0-10 evidence support score, and script verification, which
+# block repeats, myths, and fabrication regardless of this number. Kept low so an
+# ordinary day always yields the best-supported video. (Was 7.0, then 6.0.)
+MIN_SCORE_TO_PROCEED = 4.0
 HISTORY_DEDUPE_WINDOW = 100  # compare against last N published hypotheses
 
 # --- Media ---
