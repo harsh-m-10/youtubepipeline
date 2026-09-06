@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 44,
+    "views": 45,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -570,17 +570,27 @@
     "avg_view_pct": 53.9
   },
   "KyAdpadW7Ik": {
-    "views": 49,
+    "views": 51,
     "likes": 1,
     "comments": 1,
     "title": "Maldives Flag’s Rare Left‑Facing Crescent",
-    "date": "2026-09-03"
+    "date": "2026-09-03",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 47.3
   },
   "qNc437MZblo": {
-    "views": 16,
+    "views": 14,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Mona Lisa’s Peripheral Drift: A Hidden Smile Shift",
     "date": "2026-09-04"
+  },
+  "KPjNZH9ezXM": {
+    "views": 12,
+    "likes": 1,
+    "comments": 1,
+    "title": "The 15‑Minute Birth of the Iconic I ♥ NY Logo",
+    "date": "2026-09-05"
   }
 }
