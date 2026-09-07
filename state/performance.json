@@ -70,7 +70,7 @@
     "avg_view_pct": 33.7
   },
   "rjAd7OGJvpw": {
-    "views": 50,
+    "views": 51,
     "likes": 1,
     "comments": 1,
     "title": "Library of Future",
@@ -90,7 +90,7 @@
     "avg_view_pct": 87.3
   },
   "1KYRaVxaPRk": {
-    "views": 58,
+    "views": 61,
     "likes": 1,
     "comments": 1,
     "title": "2,000-Year-Old Holy Water Vending Machine",
@@ -110,7 +110,7 @@
     "avg_view_pct": 4.5
   },
   "ztea75lUNe4": {
-    "views": 31,
+    "views": 32,
     "likes": 2,
     "comments": 1,
     "title": "Underwater Denmark Strait Cataract",
@@ -125,9 +125,9 @@
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 23.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 34.1
+    "minutes_watched": 25.0,
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 35.9
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -575,22 +575,32 @@
     "comments": 1,
     "title": "Maldives Flag’s Rare Left‑Facing Crescent",
     "date": "2026-09-03",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 47.3
+    "minutes_watched": 4.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 65.1
   },
   "qNc437MZblo": {
-    "views": 14,
+    "views": 18,
     "likes": 0,
     "comments": 1,
     "title": "Mona Lisa’s Peripheral Drift: A Hidden Smile Shift",
-    "date": "2026-09-04"
+    "date": "2026-09-04",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 37.0,
+    "avg_view_pct": 79.8
   },
   "KPjNZH9ezXM": {
-    "views": 12,
+    "views": 13,
     "likes": 1,
     "comments": 1,
     "title": "The 15‑Minute Birth of the Iconic I ♥ NY Logo",
     "date": "2026-09-05"
+  },
+  "dextHOnsdXY": {
+    "views": 20,
+    "likes": 0,
+    "comments": 0,
+    "title": "World War II Pilots Made the Thumbs‑Up Icon",
+    "date": "2026-09-06"
   }
 }
