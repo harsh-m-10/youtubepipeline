@@ -146,8 +146,8 @@
     "title": "First Computer Music 1950",
     "date": "2026-06-27",
     "minutes_watched": 10.0,
-    "avg_view_sec": 39.0,
-    "avg_view_pct": 72.6
+    "avg_view_sec": 36.0,
+    "avg_view_pct": 68.3
   },
   "0HyCUdWbXwM": {
     "views": 161,
@@ -280,7 +280,7 @@
     "avg_view_pct": 55.0
   },
   "uupcNfpsLXA": {
-    "views": 36,
+    "views": 37,
     "likes": 2,
     "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
@@ -510,7 +510,7 @@
     "avg_view_pct": 45.2
   },
   "SYtbI4V0jOk": {
-    "views": 4,
+    "views": 5,
     "likes": 1,
     "comments": 1,
     "title": "Why We Knock on Wood: Celtic Tree Spirits",
@@ -575,12 +575,12 @@
     "comments": 1,
     "title": "Maldives Flag’s Rare Left‑Facing Crescent",
     "date": "2026-09-03",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 29.0,
-    "avg_view_pct": 65.1
+    "minutes_watched": 5.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 59.6
   },
   "qNc437MZblo": {
-    "views": 18,
+    "views": 19,
     "likes": 0,
     "comments": 1,
     "title": "Mona Lisa’s Peripheral Drift: A Hidden Smile Shift",
@@ -594,13 +594,23 @@
     "likes": 1,
     "comments": 1,
     "title": "The 15‑Minute Birth of the Iconic I ♥ NY Logo",
-    "date": "2026-09-05"
+    "date": "2026-09-05",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 25.0,
+    "avg_view_pct": 50.4
   },
   "dextHOnsdXY": {
     "views": 20,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "World War II Pilots Made the Thumbs‑Up Icon",
     "date": "2026-09-06"
+  },
+  "4gTo1ICj3bY": {
+    "views": 537,
+    "likes": 5,
+    "comments": 0,
+    "title": "Why \"break a leg\" actually warns against good luck",
+    "date": "2026-09-07"
   }
 }
