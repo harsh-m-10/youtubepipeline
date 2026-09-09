@@ -95,9 +95,9 @@
     "comments": 1,
     "title": "2,000-Year-Old Holy Water Vending Machine",
     "date": "2026-06-22",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 10.0,
-    "avg_view_pct": 11.5
+    "minutes_watched": 7.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 25.3
   },
   "xcI_kgYGlRA": {
     "views": 22,
@@ -116,8 +116,8 @@
     "title": "Underwater Denmark Strait Cataract",
     "date": "2026-06-24",
     "minutes_watched": 6.0,
-    "avg_view_sec": 22.0,
-    "avg_view_pct": 40.9
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 39.2
   },
   "I9flBu-uuV0": {
     "views": 315,
@@ -604,13 +604,23 @@
     "likes": 0,
     "comments": 1,
     "title": "World War II Pilots Made the Thumbs‑Up Icon",
-    "date": "2026-09-06"
+    "date": "2026-09-06",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 31.3
   },
   "4gTo1ICj3bY": {
-    "views": 537,
+    "views": 544,
     "likes": 5,
-    "comments": 0,
+    "comments": 1,
     "title": "Why \"break a leg\" actually warns against good luck",
     "date": "2026-09-07"
+  },
+  "s0fRyTydT8U": {
+    "views": 16,
+    "likes": 1,
+    "comments": 0,
+    "title": "Golden Arches Were Designed as an \"M\" for McDonald's",
+    "date": "2026-09-08"
   }
 }
