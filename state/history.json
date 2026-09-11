@@ -636,5 +636,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 7.0
+  },
+  {
+    "date": "2026-09-11",
+    "belief": "A single cup of instant coffee contains about 60 mg of caffeine, roughly the same as a shot of espresso, despite being marketed as a weaker alternative.",
+    "title": "Instant Coffee Packs Near‑Espresso Caffeine",
+    "video_id": "R_lGy7tWZQQ",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
