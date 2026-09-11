@@ -600,7 +600,7 @@
     "avg_view_pct": 50.4
   },
   "dextHOnsdXY": {
-    "views": 20,
+    "views": 21,
     "likes": 0,
     "comments": 1,
     "title": "World War II Pilots Made the Thumbs‑Up Icon",
@@ -615,22 +615,32 @@
     "comments": 1,
     "title": "Why \"break a leg\" actually warns against good luck",
     "date": "2026-09-07",
-    "minutes_watched": 19.0,
+    "minutes_watched": 20.0,
     "avg_view_sec": 15.0,
     "avg_view_pct": 32.7
   },
   "s0fRyTydT8U": {
-    "views": 61,
+    "views": 87,
     "likes": 1,
     "comments": 1,
     "title": "Golden Arches Were Designed as an \"M\" for McDonald's",
-    "date": "2026-09-08"
+    "date": "2026-09-08",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 34.1
   },
   "n66w3bNWT5Q": {
-    "views": 16,
+    "views": 18,
     "likes": 2,
     "comments": 1,
     "title": "Gymnasiums Were Born Naked – The Ancient Origin of the Word",
     "date": "2026-09-09"
+  },
+  "tkpNJpcB-h4": {
+    "views": 41,
+    "likes": 3,
+    "comments": 0,
+    "title": "15‑inch Snowflake: The Giant Record‑Breaking Flake",
+    "date": "2026-09-10"
   }
 }
