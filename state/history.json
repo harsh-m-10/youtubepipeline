@@ -645,5 +645,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-09-12",
+    "belief": "The word \"nerd\" was first coined by Dr. Seuss in his 1950 book \"If I Ran the Zoo\".",
+    "title": "The Word “Nerd” First Appeared in a Dr. Seuss Book (1950)",
+    "video_id": "gO6qYdTx54Y",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
