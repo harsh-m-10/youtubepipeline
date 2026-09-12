@@ -155,9 +155,9 @@
     "comments": 1,
     "title": "20-Story Shuttle",
     "date": "2026-06-28",
-    "minutes_watched": 21.0,
-    "avg_view_sec": 26.0,
-    "avg_view_pct": 38.8
+    "minutes_watched": 22.0,
+    "avg_view_sec": 27.0,
+    "avg_view_pct": 40.0
   },
   "8OXatvNyq4o": {
     "views": 66,
@@ -280,7 +280,7 @@
     "avg_view_pct": 55.0
   },
   "uupcNfpsLXA": {
-    "views": 37,
+    "views": 38,
     "likes": 2,
     "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
@@ -410,7 +410,7 @@
     "avg_view_pct": 22.8
   },
   "N_JQdFlAxLM": {
-    "views": 8,
+    "views": 9,
     "likes": 1,
     "comments": 1,
     "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
@@ -625,22 +625,32 @@
     "comments": 1,
     "title": "Golden Arches Were Designed as an \"M\" for McDonald's",
     "date": "2026-09-08",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 16.0,
-    "avg_view_pct": 34.1
+    "minutes_watched": 4.0,
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 29.3
   },
   "n66w3bNWT5Q": {
     "views": 19,
     "likes": 2,
     "comments": 1,
     "title": "Gymnasiums Were Born Naked – The Ancient Origin of the Word",
-    "date": "2026-09-09"
+    "date": "2026-09-09",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 38.5
   },
   "tkpNJpcB-h4": {
-    "views": 41,
+    "views": 100,
     "likes": 3,
     "comments": 1,
     "title": "15‑inch Snowflake: The Giant Record‑Breaking Flake",
     "date": "2026-09-10"
+  },
+  "R_lGy7tWZQQ": {
+    "views": 13,
+    "likes": 0,
+    "comments": 0,
+    "title": "Instant Coffee Packs Near‑Espresso Caffeine",
+    "date": "2026-09-11"
   }
 }
