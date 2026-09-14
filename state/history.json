@@ -663,5 +663,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-09-14",
+    "belief": "A single strand of human hair can support up to 100 grams before breaking.",
+    "title": "Human Hair Can Bear the Weight of a Small Apple",
+    "video_id": "KOBaJNVgJw4",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
