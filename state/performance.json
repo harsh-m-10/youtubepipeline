@@ -120,7 +120,7 @@
     "avg_view_pct": 39.2
   },
   "I9flBu-uuV0": {
-    "views": 318,
+    "views": 319,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -370,7 +370,7 @@
     "avg_view_pct": 44.3
   },
   "04IkmwBVt_c": {
-    "views": 12,
+    "views": 11,
     "likes": 0,
     "comments": 1,
     "title": "85‑Letter Hill Name: The World’s Longest Place Name",
@@ -615,7 +615,7 @@
     "comments": 1,
     "title": "Why \"break a leg\" actually warns against good luck",
     "date": "2026-09-07",
-    "minutes_watched": 18.0,
+    "minutes_watched": 20.0,
     "avg_view_sec": 15.0,
     "avg_view_pct": 32.7
   },
@@ -630,7 +630,7 @@
     "avg_view_pct": 32.2
   },
   "n66w3bNWT5Q": {
-    "views": 19,
+    "views": 20,
     "likes": 2,
     "comments": 1,
     "title": "Gymnasiums Were Born Naked – The Ancient Origin of the Word",
@@ -655,9 +655,9 @@
     "comments": 1,
     "title": "Instant Coffee Packs Near‑Espresso Caffeine",
     "date": "2026-09-11",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 9.0,
-    "avg_view_pct": 20.2
+    "minutes_watched": 1.0,
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 53.9
   },
   "gO6qYdTx54Y": {
     "views": 287,
@@ -665,22 +665,32 @@
     "comments": 1,
     "title": "The Word “Nerd” First Appeared in a Dr. Seuss Book (1950)",
     "date": "2026-09-12",
-    "minutes_watched": 28.0,
+    "minutes_watched": 29.0,
     "avg_view_sec": 22.0,
     "avg_view_pct": 39.3
   },
   "lR-lpuj3Fa4": {
-    "views": 37,
+    "views": 39,
     "likes": 0,
     "comments": 1,
     "title": "Checkmate’s Persian Roots: The King Is Helpless",
-    "date": "2026-09-13"
+    "date": "2026-09-13",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 36.4
   },
   "KOBaJNVgJw4": {
-    "views": 42,
+    "views": 46,
     "likes": 0,
     "comments": 1,
     "title": "Human Hair Can Bear the Weight of a Small Apple",
     "date": "2026-09-14"
+  },
+  "M3EfQ2EyEVI": {
+    "views": 45,
+    "likes": 2,
+    "comments": 0,
+    "title": "Why the @ Symbol Is Literally an “At” Sign",
+    "date": "2026-09-15"
   }
 }
