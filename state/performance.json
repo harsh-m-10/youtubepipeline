@@ -325,9 +325,9 @@
     "comments": 1,
     "title": "Coca‑Cola’s Original Cocaine Ingredient Until 1904",
     "date": "2026-07-17",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 38.6
+    "minutes_watched": 5.0,
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 42.4
   },
   "sby2mvbAuE0": {
     "views": 15,
@@ -596,8 +596,8 @@
     "title": "The 15‑Minute Birth of the Iconic I ♥ NY Logo",
     "date": "2026-09-05",
     "minutes_watched": 0.0,
-    "avg_view_sec": 25.0,
-    "avg_view_pct": 50.4
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 33.1
   },
   "dextHOnsdXY": {
     "views": 21,
@@ -620,7 +620,7 @@
     "avg_view_pct": 32.7
   },
   "s0fRyTydT8U": {
-    "views": 84,
+    "views": 87,
     "likes": 1,
     "comments": 1,
     "title": "Golden Arches Were Designed as an \"M\" for McDonald's",
@@ -680,17 +680,27 @@
     "avg_view_pct": 36.4
   },
   "KOBaJNVgJw4": {
-    "views": 47,
+    "views": 48,
     "likes": 0,
     "comments": 1,
     "title": "Human Hair Can Bear the Weight of a Small Apple",
-    "date": "2026-09-14"
+    "date": "2026-09-14",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 6.0,
+    "avg_view_pct": 11.2
   },
   "M3EfQ2EyEVI": {
-    "views": 46,
-    "likes": 2,
+    "views": 53,
+    "likes": 3,
     "comments": 1,
     "title": "Why the @ Symbol Is Literally an “At” Sign",
     "date": "2026-09-15"
+  },
+  "QJcPMzX1hSk": {
+    "views": 23,
+    "likes": 0,
+    "comments": 0,
+    "title": "Monopoly’s 28 Property Mystery Revealed",
+    "date": "2026-09-16"
   }
 }
