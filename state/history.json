@@ -690,5 +690,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-09-17",
+    "belief": "The first recorded use of a toothbrush dates back to 3000 BC in ancient Babylonia, where people used chew sticks made of twigs.",
+    "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
+    "video_id": "Br2bjWPI6hY",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
