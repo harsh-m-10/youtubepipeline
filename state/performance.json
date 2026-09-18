@@ -290,7 +290,7 @@
     "avg_view_pct": 40.2
   },
   "2JqdgE0hcgI": {
-    "views": 58,
+    "views": 59,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -340,7 +340,7 @@
     "avg_view_pct": 59.7
   },
   "BTCnvYtoVOc": {
-    "views": 31,
+    "views": 32,
     "likes": 0,
     "comments": 1,
     "title": "The 1791 Bet That Invented the Word “Quiz”",
@@ -620,7 +620,7 @@
     "avg_view_pct": 32.7
   },
   "s0fRyTydT8U": {
-    "views": 87,
+    "views": 86,
     "likes": 1,
     "comments": 1,
     "title": "Golden Arches Were Designed as an \"M\" for McDonald's",
@@ -635,9 +635,9 @@
     "comments": 1,
     "title": "Gymnasiums Were Born Naked – The Ancient Origin of the Word",
     "date": "2026-09-09",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 17.0,
-    "avg_view_pct": 36.0
+    "minutes_watched": 2.0,
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 32.2
   },
   "tkpNJpcB-h4": {
     "views": 196,
@@ -660,7 +660,7 @@
     "avg_view_pct": 53.9
   },
   "gO6qYdTx54Y": {
-    "views": 287,
+    "views": 288,
     "likes": 0,
     "comments": 1,
     "title": "The Word “Nerd” First Appeared in a Dr. Seuss Book (1950)",
@@ -690,17 +690,27 @@
     "avg_view_pct": 11.2
   },
   "M3EfQ2EyEVI": {
-    "views": 53,
-    "likes": 3,
+    "views": 60,
+    "likes": 2,
     "comments": 1,
     "title": "Why the @ Symbol Is Literally an “At” Sign",
-    "date": "2026-09-15"
+    "date": "2026-09-15",
+    "minutes_watched": 3.0,
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 34.2
   },
   "QJcPMzX1hSk": {
-    "views": 23,
+    "views": 30,
     "likes": 0,
     "comments": 1,
     "title": "Monopoly’s 28 Property Mystery Revealed",
     "date": "2026-09-16"
+  },
+  "Br2bjWPI6hY": {
+    "views": 54,
+    "likes": 2,
+    "comments": 0,
+    "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
+    "date": "2026-09-17"
   }
 }
