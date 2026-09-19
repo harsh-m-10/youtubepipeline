@@ -70,7 +70,7 @@
     "avg_view_pct": 33.7
   },
   "rjAd7OGJvpw": {
-    "views": 51,
+    "views": 52,
     "likes": 1,
     "comments": 1,
     "title": "Library of Future",
@@ -420,7 +420,7 @@
     "avg_view_pct": 33.4
   },
   "TdcXDyvSlgk": {
-    "views": 2,
+    "views": 3,
     "likes": 1,
     "comments": 1,
     "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
@@ -626,11 +626,11 @@
     "title": "Golden Arches Were Designed as an \"M\" for McDonald's",
     "date": "2026-09-08",
     "minutes_watched": 6.0,
-    "avg_view_sec": 15.0,
-    "avg_view_pct": 32.2
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 31.7
   },
   "n66w3bNWT5Q": {
-    "views": 20,
+    "views": 21,
     "likes": 2,
     "comments": 1,
     "title": "Gymnasiums Were Born Naked – The Ancient Origin of the Word",
@@ -680,7 +680,7 @@
     "avg_view_pct": 36.4
   },
   "KOBaJNVgJw4": {
-    "views": 48,
+    "views": 47,
     "likes": 0,
     "comments": 1,
     "title": "Human Hair Can Bear the Weight of a Small Apple",
@@ -696,21 +696,31 @@
     "title": "Why the @ Symbol Is Literally an “At” Sign",
     "date": "2026-09-15",
     "minutes_watched": 3.0,
-    "avg_view_sec": 15.0,
-    "avg_view_pct": 34.2
+    "avg_view_sec": 17.0,
+    "avg_view_pct": 37.4
   },
   "QJcPMzX1hSk": {
-    "views": 30,
+    "views": 32,
     "likes": 0,
     "comments": 1,
     "title": "Monopoly’s 28 Property Mystery Revealed",
-    "date": "2026-09-16"
+    "date": "2026-09-16",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 40.6
   },
   "Br2bjWPI6hY": {
-    "views": 54,
+    "views": 55,
     "likes": 2,
     "comments": 1,
     "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
     "date": "2026-09-17"
+  },
+  "tl8nPPIOZm0": {
+    "views": 2,
+    "likes": 0,
+    "comments": 0,
+    "title": "Carpenter’s Thumb: The Real Origin of \"Rule of Thumb\"",
+    "date": "2026-09-18"
   }
 }
