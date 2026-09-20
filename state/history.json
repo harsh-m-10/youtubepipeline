@@ -715,7 +715,16 @@
     "title": "The 1839 Self‑ie: First Timed Self‑Portrait",
     "video_id": "x4kSWKjurTA",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-09-20",
+    "belief": "Tokyo has more vending machines than people, with roughly 5.5 machines per 100 residents.",
+    "title": "Japan’s 5.5 Million Vending Machines – One per 23 People",
+    "video_id": "vdeC5NptRQw",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]

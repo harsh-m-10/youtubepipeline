@@ -120,7 +120,7 @@
     "avg_view_pct": 39.2
   },
   "I9flBu-uuV0": {
-    "views": 320,
+    "views": 318,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -300,7 +300,7 @@
     "avg_view_pct": 47.3
   },
   "kczxPnzBTRg": {
-    "views": 20,
+    "views": 23,
     "likes": 3,
     "comments": 1,
     "title": "Goodbye’s secret prayer: From ‘God be with ye’ to today’s farewell",
@@ -490,7 +490,7 @@
     "avg_view_pct": 42.3
   },
   "oa4IYFgDRbc": {
-    "views": 25,
+    "views": 26,
     "likes": 0,
     "comments": 1,
     "title": "The First Barcode Ever Scanned Was on a Pack of Gum",
@@ -501,7 +501,7 @@
   },
   "KiRjhwg8mbk": {
     "views": 377,
-    "likes": 3,
+    "likes": 0,
     "comments": 1,
     "title": "Why the £ Symbol Is Actually an L from the Roman Libra",
     "date": "2026-08-11",
@@ -615,7 +615,7 @@
     "comments": 1,
     "title": "Why \"break a leg\" actually warns against good luck",
     "date": "2026-09-07",
-    "minutes_watched": 20.0,
+    "minutes_watched": 18.0,
     "avg_view_sec": 15.0,
     "avg_view_pct": 32.7
   },
@@ -627,7 +627,7 @@
     "date": "2026-09-08",
     "minutes_watched": 6.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 31.7
+    "avg_view_pct": 30.4
   },
   "n66w3bNWT5Q": {
     "views": 21,
@@ -665,7 +665,7 @@
     "comments": 1,
     "title": "The Word “Nerd” First Appeared in a Dr. Seuss Book (1950)",
     "date": "2026-09-12",
-    "minutes_watched": 29.0,
+    "minutes_watched": 27.0,
     "avg_view_sec": 22.0,
     "avg_view_pct": 39.3
   },
@@ -690,37 +690,47 @@
     "avg_view_pct": 11.2
   },
   "M3EfQ2EyEVI": {
-    "views": 54,
+    "views": 55,
     "likes": 2,
     "comments": 1,
     "title": "Why the @ Symbol Is Literally an “At” Sign",
     "date": "2026-09-15",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 17.0,
-    "avg_view_pct": 37.4
+    "minutes_watched": 4.0,
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 35.2
   },
   "QJcPMzX1hSk": {
-    "views": 33,
+    "views": 31,
     "likes": 0,
     "comments": 1,
     "title": "Monopoly’s 28 Property Mystery Revealed",
     "date": "2026-09-16",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 26.0,
-    "avg_view_pct": 40.6
+    "minutes_watched": 3.0,
+    "avg_view_sec": 31.0,
+    "avg_view_pct": 47.4
   },
   "Br2bjWPI6hY": {
-    "views": 55,
+    "views": 56,
     "likes": 3,
     "comments": 1,
     "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
-    "date": "2026-09-17"
+    "date": "2026-09-17",
+    "minutes_watched": 3.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 39.1
   },
   "tl8nPPIOZm0": {
-    "views": 3,
+    "views": 2,
     "likes": 0,
     "comments": 1,
     "title": "Carpenter’s Thumb: The Real Origin of \"Rule of Thumb\"",
     "date": "2026-09-18"
+  },
+  "x4kSWKjurTA": {
+    "views": 13,
+    "likes": 0,
+    "comments": 0,
+    "title": "The 1839 Self‑ie: First Timed Self‑Portrait",
+    "date": "2026-09-19"
   }
 }
