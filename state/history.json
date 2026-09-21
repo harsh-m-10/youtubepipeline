@@ -724,7 +724,16 @@
     "title": "Japan’s 5.5 Million Vending Machines – One per 23 People",
     "video_id": "vdeC5NptRQw",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-09-21",
+    "belief": "The original “zip” in ZIP code stands for “Zone Improvement Plan”.",
+    "title": "Why ZIP Means Zone Improvement Plan",
+    "video_id": "ddwtbMBZng8",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
