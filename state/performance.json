@@ -496,8 +496,8 @@
     "title": "The First Barcode Ever Scanned Was on a Pack of Gum",
     "date": "2026-08-09",
     "minutes_watched": 1.0,
-    "avg_view_sec": 13.0,
-    "avg_view_pct": 27.7
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 26.0
   },
   "KiRjhwg8mbk": {
     "views": 377,
@@ -715,9 +715,9 @@
     "comments": 1,
     "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
     "date": "2026-09-17",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 17.0,
-    "avg_view_pct": 37.9
+    "minutes_watched": 4.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 43.3
   },
   "tl8nPPIOZm0": {
     "views": 2,
@@ -734,13 +734,23 @@
     "likes": 0,
     "comments": 1,
     "title": "The 1839 Self‑ie: First Timed Self‑Portrait",
-    "date": "2026-09-19"
+    "date": "2026-09-19",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 8.0,
+    "avg_view_pct": 19.1
   },
   "vdeC5NptRQw": {
-    "views": 72,
+    "views": 75,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Japan’s 5.5 Million Vending Machines – One per 23 People",
     "date": "2026-09-20"
+  },
+  "ddwtbMBZng8": {
+    "views": 15,
+    "likes": 0,
+    "comments": 0,
+    "title": "Why ZIP Means Zone Improvement Plan",
+    "date": "2026-09-21"
   }
 }
