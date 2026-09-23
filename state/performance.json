@@ -501,7 +501,7 @@
   },
   "KiRjhwg8mbk": {
     "views": 377,
-    "likes": 0,
+    "likes": 3,
     "comments": 1,
     "title": "Why the £ Symbol Is Actually an L from the Roman Libra",
     "date": "2026-08-11",
@@ -740,17 +740,27 @@
     "avg_view_pct": 19.1
   },
   "vdeC5NptRQw": {
-    "views": 75,
+    "views": 76,
     "likes": 0,
     "comments": 1,
     "title": "Japan’s 5.5 Million Vending Machines – One per 23 People",
-    "date": "2026-09-20"
+    "date": "2026-09-20",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 6.0,
+    "avg_view_pct": 15.1
   },
   "ddwtbMBZng8": {
-    "views": 15,
+    "views": 14,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Why ZIP Means Zone Improvement Plan",
     "date": "2026-09-21"
+  },
+  "swJjTwNsUks": {
+    "views": 129,
+    "likes": 11,
+    "comments": 0,
+    "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
+    "date": "2026-09-22"
   }
 }
