@@ -160,7 +160,7 @@
     "avg_view_pct": 40.0
   },
   "8OXatvNyq4o": {
-    "views": 66,
+    "views": 67,
     "likes": 1,
     "comments": 1,
     "title": "Coca-Cola's Brain Tonic Roots",
@@ -320,7 +320,7 @@
     "avg_view_pct": 58.5
   },
   "qSWAzMLQhOQ": {
-    "views": 35,
+    "views": 36,
     "likes": 2,
     "comments": 1,
     "title": "Coca‑Cola’s Original Cocaine Ingredient Until 1904",
@@ -476,8 +476,8 @@
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
     "date": "2026-08-05",
     "minutes_watched": 1.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 40.7
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 46.4
   },
   "cvBOxWCq7Hw": {
     "views": 142,
@@ -526,8 +526,8 @@
     "title": "The M in M&M's: Two Real Surnames",
     "date": "2026-08-15",
     "minutes_watched": 0.0,
-    "avg_view_sec": 10.0,
-    "avg_view_pct": 20.4
+    "avg_view_sec": 8.0,
+    "avg_view_pct": 16.8
   },
   "GnK9PJwHu8M": {
     "views": 15,
@@ -730,7 +730,7 @@
     "avg_view_pct": 14.8
   },
   "x4kSWKjurTA": {
-    "views": 13,
+    "views": 14,
     "likes": 0,
     "comments": 1,
     "title": "The 1839 Self‑ie: First Timed Self‑Portrait",
@@ -740,27 +740,37 @@
     "avg_view_pct": 19.1
   },
   "vdeC5NptRQw": {
-    "views": 76,
+    "views": 77,
     "likes": 0,
     "comments": 1,
     "title": "Japan’s 5.5 Million Vending Machines – One per 23 People",
     "date": "2026-09-20",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 6.0,
-    "avg_view_pct": 15.1
+    "minutes_watched": 2.0,
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 30.9
   },
   "ddwtbMBZng8": {
-    "views": 14,
+    "views": 15,
     "likes": 0,
     "comments": 1,
     "title": "Why ZIP Means Zone Improvement Plan",
-    "date": "2026-09-21"
+    "date": "2026-09-21",
+    "minutes_watched": 5.0,
+    "avg_view_sec": 148.0,
+    "avg_view_pct": 246.7
   },
   "swJjTwNsUks": {
-    "views": 129,
+    "views": 130,
     "likes": 11,
-    "comments": 0,
+    "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
     "date": "2026-09-22"
+  },
+  "n25hIEQh-nc": {
+    "views": 119,
+    "likes": 6,
+    "comments": 1,
+    "title": "Why the ¢ sign hides the word “hundred”",
+    "date": "2026-09-23"
   }
 }
