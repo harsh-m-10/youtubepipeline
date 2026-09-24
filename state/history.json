@@ -753,5 +753,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-09-24",
+    "belief": "A single cup of coffee contains roughly the same amount of antioxidants as a glass of red wine.",
+    "title": "Coffee packs as many polyphenols as a glass of red wine",
+    "video_id": "FcgVFO6v6ho",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
