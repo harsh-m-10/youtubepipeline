@@ -40,7 +40,7 @@
     "avg_view_pct": 126.4
   },
   "XCqnlCjS_jk": {
-    "views": 20,
+    "views": 21,
     "likes": 0,
     "comments": 1,
     "title": "QWERTY Secret",
@@ -760,17 +760,27 @@
     "avg_view_pct": 246.7
   },
   "swJjTwNsUks": {
-    "views": 130,
+    "views": 133,
     "likes": 11,
     "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
-    "date": "2026-09-22"
+    "date": "2026-09-22",
+    "minutes_watched": 37.0,
+    "avg_view_sec": 36.0,
+    "avg_view_pct": 64.4
   },
   "n25hIEQh-nc": {
-    "views": 119,
+    "views": 121,
     "likes": 6,
     "comments": 1,
     "title": "Why the ¢ sign hides the word “hundred”",
     "date": "2026-09-23"
+  },
+  "FcgVFO6v6ho": {
+    "views": 31,
+    "likes": 2,
+    "comments": 0,
+    "title": "Coffee packs as many polyphenols as a glass of red wine",
+    "date": "2026-09-24"
   }
 }
