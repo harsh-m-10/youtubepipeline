@@ -736,8 +736,8 @@
     "title": "The 1839 Self‑ie: First Timed Self‑Portrait",
     "date": "2026-09-19",
     "minutes_watched": 0.0,
-    "avg_view_sec": 8.0,
-    "avg_view_pct": 19.1
+    "avg_view_sec": 7.0,
+    "avg_view_pct": 16.0
   },
   "vdeC5NptRQw": {
     "views": 77,
@@ -774,13 +774,23 @@
     "likes": 6,
     "comments": 1,
     "title": "Why the ¢ sign hides the word “hundred”",
-    "date": "2026-09-23"
+    "date": "2026-09-23",
+    "minutes_watched": 17.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 41.5
   },
   "FcgVFO6v6ho": {
-    "views": 31,
+    "views": 30,
     "likes": 2,
     "comments": 1,
     "title": "Coffee packs as many polyphenols as a glass of red wine",
     "date": "2026-09-24"
+  },
+  "EgAO-A1llXw": {
+    "views": 76,
+    "likes": 10,
+    "comments": 0,
+    "title": "Cat Whiskers Match Body Width – The Built‑In Measuring Tape",
+    "date": "2026-09-25"
   }
 }
