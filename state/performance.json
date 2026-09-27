@@ -630,7 +630,7 @@
     "avg_view_pct": 30.4
   },
   "n66w3bNWT5Q": {
-    "views": 21,
+    "views": 22,
     "likes": 2,
     "comments": 1,
     "title": "Gymnasiums Were Born Naked – The Ancient Origin of the Word",
@@ -777,20 +777,30 @@
     "date": "2026-09-23",
     "minutes_watched": 17.0,
     "avg_view_sec": 18.0,
-    "avg_view_pct": 41.5
+    "avg_view_pct": 41.2
   },
   "FcgVFO6v6ho": {
     "views": 30,
     "likes": 2,
     "comments": 1,
     "title": "Coffee packs as many polyphenols as a glass of red wine",
-    "date": "2026-09-24"
+    "date": "2026-09-24",
+    "minutes_watched": 70.0,
+    "avg_view_sec": 422.0,
+    "avg_view_pct": 741.8
   },
   "EgAO-A1llXw": {
-    "views": 76,
+    "views": 90,
     "likes": 10,
-    "comments": 0,
+    "comments": 1,
     "title": "Cat Whiskers Match Body Width – The Built‑In Measuring Tape",
     "date": "2026-09-25"
+  },
+  "J5j-AYIBpPM": {
+    "views": 140,
+    "likes": 5,
+    "comments": 0,
+    "title": "Why New Soda Cans Pop – The Science of Carbonated Bubbles",
+    "date": "2026-09-26"
   }
 }
