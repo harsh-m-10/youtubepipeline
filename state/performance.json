@@ -640,7 +640,7 @@
     "avg_view_pct": 31.3
   },
   "tkpNJpcB-h4": {
-    "views": 196,
+    "views": 198,
     "likes": 3,
     "comments": 1,
     "title": "15‑inch Snowflake: The Giant Record‑Breaking Flake",
@@ -790,20 +790,30 @@
     "avg_view_pct": 679.0
   },
   "EgAO-A1llXw": {
-    "views": 95,
+    "views": 96,
     "likes": 10,
     "comments": 1,
     "title": "Cat Whiskers Match Body Width – The Built‑In Measuring Tape",
     "date": "2026-09-25",
-    "minutes_watched": 16.0,
-    "avg_view_sec": 42.0,
-    "avg_view_pct": 69.3
+    "minutes_watched": 17.0,
+    "avg_view_sec": 41.0,
+    "avg_view_pct": 66.5
   },
   "J5j-AYIBpPM": {
-    "views": 209,
+    "views": 212,
     "likes": 6,
     "comments": 1,
     "title": "Why New Soda Cans Pop – The Science of Carbonated Bubbles",
-    "date": "2026-09-26"
+    "date": "2026-09-26",
+    "minutes_watched": 7.0,
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 36.5
+  },
+  "QZcOtvOCwMc": {
+    "views": 26,
+    "likes": 1,
+    "comments": 0,
+    "title": "The 0.5‑inch Thumb Web that Revolutionized Baseball Gloves",
+    "date": "2026-09-28"
   }
 }
