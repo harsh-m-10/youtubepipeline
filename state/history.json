@@ -798,5 +798,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-09-30",
+    "belief": "A single US penny contains 2.5% copper, less than the 95% copper used before 1982.",
+    "title": "Modern Penny is Only 2.5% Copper – The Surprising Metal Shift",
+    "video_id": "Q-S-AjApCMA",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 4.0
   }
 ]
