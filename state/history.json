@@ -807,5 +807,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 4.0
+  },
+  {
+    "date": "2026-10-01",
+    "belief": "Bananas are naturally radioactive because they contain potassium‑40.",
+    "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
+    "video_id": "ei9NYYhOdJs",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
