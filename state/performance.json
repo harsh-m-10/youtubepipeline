@@ -20,7 +20,7 @@
     "avg_view_pct": 68.0
   },
   "HUUZgX_GWyg": {
-    "views": 20,
+    "views": 21,
     "likes": 1,
     "comments": 1,
     "title": "Email's Hidden Past",
@@ -440,7 +440,7 @@
     "avg_view_pct": 1154.5
   },
   "U9SkGWOQ-6E": {
-    "views": 1,
+    "views": 3,
     "likes": 0,
     "comments": 1,
     "title": "Bluetooth Named After a Unifying Viking King",
@@ -460,7 +460,7 @@
     "avg_view_pct": 8.2
   },
   "K-Dm5ajIMLc": {
-    "views": 22,
+    "views": 24,
     "likes": 0,
     "comments": 1,
     "title": "Nice Once Meant Foolish – The Forgotten Origin of a Common Word",
@@ -470,7 +470,7 @@
     "avg_view_pct": 46.8
   },
   "Mmk3QcTB6ck": {
-    "views": 26,
+    "views": 27,
     "likes": 0,
     "comments": 1,
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
@@ -810,27 +810,37 @@
     "avg_view_pct": 36.7
   },
   "QZcOtvOCwMc": {
-    "views": 37,
+    "views": 38,
     "likes": 1,
     "comments": 1,
     "title": "The 0.5‑inch Thumb Web that Revolutionized Baseball Gloves",
     "date": "2026-09-28",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 30.0,
-    "avg_view_pct": 54.1
+    "minutes_watched": 5.0,
+    "avg_view_sec": 28.0,
+    "avg_view_pct": 51.2
   },
   "_4Npf03XY9M": {
-    "views": 253,
+    "views": 276,
     "likes": 2,
     "comments": 1,
     "title": "Eiffel Tower Grows 6 Inches Every Summer",
-    "date": "2026-09-29"
+    "date": "2026-09-29",
+    "minutes_watched": 4.0,
+    "avg_view_sec": 23.0,
+    "avg_view_pct": 43.3
   },
   "Q-S-AjApCMA": {
-    "views": 4,
+    "views": 7,
     "likes": 0,
     "comments": 1,
     "title": "Modern Penny is Only 2.5% Copper – The Surprising Metal Shift",
     "date": "2026-09-30"
+  },
+  "ei9NYYhOdJs": {
+    "views": 356,
+    "likes": 8,
+    "comments": 0,
+    "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
+    "date": "2026-10-01"
   }
 }
