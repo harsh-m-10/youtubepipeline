@@ -823,7 +823,16 @@
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
     "video_id": "qRguNgWZVRk",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-10-03",
+    "belief": "The first recorded use of the word “meme” by Richard Dawkins was in his 1976 book The Selfish Gene.",
+    "title": "The First Meme: Dawkins' 1976 Coinage",
+    "video_id": "3kuyE8PRsYc",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
