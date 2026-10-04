@@ -160,7 +160,7 @@
     "avg_view_pct": 40.0
   },
   "8OXatvNyq4o": {
-    "views": 67,
+    "views": 68,
     "likes": 1,
     "comments": 1,
     "title": "Coca-Cola's Brain Tonic Roots",
@@ -430,7 +430,7 @@
     "avg_view_pct": 45.5
   },
   "mVyGPr8owQs": {
-    "views": 31,
+    "views": 32,
     "likes": 0,
     "comments": 1,
     "title": "Royal Pizza Margherita: The 1889 Tribute That Shaped Italy",
@@ -445,9 +445,9 @@
     "comments": 1,
     "title": "Bluetooth Named After a Unifying Viking King",
     "date": "2026-08-01",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 53.0,
-    "avg_view_pct": 93.0
+    "minutes_watched": 1.0,
+    "avg_view_sec": 48.0,
+    "avg_view_pct": 84.2
   },
   "GlniMCD6dm8": {
     "views": 9,
@@ -810,7 +810,7 @@
     "avg_view_pct": 36.7
   },
   "QZcOtvOCwMc": {
-    "views": 39,
+    "views": 41,
     "likes": 1,
     "comments": 1,
     "title": "The 0.5‑inch Thumb Web that Revolutionized Baseball Gloves",
@@ -825,12 +825,12 @@
     "comments": 1,
     "title": "Eiffel Tower Grows 6 Inches Every Summer",
     "date": "2026-09-29",
-    "minutes_watched": 10.0,
-    "avg_view_sec": 15.0,
-    "avg_view_pct": 27.8
+    "minutes_watched": 13.0,
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 26.8
   },
   "Q-S-AjApCMA": {
-    "views": 9,
+    "views": 10,
     "likes": 0,
     "comments": 1,
     "title": "Modern Penny is Only 2.5% Copper – The Surprising Metal Shift",
@@ -840,17 +840,27 @@
     "avg_view_pct": 26.3
   },
   "ei9NYYhOdJs": {
-    "views": 706,
+    "views": 751,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
-    "date": "2026-10-01"
+    "date": "2026-10-01",
+    "minutes_watched": 19.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 47.1
   },
   "qRguNgWZVRk": {
-    "views": 70,
+    "views": 109,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
     "date": "2026-10-02"
+  },
+  "3kuyE8PRsYc": {
+    "views": 19,
+    "likes": 0,
+    "comments": 1,
+    "title": "The First Meme: Dawkins' 1976 Coinage",
+    "date": "2026-10-03"
   }
 }

@@ -832,7 +832,16 @@
     "title": "The First Meme: Dawkins' 1976 Coinage",
     "video_id": "3kuyE8PRsYc",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-10-04",
+    "belief": "A single honeybee can visit up to 5,000 flowers in a day, traveling about 55 km.",
+    "title": "Honeybee Foraging: Miles, Dances, and Wing Wear",
+    "video_id": "U0zjzFMJnog",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]
