@@ -290,7 +290,7 @@
     "avg_view_pct": 40.2
   },
   "2JqdgE0hcgI": {
-    "views": 60,
+    "views": 61,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -476,8 +476,8 @@
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
     "date": "2026-08-05",
     "minutes_watched": 2.0,
-    "avg_view_sec": 30.0,
-    "avg_view_pct": 61.2
+    "avg_view_sec": 25.0,
+    "avg_view_pct": 52.6
   },
   "cvBOxWCq7Hw": {
     "views": 142,
@@ -570,7 +570,7 @@
     "avg_view_pct": 53.9
   },
   "KyAdpadW7Ik": {
-    "views": 52,
+    "views": 53,
     "likes": 1,
     "comments": 1,
     "title": "Maldives Flag’s Rare Left‑Facing Crescent",
@@ -770,7 +770,7 @@
     "avg_view_pct": 64.4
   },
   "n25hIEQh-nc": {
-    "views": 121,
+    "views": 122,
     "likes": 6,
     "comments": 1,
     "title": "Why the ¢ sign hides the word “hundred”",
@@ -805,9 +805,9 @@
     "comments": 1,
     "title": "Why New Soda Cans Pop – The Science of Carbonated Bubbles",
     "date": "2026-09-26",
-    "minutes_watched": 11.0,
-    "avg_view_sec": 16.0,
-    "avg_view_pct": 36.7
+    "minutes_watched": 12.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 42.1
   },
   "QZcOtvOCwMc": {
     "views": 41,
@@ -840,27 +840,40 @@
     "avg_view_pct": 26.3
   },
   "ei9NYYhOdJs": {
-    "views": 751,
+    "views": 750,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
     "date": "2026-10-01",
-    "minutes_watched": 19.0,
-    "avg_view_sec": 29.0,
-    "avg_view_pct": 47.1
+    "minutes_watched": 33.0,
+    "avg_view_sec": 23.0,
+    "avg_view_pct": 37.4
   },
   "qRguNgWZVRk": {
-    "views": 109,
+    "views": 112,
     "likes": 0,
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
-    "date": "2026-10-02"
+    "date": "2026-10-02",
+    "minutes_watched": 6.0,
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 31.5
   },
   "3kuyE8PRsYc": {
-    "views": 19,
+    "views": 34,
     "likes": 0,
-    "comments": 1,
+    "comments": 2,
     "title": "The First Meme: Dawkins' 1976 Coinage",
-    "date": "2026-10-03"
+    "date": "2026-10-03",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 9.0,
+    "avg_view_pct": 22.4
+  },
+  "U0zjzFMJnog": {
+    "views": 147,
+    "likes": 0,
+    "comments": 0,
+    "title": "Honeybee Foraging: Miles, Dances, and Wing Wear",
+    "date": "2026-10-04"
   }
 }
