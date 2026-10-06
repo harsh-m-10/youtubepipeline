@@ -843,5 +843,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 7.0
+  },
+  {
+    "date": "2026-10-06",
+    "belief": "The first recorded use of a password was in 1961 on the MIT Compatible Time-Sharing System, requiring users to type a secret word to log in.",
+    "title": "The First Computer Password: MIT's Secret Word in the 1960s",
+    "video_id": "ZXgTP2enOjo",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.5
   }
 ]
