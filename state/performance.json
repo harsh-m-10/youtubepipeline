@@ -220,7 +220,7 @@
     "avg_view_pct": 25.1
   },
   "vT2UbZtkYNY": {
-    "views": 8,
+    "views": 9,
     "likes": 0,
     "comments": 1,
     "title": "Mona Lisa’s Missing Eyebrows: The Real Reason They Vanished",
@@ -420,7 +420,7 @@
     "avg_view_pct": 33.4
   },
   "TdcXDyvSlgk": {
-    "views": 3,
+    "views": 4,
     "likes": 1,
     "comments": 1,
     "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
@@ -570,7 +570,7 @@
     "avg_view_pct": 53.9
   },
   "KyAdpadW7Ik": {
-    "views": 53,
+    "views": 54,
     "likes": 1,
     "comments": 1,
     "title": "Maldives Flag’s Rare Left‑Facing Crescent",
@@ -760,7 +760,7 @@
     "avg_view_pct": 246.7
   },
   "swJjTwNsUks": {
-    "views": 133,
+    "views": 134,
     "likes": 11,
     "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
@@ -777,7 +777,7 @@
     "date": "2026-09-23",
     "minutes_watched": 17.0,
     "avg_view_sec": 18.0,
-    "avg_view_pct": 41.2
+    "avg_view_pct": 41.1
   },
   "FcgVFO6v6ho": {
     "views": 30,
@@ -845,7 +845,7 @@
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
     "date": "2026-10-01",
-    "minutes_watched": 33.0,
+    "minutes_watched": 34.0,
     "avg_view_sec": 23.0,
     "avg_view_pct": 37.4
   },
@@ -857,23 +857,33 @@
     "date": "2026-10-02",
     "minutes_watched": 6.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 31.5
+    "avg_view_pct": 31.1
   },
   "3kuyE8PRsYc": {
-    "views": 34,
+    "views": 36,
     "likes": 0,
     "comments": 2,
     "title": "The First Meme: Dawkins' 1976 Coinage",
     "date": "2026-10-03",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 9.0,
-    "avg_view_pct": 22.4
+    "minutes_watched": 1.0,
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 32.0
   },
   "U0zjzFMJnog": {
     "views": 130,
     "likes": 0,
     "comments": 1,
     "title": "Honeybee Foraging: Miles, Dances, and Wing Wear",
-    "date": "2026-10-04"
+    "date": "2026-10-04",
+    "minutes_watched": 9.0,
+    "avg_view_sec": 31.0,
+    "avg_view_pct": 52.9
+  },
+  "ZXgTP2enOjo": {
+    "views": 2,
+    "likes": 0,
+    "comments": 0,
+    "title": "The First Computer Password: MIT's Secret Word in the 1960s",
+    "date": "2026-10-06"
   }
 }
