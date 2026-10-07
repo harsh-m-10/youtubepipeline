@@ -852,5 +852,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.5
+  },
+  {
+    "date": "2026-10-07",
+    "belief": "The iconic Coca‑Cola bottle shape was patented in 1915 to distinguish it from competitors.",
+    "title": "How a 1915 Patent Gave Coke Its Iconic Bottle Shape",
+    "video_id": "76or47y3WBU",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
