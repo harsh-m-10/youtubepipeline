@@ -859,7 +859,16 @@
     "title": "How a 1915 Patent Gave Coke Its Iconic Bottle Shape",
     "video_id": "76or47y3WBU",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-10-08",
+    "belief": "A standard US baseball has exactly 108 stitches.",
+    "title": "The 108 Stitches Inside Every Baseball",
+    "video_id": "uA1YJon82BM",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
