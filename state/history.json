@@ -868,7 +868,16 @@
     "title": "The 108 Stitches Inside Every Baseball",
     "video_id": "uA1YJon82BM",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-10-09",
+    "belief": "A standard LEGO brick has a tolerance of only 0.02 mm, allowing billions of bricks to interlock perfectly worldwide.",
+    "title": "How LEGO Bricks Fit Together Across 70 Years",
+    "video_id": "kEh4gLfRG3U",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]

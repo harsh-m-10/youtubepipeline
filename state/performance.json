@@ -170,7 +170,7 @@
     "avg_view_pct": 29.1
   },
   "13a7J0X0KNs": {
-    "views": 63,
+    "views": 64,
     "likes": 1,
     "comments": 1,
     "title": "Zombie Ant Fungus",
@@ -250,7 +250,7 @@
     "avg_view_pct": 38.3
   },
   "zdsPuZ09Cvk": {
-    "views": 19,
+    "views": 20,
     "likes": 0,
     "comments": 1,
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
@@ -290,7 +290,7 @@
     "avg_view_pct": 40.2
   },
   "2JqdgE0hcgI": {
-    "views": 63,
+    "views": 64,
     "likes": 3,
     "comments": 2,
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
@@ -370,7 +370,7 @@
     "avg_view_pct": 44.3
   },
   "04IkmwBVt_c": {
-    "views": 11,
+    "views": 12,
     "likes": 0,
     "comments": 1,
     "title": "85‑Letter Hill Name: The World’s Longest Place Name",
@@ -800,7 +800,7 @@
     "avg_view_pct": 66.5
   },
   "J5j-AYIBpPM": {
-    "views": 214,
+    "views": 215,
     "likes": 6,
     "comments": 1,
     "title": "Why New Soda Cans Pop – The Science of Carbonated Bubbles",
@@ -830,7 +830,7 @@
     "avg_view_pct": 26.8
   },
   "Q-S-AjApCMA": {
-    "views": 12,
+    "views": 13,
     "likes": 0,
     "comments": 1,
     "title": "Modern Penny is Only 2.5% Copper – The Surprising Metal Shift",
@@ -840,7 +840,7 @@
     "avg_view_pct": 26.3
   },
   "ei9NYYhOdJs": {
-    "views": 750,
+    "views": 751,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
@@ -850,7 +850,7 @@
     "avg_view_pct": 37.4
   },
   "qRguNgWZVRk": {
-    "views": 112,
+    "views": 115,
     "likes": 0,
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
@@ -870,7 +870,7 @@
     "avg_view_pct": 32.0
   },
   "U0zjzFMJnog": {
-    "views": 129,
+    "views": 130,
     "likes": 0,
     "comments": 1,
     "title": "Honeybee Foraging: Miles, Dances, and Wing Wear",
@@ -880,17 +880,27 @@
     "avg_view_pct": 52.9
   },
   "ZXgTP2enOjo": {
-    "views": 3,
+    "views": 4,
     "likes": 0,
     "comments": 1,
     "title": "The First Computer Password: MIT's Secret Word in the 1960s",
-    "date": "2026-10-06"
+    "date": "2026-10-06",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "76or47y3WBU": {
-    "views": 48,
+    "views": 66,
     "likes": 1,
-    "comments": 0,
+    "comments": 1,
     "title": "How a 1915 Patent Gave Coke Its Iconic Bottle Shape",
     "date": "2026-10-07"
+  },
+  "uA1YJon82BM": {
+    "views": 356,
+    "likes": 0,
+    "comments": 1,
+    "title": "The 108 Stitches Inside Every Baseball",
+    "date": "2026-10-08"
   }
 }
