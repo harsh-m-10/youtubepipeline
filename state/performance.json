@@ -76,8 +76,8 @@
     "title": "Library of Future",
     "date": "2026-06-20",
     "minutes_watched": 3.0,
-    "avg_view_sec": 14.0,
-    "avg_view_pct": 19.2
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 17.6
   },
   "t4ecca0WRPg": {
     "views": 3,
@@ -120,7 +120,7 @@
     "avg_view_pct": 39.7
   },
   "I9flBu-uuV0": {
-    "views": 319,
+    "views": 320,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -147,7 +147,7 @@
     "date": "2026-06-27",
     "minutes_watched": 10.0,
     "avg_view_sec": 36.0,
-    "avg_view_pct": 68.3
+    "avg_view_pct": 66.9
   },
   "0HyCUdWbXwM": {
     "views": 162,
@@ -230,7 +230,7 @@
     "avg_view_pct": 16.5
   },
   "UhxskXsy4C8": {
-    "views": 25,
+    "views": 27,
     "likes": 1,
     "comments": 1,
     "title": "The Pocket Watch Pocket: How 1870s Jeans Got Their Tiny Timekeeper",
@@ -296,8 +296,8 @@
     "title": "Google’s Misspelled ‘Googol’: The 10^100 Number Behind the Name",
     "date": "2026-07-14",
     "minutes_watched": 9.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 47.3
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 45.5
   },
   "kczxPnzBTRg": {
     "views": 23,
@@ -470,7 +470,7 @@
     "avg_view_pct": 46.8
   },
   "Mmk3QcTB6ck": {
-    "views": 27,
+    "views": 28,
     "likes": 0,
     "comments": 1,
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
@@ -760,7 +760,7 @@
     "avg_view_pct": 246.7
   },
   "swJjTwNsUks": {
-    "views": 134,
+    "views": 135,
     "likes": 11,
     "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
@@ -830,7 +830,7 @@
     "avg_view_pct": 26.8
   },
   "Q-S-AjApCMA": {
-    "views": 13,
+    "views": 15,
     "likes": 0,
     "comments": 1,
     "title": "Modern Penny is Only 2.5% Copper – The Surprising Metal Shift",
@@ -850,7 +850,7 @@
     "avg_view_pct": 37.4
   },
   "qRguNgWZVRk": {
-    "views": 115,
+    "views": 118,
     "likes": 0,
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
@@ -860,7 +860,7 @@
     "avg_view_pct": 29.9
   },
   "3kuyE8PRsYc": {
-    "views": 36,
+    "views": 37,
     "likes": 0,
     "comments": 2,
     "title": "The First Meme: Dawkins' 1976 Coinage",
@@ -890,17 +890,27 @@
     "avg_view_pct": 0.0
   },
   "76or47y3WBU": {
-    "views": 66,
+    "views": 68,
     "likes": 1,
     "comments": 1,
     "title": "How a 1915 Patent Gave Coke Its Iconic Bottle Shape",
-    "date": "2026-10-07"
+    "date": "2026-10-07",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 44.3
   },
   "uA1YJon82BM": {
-    "views": 356,
+    "views": 451,
     "likes": 0,
     "comments": 1,
     "title": "The 108 Stitches Inside Every Baseball",
     "date": "2026-10-08"
+  },
+  "kEh4gLfRG3U": {
+    "views": 134,
+    "likes": 0,
+    "comments": 0,
+    "title": "How LEGO Bricks Fit Together Across 70 Years",
+    "date": "2026-10-09"
   }
 }
