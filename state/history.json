@@ -879,5 +879,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-10-11",
+    "belief": "The first commercially sold chocolate bar was invented in 1847 by Joseph Fry, who mixed cocoa butter back into chocolate paste.",
+    "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
+    "video_id": "NNrwRoixet8",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 4.0
   }
 ]
