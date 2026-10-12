@@ -125,9 +125,9 @@
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 25.0,
+    "minutes_watched": 26.0,
     "avg_view_sec": 21.0,
-    "avg_view_pct": 36.0
+    "avg_view_pct": 36.1
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 46,
+    "views": 47,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -176,8 +176,8 @@
     "title": "Zombie Ant Fungus",
     "date": "2026-06-30",
     "minutes_watched": 7.0,
-    "avg_view_sec": 23.0,
-    "avg_view_pct": 33.4
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 32.3
   },
   "BaLVuZvGUFQ": {
     "views": 31,
@@ -280,7 +280,7 @@
     "avg_view_pct": 55.0
   },
   "uupcNfpsLXA": {
-    "views": 38,
+    "views": 39,
     "likes": 2,
     "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
@@ -420,7 +420,7 @@
     "avg_view_pct": 33.4
   },
   "TdcXDyvSlgk": {
-    "views": 4,
+    "views": 5,
     "likes": 1,
     "comments": 1,
     "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
@@ -560,7 +560,7 @@
     "avg_view_pct": 13.2
   },
   "XrGVcPMCsTQ": {
-    "views": 4,
+    "views": 5,
     "likes": 0,
     "comments": 1,
     "title": "Eiffel Tower’s 20‑Year Deadline",
@@ -570,7 +570,7 @@
     "avg_view_pct": 53.9
   },
   "KyAdpadW7Ik": {
-    "views": 54,
+    "views": 55,
     "likes": 1,
     "comments": 1,
     "title": "Maldives Flag’s Rare Left‑Facing Crescent",
@@ -840,24 +840,24 @@
     "avg_view_pct": 17.9
   },
   "ei9NYYhOdJs": {
-    "views": 751,
+    "views": 752,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
     "date": "2026-10-01",
     "minutes_watched": 34.0,
     "avg_view_sec": 23.0,
-    "avg_view_pct": 37.4
+    "avg_view_pct": 37.3
   },
   "qRguNgWZVRk": {
-    "views": 119,
+    "views": 120,
     "likes": 0,
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
     "date": "2026-10-02",
     "minutes_watched": 7.0,
-    "avg_view_sec": 14.0,
-    "avg_view_pct": 30.4
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 28.3
   },
   "3kuyE8PRsYc": {
     "views": 37,
@@ -866,11 +866,11 @@
     "title": "The First Meme: Dawkins' 1976 Coinage",
     "date": "2026-10-03",
     "minutes_watched": 1.0,
-    "avg_view_sec": 13.0,
-    "avg_view_pct": 32.0
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 30.1
   },
   "U0zjzFMJnog": {
-    "views": 130,
+    "views": 132,
     "likes": 0,
     "comments": 1,
     "title": "Honeybee Foraging: Miles, Dances, and Wing Wear",
@@ -890,7 +890,7 @@
     "avg_view_pct": 39.2
   },
   "76or47y3WBU": {
-    "views": 68,
+    "views": 53,
     "likes": 1,
     "comments": 1,
     "title": "How a 1915 Patent Gave Coke Its Iconic Bottle Shape",
@@ -900,20 +900,30 @@
     "avg_view_pct": 49.0
   },
   "uA1YJon82BM": {
-    "views": 469,
+    "views": 471,
     "likes": 0,
     "comments": 1,
     "title": "The 108 Stitches Inside Every Baseball",
     "date": "2026-10-08",
-    "minutes_watched": 13.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 42.7
+    "minutes_watched": 17.0,
+    "avg_view_sec": 17.0,
+    "avg_view_pct": 38.2
   },
   "kEh4gLfRG3U": {
-    "views": 117,
+    "views": 119,
     "likes": 0,
     "comments": 1,
     "title": "How LEGO Bricks Fit Together Across 70 Years",
-    "date": "2026-10-09"
+    "date": "2026-10-09",
+    "minutes_watched": 4.0,
+    "avg_view_sec": 9.0,
+    "avg_view_pct": 21.0
+  },
+  "NNrwRoixet8": {
+    "views": 163,
+    "likes": 3,
+    "comments": 3,
+    "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
+    "date": "2026-10-11"
   }
 }
