@@ -888,5 +888,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 4.0
+  },
+  {
+    "date": "2026-10-13",
+    "belief": "The term “spam” for unwanted email comes from a Monty Python sketch where the word is repeated excessively.",
+    "title": "Spam Email’s Monty Python Origin",
+    "video_id": "d5nFT0IAfZ0",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]

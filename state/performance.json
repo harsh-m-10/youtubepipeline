@@ -146,8 +146,8 @@
     "title": "First Computer Music 1950",
     "date": "2026-06-27",
     "minutes_watched": 10.0,
-    "avg_view_sec": 36.0,
-    "avg_view_pct": 66.9
+    "avg_view_sec": 34.0,
+    "avg_view_pct": 63.6
   },
   "0HyCUdWbXwM": {
     "views": 162,
@@ -847,7 +847,7 @@
     "date": "2026-10-01",
     "minutes_watched": 34.0,
     "avg_view_sec": 23.0,
-    "avg_view_pct": 37.3
+    "avg_view_pct": 36.7
   },
   "qRguNgWZVRk": {
     "views": 120,
@@ -855,9 +855,9 @@
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
     "date": "2026-10-02",
-    "minutes_watched": 7.0,
-    "avg_view_sec": 13.0,
-    "avg_view_pct": 28.3
+    "minutes_watched": 8.0,
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 30.9
   },
   "3kuyE8PRsYc": {
     "views": 37,
@@ -920,10 +920,13 @@
     "avg_view_pct": 21.0
   },
   "NNrwRoixet8": {
-    "views": 165,
+    "views": 166,
     "likes": 3,
     "comments": 3,
     "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
-    "date": "2026-10-11"
+    "date": "2026-10-11",
+    "minutes_watched": 12.0,
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 26.5
   }
 }
