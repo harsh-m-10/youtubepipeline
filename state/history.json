@@ -897,5 +897,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-10-14",
+    "belief": "The largest snowflake ever recorded fell in Fort Keogh, Montana, in 1887 and measured 15 inches wide.",
+    "title": "15‑Inch Snowflake: The Giant Flake of 1887",
+    "video_id": "1Kn6ULIu74A",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
