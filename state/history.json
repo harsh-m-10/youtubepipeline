@@ -904,7 +904,16 @@
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
     "video_id": "1Kn6ULIu74A",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-10-15",
+    "belief": "The phrase \"butterfly effect\" was first used in meteorology by Edward Lorenz in a 1972 paper describing tiny changes in weather models.",
+    "title": "The Weather Paper That First Coined \"Butterfly Effect\"",
+    "video_id": "hjIy-UVT3CQ",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
