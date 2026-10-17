@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 320,
+    "views": 321,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -436,8 +436,8 @@
     "title": "Royal Pizza Margherita: The 1889 Tribute That Shaped Italy",
     "date": "2026-07-31",
     "minutes_watched": 67.0,
-    "avg_view_sec": 574.0,
-    "avg_view_pct": 990.1
+    "avg_view_sec": 502.0,
+    "avg_view_pct": 866.8
   },
   "U9SkGWOQ-6E": {
     "views": 3,
@@ -566,8 +566,8 @@
     "title": "Eiffel Tower’s 20‑Year Deadline",
     "date": "2026-08-21",
     "minutes_watched": 1.0,
-    "avg_view_sec": 27.0,
-    "avg_view_pct": 53.9
+    "avg_view_sec": 32.0,
+    "avg_view_pct": 63.9
   },
   "KyAdpadW7Ik": {
     "views": 55,
@@ -827,7 +827,7 @@
     "date": "2026-09-29",
     "minutes_watched": 13.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 26.8
+    "avg_view_pct": 27.1
   },
   "Q-S-AjApCMA": {
     "views": 15,
@@ -910,7 +910,7 @@
     "avg_view_pct": 38.2
   },
   "kEh4gLfRG3U": {
-    "views": 118,
+    "views": 119,
     "likes": 0,
     "comments": 1,
     "title": "How LEGO Bricks Fit Together Across 70 Years",
@@ -930,24 +930,37 @@
     "avg_view_pct": 25.7
   },
   "d5nFT0IAfZ0": {
-    "views": 29,
+    "views": 30,
     "likes": 2,
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "minutes_watched": 7.0,
+    "avg_view_sec": 37.0,
+    "avg_view_pct": 65.4
   },
   "1Kn6ULIu74A": {
-    "views": 29,
+    "views": 37,
     "likes": 1,
     "comments": 1,
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
-    "date": "2026-10-14"
+    "date": "2026-10-14",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 10.0,
+    "avg_view_pct": 17.2
   },
   "hjIy-UVT3CQ": {
-    "views": 14,
+    "views": 18,
     "likes": 2,
     "comments": 2,
     "title": "The Weather Paper That First Coined \"Butterfly Effect\"",
     "date": "2026-10-15"
+  },
+  "LeSg9HVYDD0": {
+    "views": 5,
+    "likes": 0,
+    "comments": 0,
+    "title": "Roman Juno Cake: The Birth of Birthday Traditions",
+    "date": "2026-10-16"
   }
 }
