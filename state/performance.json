@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 321,
+    "views": 322,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -200,7 +200,7 @@
     "avg_view_pct": 24.1
   },
   "uOfLKchs2qM": {
-    "views": 38,
+    "views": 40,
     "likes": 1,
     "comments": 1,
     "title": "First Handheld Cell Call 1973: Martin Cooper's Manhattan Demo",
@@ -216,8 +216,8 @@
     "title": "Olympic Art Medals: 146 Winners From 1912‑1948",
     "date": "2026-07-06",
     "minutes_watched": 4.0,
-    "avg_view_sec": 16.0,
-    "avg_view_pct": 25.1
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 23.7
   },
   "vT2UbZtkYNY": {
     "views": 9,
@@ -470,7 +470,7 @@
     "avg_view_pct": 46.8
   },
   "Mmk3QcTB6ck": {
-    "views": 28,
+    "views": 29,
     "likes": 0,
     "comments": 1,
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
@@ -805,9 +805,9 @@
     "comments": 1,
     "title": "Why New Soda Cans Pop – The Science of Carbonated Bubbles",
     "date": "2026-09-26",
-    "minutes_watched": 12.0,
-    "avg_view_sec": 18.0,
-    "avg_view_pct": 42.1
+    "minutes_watched": 43.0,
+    "avg_view_sec": 78.0,
+    "avg_view_pct": 178.0
   },
   "QZcOtvOCwMc": {
     "views": 41,
@@ -895,9 +895,9 @@
     "comments": 1,
     "title": "How a 1915 Patent Gave Coke Its Iconic Bottle Shape",
     "date": "2026-10-07",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 23.0,
-    "avg_view_pct": 49.0
+    "minutes_watched": 5.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 54.0
   },
   "uA1YJon82BM": {
     "views": 471,
@@ -920,14 +920,14 @@
     "avg_view_pct": 20.0
   },
   "NNrwRoixet8": {
-    "views": 171,
+    "views": 172,
     "likes": 3,
     "comments": 3,
     "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
     "date": "2026-10-11",
     "minutes_watched": 12.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 25.7
+    "avg_view_pct": 25.3
   },
   "d5nFT0IAfZ0": {
     "views": 30,
@@ -935,9 +935,9 @@
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
     "date": "2026-10-13",
-    "minutes_watched": 7.0,
-    "avg_view_sec": 37.0,
-    "avg_view_pct": 65.4
+    "minutes_watched": 8.0,
+    "avg_view_sec": 36.0,
+    "avg_view_pct": 62.6
   },
   "1Kn6ULIu74A": {
     "views": 37,
@@ -945,22 +945,32 @@
     "comments": 1,
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
     "date": "2026-10-14",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 10.0,
-    "avg_view_pct": 17.2
+    "minutes_watched": 2.0,
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 22.6
   },
   "hjIy-UVT3CQ": {
     "views": 18,
     "likes": 2,
     "comments": 2,
     "title": "The Weather Paper That First Coined \"Butterfly Effect\"",
-    "date": "2026-10-15"
+    "date": "2026-10-15",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 28.0,
+    "avg_view_pct": 50.9
   },
   "LeSg9HVYDD0": {
-    "views": 5,
+    "views": 6,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Roman Juno Cake: The Birth of Birthday Traditions",
     "date": "2026-10-16"
+  },
+  "d-8Qnisswko": {
+    "views": 36,
+    "likes": 0,
+    "comments": 0,
+    "title": "A Single LEGO Brick Holds 4,240 Newtons of Force",
+    "date": "2026-10-17"
   }
 }
