@@ -933,5 +933,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-10-18",
+    "belief": "The original McDonald’s fries were cooked in pure beef tallow, giving them a distinctive flavor.",
+    "title": "McDonald's fries were 93% beef tallow",
+    "video_id": "5AbNKGJ5-jQ",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
