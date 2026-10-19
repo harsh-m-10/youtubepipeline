@@ -940,6 +940,15 @@
     "title": "McDonald's fries were 93% beef tallow",
     "video_id": "5AbNKGJ5-jQ",
     "ig_media_id": null,
+    "commented": true,
+    "score": 5.0
+  },
+  {
+    "date": "2026-10-19",
+    "belief": "The U.S. penny’s copper coating was removed in 1982, making modern pennies 97.5% zinc with a thin copper plating.",
+    "title": "U.S. Pennies Are Mostly Zinc Since 1982",
+    "video_id": "rtluUDCwYBM",
+    "ig_media_id": null,
     "commented": false,
     "score": 5.0
   }

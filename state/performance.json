@@ -70,7 +70,7 @@
     "avg_view_pct": 33.7
   },
   "rjAd7OGJvpw": {
-    "views": 53,
+    "views": 55,
     "likes": 1,
     "comments": 1,
     "title": "Library of Future",
@@ -280,7 +280,7 @@
     "avg_view_pct": 55.0
   },
   "uupcNfpsLXA": {
-    "views": 39,
+    "views": 40,
     "likes": 2,
     "comments": 1,
     "title": "Dollar Sign Born from Spanish Peso 'ps' Abbreviation",
@@ -930,14 +930,14 @@
     "avg_view_pct": 25.3
   },
   "d5nFT0IAfZ0": {
-    "views": 30,
+    "views": 31,
     "likes": 2,
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
     "date": "2026-10-13",
     "minutes_watched": 8.0,
-    "avg_view_sec": 36.0,
-    "avg_view_pct": 62.6
+    "avg_view_sec": 32.0,
+    "avg_view_pct": 55.8
   },
   "1Kn6ULIu74A": {
     "views": 37,
@@ -955,22 +955,32 @@
     "comments": 2,
     "title": "The Weather Paper That First Coined \"Butterfly Effect\"",
     "date": "2026-10-15",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 28.0,
-    "avg_view_pct": 50.9
+    "minutes_watched": 6.0,
+    "avg_view_sec": 39.0,
+    "avg_view_pct": 71.4
   },
   "LeSg9HVYDD0": {
     "views": 6,
     "likes": 0,
     "comments": 1,
     "title": "Roman Juno Cake: The Birth of Birthday Traditions",
-    "date": "2026-10-16"
+    "date": "2026-10-16",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 42.9
   },
   "d-8Qnisswko": {
-    "views": 37,
+    "views": 36,
     "likes": 0,
     "comments": 1,
     "title": "A Single LEGO Brick Holds 4,240 Newtons of Force",
     "date": "2026-10-17"
+  },
+  "5AbNKGJ5-jQ": {
+    "views": 4,
+    "likes": 0,
+    "comments": 1,
+    "title": "McDonald's fries were 93% beef tallow",
+    "date": "2026-10-18"
   }
 }
