@@ -951,5 +951,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-10-20",
+    "belief": "The original purpose of the rubber duck on a developer's desk is to help debug code by explaining problems out loud.",
+    "title": "Why Every Developer’s Desk Has a Rubber Duck",
+    "video_id": "lqeSc__JJtM",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 3.5
   }
 ]
