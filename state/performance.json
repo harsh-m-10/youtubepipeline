@@ -10,7 +10,7 @@
     "avg_view_pct": 62.0
   },
   "QL53Ho89Ydg": {
-    "views": 35,
+    "views": 36,
     "likes": 2,
     "comments": 1,
     "title": "Giant Fungus",
@@ -70,7 +70,7 @@
     "avg_view_pct": 33.7
   },
   "rjAd7OGJvpw": {
-    "views": 55,
+    "views": 57,
     "likes": 1,
     "comments": 1,
     "title": "Library of Future",
@@ -120,14 +120,14 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 322,
+    "views": 323,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
     "date": "2026-06-25",
-    "minutes_watched": 26.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 36.1
+    "minutes_watched": 27.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 36.7
   },
   "nyQOUUp-x8Y": {
     "views": 27,
@@ -330,7 +330,7 @@
     "avg_view_pct": 42.4
   },
   "sby2mvbAuE0": {
-    "views": 17,
+    "views": 18,
     "likes": 1,
     "comments": 1,
     "title": "Karaoke Means ‘Empty Orchestra’ – The Word’s True Origin",
@@ -410,7 +410,7 @@
     "avg_view_pct": 22.8
   },
   "N_JQdFlAxLM": {
-    "views": 9,
+    "views": 10,
     "likes": 1,
     "comments": 1,
     "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
@@ -530,7 +530,7 @@
     "avg_view_pct": 16.8
   },
   "GnK9PJwHu8M": {
-    "views": 15,
+    "views": 16,
     "likes": 1,
     "comments": 1,
     "title": "Glowing Polymer Thread Hidden in U.S. Bills",
@@ -920,7 +920,7 @@
     "avg_view_pct": 20.0
   },
   "NNrwRoixet8": {
-    "views": 172,
+    "views": 173,
     "likes": 3,
     "comments": 3,
     "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
@@ -930,7 +930,7 @@
     "avg_view_pct": 25.3
   },
   "d5nFT0IAfZ0": {
-    "views": 31,
+    "views": 32,
     "likes": 2,
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
@@ -966,21 +966,31 @@
     "title": "Roman Juno Cake: The Birth of Birthday Traditions",
     "date": "2026-10-16",
     "minutes_watched": 0.0,
-    "avg_view_sec": 24.0,
-    "avg_view_pct": 42.9
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 36.4
   },
   "d-8Qnisswko": {
-    "views": 36,
+    "views": 38,
     "likes": 0,
     "comments": 1,
     "title": "A Single LEGO Brick Holds 4,240 Newtons of Force",
-    "date": "2026-10-17"
+    "date": "2026-10-17",
+    "minutes_watched": 3.0,
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 40.0
   },
   "5AbNKGJ5-jQ": {
-    "views": 4,
+    "views": 15,
     "likes": 0,
     "comments": 1,
     "title": "McDonald's fries were 93% beef tallow",
     "date": "2026-10-18"
+  },
+  "rtluUDCwYBM": {
+    "views": 1,
+    "likes": 0,
+    "comments": 0,
+    "title": "U.S. Pennies Are Mostly Zinc Since 1982",
+    "date": "2026-10-19"
   }
 }
