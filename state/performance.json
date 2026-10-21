@@ -475,9 +475,9 @@
     "comments": 1,
     "title": "Over 1,000 Chemicals Brewed in One Cup of Coffee",
     "date": "2026-08-05",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 25.0,
-    "avg_view_pct": 52.6
+    "minutes_watched": 3.0,
+    "avg_view_sec": 27.0,
+    "avg_view_pct": 56.7
   },
   "cvBOxWCq7Hw": {
     "views": 142,
@@ -930,14 +930,14 @@
     "avg_view_pct": 25.3
   },
   "d5nFT0IAfZ0": {
-    "views": 32,
+    "views": 34,
     "likes": 2,
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
     "date": "2026-10-13",
-    "minutes_watched": 8.0,
-    "avg_view_sec": 32.0,
-    "avg_view_pct": 55.8
+    "minutes_watched": 9.0,
+    "avg_view_sec": 30.0,
+    "avg_view_pct": 52.7
   },
   "1Kn6ULIu74A": {
     "views": 37,
@@ -980,17 +980,27 @@
     "avg_view_pct": 40.0
   },
   "5AbNKGJ5-jQ": {
-    "views": 16,
+    "views": 17,
     "likes": 0,
     "comments": 1,
     "title": "McDonald's fries were 93% beef tallow",
-    "date": "2026-10-18"
+    "date": "2026-10-18",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "rtluUDCwYBM": {
     "views": 1,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "U.S. Pennies Are Mostly Zinc Since 1982",
     "date": "2026-10-19"
+  },
+  "lqeSc__JJtM": {
+    "views": 18,
+    "likes": 0,
+    "comments": 1,
+    "title": "Why Every Developer’s Desk Has a Rubber Duck",
+    "date": "2026-10-20"
   }
 }
