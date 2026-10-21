@@ -960,5 +960,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 3.5
+  },
+  {
+    "date": "2026-10-21",
+    "belief": "The abbreviation \"PHP\" originally stood for \"Personal Home Page\" before being rebranded as a recursive acronym.",
+    "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
+    "video_id": "LpyTP-FUW2Q",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
