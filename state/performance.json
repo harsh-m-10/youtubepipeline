@@ -750,7 +750,7 @@
     "avg_view_pct": 30.9
   },
   "ddwtbMBZng8": {
-    "views": 15,
+    "views": 16,
     "likes": 0,
     "comments": 1,
     "title": "Why ZIP Means Zone Improvement Plan",
@@ -760,7 +760,7 @@
     "avg_view_pct": 246.7
   },
   "swJjTwNsUks": {
-    "views": 137,
+    "views": 138,
     "likes": 11,
     "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
@@ -980,34 +980,47 @@
     "avg_view_pct": 40.0
   },
   "5AbNKGJ5-jQ": {
-    "views": 18,
+    "views": 17,
     "likes": 0,
     "comments": 1,
     "title": "McDonald's fries were 93% beef tallow",
     "date": "2026-10-18",
     "minutes_watched": 1.0,
-    "avg_view_sec": 9.0,
-    "avg_view_pct": 20.5
+    "avg_view_sec": 8.0,
+    "avg_view_pct": 18.5
   },
   "rtluUDCwYBM": {
     "views": 1,
     "likes": 0,
     "comments": 1,
     "title": "U.S. Pennies Are Mostly Zinc Since 1982",
-    "date": "2026-10-19"
+    "date": "2026-10-19",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "lqeSc__JJtM": {
-    "views": 27,
+    "views": 28,
     "likes": 0,
     "comments": 1,
     "title": "Why Every Developer’s Desk Has a Rubber Duck",
-    "date": "2026-10-20"
+    "date": "2026-10-20",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 48.8
   },
   "LpyTP-FUW2Q": {
-    "views": 25,
+    "views": 40,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
     "date": "2026-10-21"
+  },
+  "XOhpSzKFds0": {
+    "views": 40,
+    "likes": 0,
+    "comments": 1,
+    "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
+    "date": "2026-10-22"
   }
 }
