@@ -978,5 +978,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 4.0
+  },
+  {
+    "date": "2026-10-23",
+    "belief": "A single cup of coffee contains about 100 mg of caffeine, roughly the same as a 12‑oz soda.",
+    "title": "Coffee’s 100 mg Caffeine Punch Explained",
+    "video_id": "HTkWHwlSOqQ",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
