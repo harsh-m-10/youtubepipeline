@@ -985,7 +985,16 @@
     "title": "Coffee’s 100 mg Caffeine Punch Explained",
     "video_id": "HTkWHwlSOqQ",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-10-24",
+    "belief": "The term “bug” for a software error was popularized after a moth was found stuck in a Harvard Mark II computer in 1947.",
+    "title": "How a 1947 Moth Made ‘Bug’ a Tech Term",
+    "video_id": "AVBFm4b1cUA",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
