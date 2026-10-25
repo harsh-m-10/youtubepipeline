@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 47,
+    "views": 48,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -270,7 +270,7 @@
     "avg_view_pct": 42.1
   },
   "3S6XoXmPE6o": {
-    "views": 1561,
+    "views": 1562,
     "likes": 19,
     "comments": 2,
     "title": "The $100,000 U.S. Banknote That Never Hit Public Hands",
@@ -440,7 +440,7 @@
     "avg_view_pct": 866.8
   },
   "U9SkGWOQ-6E": {
-    "views": 3,
+    "views": 4,
     "likes": 0,
     "comments": 1,
     "title": "Bluetooth Named After a Unifying Viking King",
@@ -710,7 +710,7 @@
     "avg_view_pct": 47.4
   },
   "Br2bjWPI6hY": {
-    "views": 52,
+    "views": 53,
     "likes": 3,
     "comments": 1,
     "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
@@ -750,7 +750,7 @@
     "avg_view_pct": 30.9
   },
   "ddwtbMBZng8": {
-    "views": 16,
+    "views": 17,
     "likes": 0,
     "comments": 1,
     "title": "Why ZIP Means Zone Improvement Plan",
@@ -840,7 +840,7 @@
     "avg_view_pct": 17.9
   },
   "ei9NYYhOdJs": {
-    "views": 752,
+    "views": 756,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
@@ -860,7 +860,7 @@
     "avg_view_pct": 30.9
   },
   "3kuyE8PRsYc": {
-    "views": 37,
+    "views": 38,
     "likes": 0,
     "comments": 2,
     "title": "The First Meme: Dawkins' 1976 Coinage",
@@ -880,7 +880,7 @@
     "avg_view_pct": 57.8
   },
   "ZXgTP2enOjo": {
-    "views": 6,
+    "views": 8,
     "likes": 0,
     "comments": 1,
     "title": "The First Computer Password: MIT's Secret Word in the 1960s",
@@ -940,7 +940,7 @@
     "avg_view_pct": 51.1
   },
   "1Kn6ULIu74A": {
-    "views": 37,
+    "views": 40,
     "likes": 1,
     "comments": 1,
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
@@ -1005,32 +1005,42 @@
     "comments": 1,
     "title": "Why Every Developer’s Desk Has a Rubber Duck",
     "date": "2026-10-20",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 39.5
+    "minutes_watched": 3.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 33.5
   },
   "LpyTP-FUW2Q": {
-    "views": 41,
+    "views": 43,
     "likes": 0,
     "comments": 1,
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
     "date": "2026-10-21",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 37.0,
-    "avg_view_pct": 84.0
+    "minutes_watched": 3.0,
+    "avg_view_sec": 26.0,
+    "avg_view_pct": 58.8
   },
   "XOhpSzKFds0": {
-    "views": 51,
+    "views": 61,
     "likes": 0,
     "comments": 1,
     "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
-    "date": "2026-10-22"
+    "date": "2026-10-22",
+    "minutes_watched": 6.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 35.6
   },
   "HTkWHwlSOqQ": {
-    "views": 10,
+    "views": 16,
     "likes": 0,
     "comments": 1,
     "title": "Coffee’s 100 mg Caffeine Punch Explained",
     "date": "2026-10-23"
+  },
+  "AVBFm4b1cUA": {
+    "views": 126,
+    "likes": 0,
+    "comments": 0,
+    "title": "How a 1947 Moth Made ‘Bug’ a Tech Term",
+    "date": "2026-10-24"
   }
 }
