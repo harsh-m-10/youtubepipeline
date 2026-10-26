@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 323,
+    "views": 325,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -410,7 +410,7 @@
     "avg_view_pct": 22.8
   },
   "N_JQdFlAxLM": {
-    "views": 10,
+    "views": 11,
     "likes": 1,
     "comments": 1,
     "title": "The 1991 Invention That Saved Your Hands: Coffee Sleeve",
@@ -780,7 +780,7 @@
     "avg_view_pct": 41.1
   },
   "FcgVFO6v6ho": {
-    "views": 30,
+    "views": 31,
     "likes": 2,
     "comments": 1,
     "title": "Coffee packs as many polyphenols as a glass of red wine",
@@ -1000,7 +1000,7 @@
     "avg_view_pct": 0.0
   },
   "lqeSc__JJtM": {
-    "views": 28,
+    "views": 29,
     "likes": 0,
     "comments": 1,
     "title": "Why Every Developer’s Desk Has a Rubber Duck",
@@ -1025,22 +1025,32 @@
     "comments": 1,
     "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
     "date": "2026-10-22",
-    "minutes_watched": 6.0,
+    "minutes_watched": 7.0,
     "avg_view_sec": 19.0,
-    "avg_view_pct": 35.6
+    "avg_view_pct": 35.1
   },
   "HTkWHwlSOqQ": {
     "views": 16,
     "likes": 0,
     "comments": 1,
     "title": "Coffee’s 100 mg Caffeine Punch Explained",
-    "date": "2026-10-23"
+    "date": "2026-10-23",
+    "minutes_watched": 3.0,
+    "avg_view_sec": 32.0,
+    "avg_view_pct": 50.2
   },
   "AVBFm4b1cUA": {
-    "views": 126,
+    "views": 133,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "How a 1947 Moth Made ‘Bug’ a Tech Term",
     "date": "2026-10-24"
+  },
+  "aseQqqFATd4": {
+    "views": 3,
+    "likes": 0,
+    "comments": 1,
+    "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
+    "date": "2026-10-25"
   }
 }
