@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 325,
+    "views": 326,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -277,7 +277,7 @@
     "date": "2026-07-12",
     "minutes_watched": 347.0,
     "avg_view_sec": 35.0,
-    "avg_view_pct": 55.0
+    "avg_view_pct": 54.9
   },
   "uupcNfpsLXA": {
     "views": 40,
@@ -755,9 +755,9 @@
     "comments": 1,
     "title": "Why ZIP Means Zone Improvement Plan",
     "date": "2026-09-21",
-    "minutes_watched": 5.0,
-    "avg_view_sec": 148.0,
-    "avg_view_pct": 246.7
+    "minutes_watched": 6.0,
+    "avg_view_sec": 115.0,
+    "avg_view_pct": 193.0
   },
   "swJjTwNsUks": {
     "views": 138,
@@ -845,9 +845,9 @@
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
     "date": "2026-10-01",
-    "minutes_watched": 34.0,
+    "minutes_watched": 35.0,
     "avg_view_sec": 23.0,
-    "avg_view_pct": 36.7
+    "avg_view_pct": 37.7
   },
   "qRguNgWZVRk": {
     "views": 123,
@@ -930,7 +930,7 @@
     "avg_view_pct": 26.6
   },
   "d5nFT0IAfZ0": {
-    "views": 36,
+    "views": 39,
     "likes": 2,
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
@@ -945,9 +945,9 @@
     "comments": 1,
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
     "date": "2026-10-14",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 14.0,
-    "avg_view_pct": 22.6
+    "minutes_watched": 4.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 29.1
   },
   "hjIy-UVT3CQ": {
     "views": 18,
@@ -1015,19 +1015,19 @@
     "comments": 1,
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
     "date": "2026-10-21",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 26.0,
-    "avg_view_pct": 58.8
+    "minutes_watched": 4.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 65.5
   },
   "XOhpSzKFds0": {
-    "views": 61,
+    "views": 63,
     "likes": 0,
     "comments": 1,
     "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
     "date": "2026-10-22",
-    "minutes_watched": 7.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 35.1
+    "minutes_watched": 8.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 36.7
   },
   "HTkWHwlSOqQ": {
     "views": 16,
@@ -1035,16 +1035,19 @@
     "comments": 1,
     "title": "Coffee’s 100 mg Caffeine Punch Explained",
     "date": "2026-10-23",
-    "minutes_watched": 3.0,
+    "minutes_watched": 4.0,
     "avg_view_sec": 32.0,
-    "avg_view_pct": 50.2
+    "avg_view_pct": 50.3
   },
   "AVBFm4b1cUA": {
-    "views": 133,
+    "views": 134,
     "likes": 0,
     "comments": 1,
     "title": "How a 1947 Moth Made ‘Bug’ a Tech Term",
-    "date": "2026-10-24"
+    "date": "2026-10-24",
+    "minutes_watched": 7.0,
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 30.2
   },
   "aseQqqFATd4": {
     "views": 3,
@@ -1052,5 +1055,12 @@
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
     "date": "2026-10-25"
+  },
+  "9evQn_cPR-g": {
+    "views": 12,
+    "likes": 0,
+    "comments": 1,
+    "title": "Monopoly’s Anti‑Trust Roots: The 1903 Landlord’s Game",
+    "date": "2026-10-26"
   }
 }
