@@ -1023,5 +1023,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 7.0
+  },
+  {
+    "date": "2026-10-28",
+    "belief": "The first recorded vending machine was invented by Hero of Alexandria in the 1st century AD and dispensed holy water.",
+    "title": "Ancient Holy‑Water Vending Machine by Hero of Alexandria",
+    "video_id": "q-xK19IkE_Q",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 7.0
   }
 ]
