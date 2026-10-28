@@ -716,8 +716,8 @@
     "title": "Babylonian Chew Sticks: The World's First Toothbrushes",
     "date": "2026-09-17",
     "minutes_watched": 4.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 43.3
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 40.6
   },
   "tl8nPPIOZm0": {
     "views": 2,
@@ -760,7 +760,7 @@
     "avg_view_pct": 193.0
   },
   "swJjTwNsUks": {
-    "views": 138,
+    "views": 139,
     "likes": 11,
     "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
@@ -866,8 +866,8 @@
     "title": "The First Meme: Dawkins' 1976 Coinage",
     "date": "2026-10-03",
     "minutes_watched": 1.0,
-    "avg_view_sec": 12.0,
-    "avg_view_pct": 30.1
+    "avg_view_sec": 11.0,
+    "avg_view_pct": 26.9
   },
   "U0zjzFMJnog": {
     "views": 132,
@@ -1010,7 +1010,7 @@
     "avg_view_pct": 33.5
   },
   "LpyTP-FUW2Q": {
-    "views": 43,
+    "views": 44,
     "likes": 0,
     "comments": 1,
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
@@ -1020,7 +1020,7 @@
     "avg_view_pct": 65.5
   },
   "XOhpSzKFds0": {
-    "views": 63,
+    "views": 66,
     "likes": 0,
     "comments": 1,
     "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
@@ -1047,20 +1047,30 @@
     "date": "2026-10-24",
     "minutes_watched": 7.0,
     "avg_view_sec": 13.0,
-    "avg_view_pct": 30.2
+    "avg_view_pct": 30.3
   },
   "aseQqqFATd4": {
     "views": 3,
     "likes": 0,
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
-    "date": "2026-10-25"
+    "date": "2026-10-25",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 54.0,
+    "avg_view_pct": 98.7
   },
   "9evQn_cPR-g": {
-    "views": 12,
+    "views": 28,
     "likes": 0,
     "comments": 1,
     "title": "Monopoly’s Anti‑Trust Roots: The 1903 Landlord’s Game",
     "date": "2026-10-26"
+  },
+  "FT6x9yhahbo": {
+    "views": 51,
+    "likes": 1,
+    "comments": 1,
+    "title": "Ancient Sumerian Clay Tablets Reveal the World’s First Recipes",
+    "date": "2026-10-27"
   }
 }
