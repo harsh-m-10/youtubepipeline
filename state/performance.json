@@ -840,7 +840,7 @@
     "avg_view_pct": 17.9
   },
   "ei9NYYhOdJs": {
-    "views": 758,
+    "views": 759,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
@@ -936,8 +936,8 @@
     "title": "Spam Email’s Monty Python Origin",
     "date": "2026-10-13",
     "minutes_watched": 9.0,
-    "avg_view_sec": 29.0,
-    "avg_view_pct": 51.1
+    "avg_view_sec": 30.0,
+    "avg_view_pct": 51.7
   },
   "1Kn6ULIu74A": {
     "views": 40,
@@ -1016,11 +1016,11 @@
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
     "date": "2026-10-21",
     "minutes_watched": 4.0,
-    "avg_view_sec": 29.0,
-    "avg_view_pct": 65.5
+    "avg_view_sec": 27.0,
+    "avg_view_pct": 61.0
   },
   "XOhpSzKFds0": {
-    "views": 68,
+    "views": 69,
     "likes": 0,
     "comments": 1,
     "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
@@ -1050,7 +1050,7 @@
     "avg_view_pct": 30.1
   },
   "aseQqqFATd4": {
-    "views": 4,
+    "views": 5,
     "likes": 0,
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
@@ -1066,21 +1066,31 @@
     "title": "Monopoly’s Anti‑Trust Roots: The 1903 Landlord’s Game",
     "date": "2026-10-26",
     "minutes_watched": 0.0,
-    "avg_view_sec": 5.0,
-    "avg_view_pct": 6.2
+    "avg_view_sec": 4.0,
+    "avg_view_pct": 5.4
   },
   "FT6x9yhahbo": {
     "views": 52,
     "likes": 1,
     "comments": 2,
     "title": "Ancient Sumerian Clay Tablets Reveal the World’s First Recipes",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "minutes_watched": 6.0,
+    "avg_view_sec": 16.0,
+    "avg_view_pct": 37.6
   },
   "q-xK19IkE_Q": {
-    "views": 17,
+    "views": 21,
     "likes": 0,
     "comments": 1,
     "title": "Ancient Holy‑Water Vending Machine by Hero of Alexandria",
     "date": "2026-10-28"
+  },
+  "qNOv83PLrUI": {
+    "views": 20,
+    "likes": 1,
+    "comments": 0,
+    "title": "Ampersand: Ancient E+T Ligature Revealed",
+    "date": "2026-10-29"
   }
 }
