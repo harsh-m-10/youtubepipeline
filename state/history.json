@@ -1050,5 +1050,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 4.0
+  },
+  {
+    "date": "2026-10-31",
+    "belief": "A single lightning bolt can contain up to one billion volts of electricity.",
+    "title": "Lightning Bolt Packs Insane Voltage",
+    "video_id": "vizHSK1sIwQ",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 6.0
   }
 ]
