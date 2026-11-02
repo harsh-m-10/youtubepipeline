@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 326,
+    "views": 327,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -360,7 +360,7 @@
     "avg_view_pct": 30.7
   },
   "zbf2sntbWs8": {
-    "views": 3,
+    "views": 4,
     "likes": 2,
     "comments": 1,
     "title": "The 1938 Chocolate Chip Cookie Recipe That Started a Nation",
@@ -526,8 +526,8 @@
     "title": "The M in M&M's: Two Real Surnames",
     "date": "2026-08-15",
     "minutes_watched": 0.0,
-    "avg_view_sec": 8.0,
-    "avg_view_pct": 16.8
+    "avg_view_sec": 6.0,
+    "avg_view_pct": 12.6
   },
   "GnK9PJwHu8M": {
     "views": 16,
@@ -850,7 +850,7 @@
     "avg_view_pct": 37.1
   },
   "qRguNgWZVRk": {
-    "views": 123,
+    "views": 125,
     "likes": 0,
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
@@ -935,7 +935,7 @@
     "comments": 1,
     "title": "Spam Email’s Monty Python Origin",
     "date": "2026-10-13",
-    "minutes_watched": 9.0,
+    "minutes_watched": 10.0,
     "avg_view_sec": 30.0,
     "avg_view_pct": 51.7
   },
@@ -965,9 +965,9 @@
     "comments": 1,
     "title": "Roman Juno Cake: The Birth of Birthday Traditions",
     "date": "2026-10-16",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 36.4
+    "minutes_watched": 1.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 34.4
   },
   "d-8Qnisswko": {
     "views": 41,
@@ -975,9 +975,9 @@
     "comments": 1,
     "title": "A Single LEGO Brick Holds 4,240 Newtons of Force",
     "date": "2026-10-17",
-    "minutes_watched": 3.0,
+    "minutes_watched": 4.0,
     "avg_view_sec": 21.0,
-    "avg_view_pct": 40.0
+    "avg_view_pct": 40.7
   },
   "5AbNKGJ5-jQ": {
     "views": 17,
@@ -1030,14 +1030,14 @@
     "avg_view_pct": 36.7
   },
   "HTkWHwlSOqQ": {
-    "views": 17,
+    "views": 20,
     "likes": 0,
     "comments": 1,
     "title": "Coffee’s 100 mg Caffeine Punch Explained",
     "date": "2026-10-23",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 32.0,
-    "avg_view_pct": 50.3
+    "minutes_watched": 5.0,
+    "avg_view_sec": 30.0,
+    "avg_view_pct": 47.2
   },
   "AVBFm4b1cUA": {
     "views": 135,
@@ -1050,17 +1050,17 @@
     "avg_view_pct": 30.1
   },
   "aseQqqFATd4": {
-    "views": 7,
+    "views": 8,
     "likes": 0,
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
     "date": "2026-10-25",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 54.0,
-    "avg_view_pct": 98.7
+    "minutes_watched": 1.0,
+    "avg_view_sec": 29.0,
+    "avg_view_pct": 53.0
   },
   "9evQn_cPR-g": {
-    "views": 45,
+    "views": 47,
     "likes": 0,
     "comments": 1,
     "title": "Monopoly’s Anti‑Trust Roots: The 1903 Landlord’s Game",
@@ -1070,7 +1070,7 @@
     "avg_view_pct": 6.2
   },
   "FT6x9yhahbo": {
-    "views": 52,
+    "views": 53,
     "likes": 1,
     "comments": 2,
     "title": "Ancient Sumerian Clay Tablets Reveal the World’s First Recipes",
@@ -1086,31 +1086,41 @@
     "title": "Ancient Holy‑Water Vending Machine by Hero of Alexandria",
     "date": "2026-10-28",
     "minutes_watched": 4.0,
-    "avg_view_sec": 17.0,
-    "avg_view_pct": 31.1
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 34.8
   },
   "qNOv83PLrUI": {
-    "views": 57,
+    "views": 58,
     "likes": 1,
     "comments": 1,
     "title": "Ampersand: Ancient E+T Ligature Revealed",
     "date": "2026-10-29",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 9.0,
-    "avg_view_pct": 16.5
+    "minutes_watched": 6.0,
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 43.6
   },
   "bScrd2x4PeU": {
     "views": 30,
     "likes": 0,
     "comments": 1,
     "title": "Latte means milk, not a secret coffee code",
-    "date": "2026-10-30"
+    "date": "2026-10-30",
+    "minutes_watched": 2.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 45.1
   },
   "vizHSK1sIwQ": {
-    "views": 8,
+    "views": 10,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Lightning Bolt Packs Insane Voltage",
     "date": "2026-10-31"
+  },
+  "Dn5LTP--ULY": {
+    "views": 13,
+    "likes": 0,
+    "comments": 1,
+    "title": "The Drag Queen Origin of “Spill the Tea”",
+    "date": "2026-11-01"
   }
 }

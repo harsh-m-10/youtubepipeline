@@ -1066,7 +1066,16 @@
     "title": "The Drag Queen Origin of “Spill the Tea”",
     "video_id": "Dn5LTP--ULY",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-11-02",
+    "belief": "The original PlayStation controller did not have analog sticks; they were added in the later DualShock model.",
+    "title": "PlayStation’s First Controller Had No Analog Sticks – 1996 Launch",
+    "video_id": "0efZWNgGrcY",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
