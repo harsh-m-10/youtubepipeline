@@ -250,7 +250,7 @@
     "avg_view_pct": 38.3
   },
   "zdsPuZ09Cvk": {
-    "views": 21,
+    "views": 22,
     "likes": 0,
     "comments": 1,
     "title": "Deadline’s Deadly Origin: The 56,000‑Victim Prison Line",
@@ -690,14 +690,14 @@
     "avg_view_pct": 11.2
   },
   "M3EfQ2EyEVI": {
-    "views": 56,
+    "views": 58,
     "likes": 2,
     "comments": 1,
     "title": "Why the @ Symbol Is Literally an “At” Sign",
     "date": "2026-09-15",
-    "minutes_watched": 3.0,
-    "avg_view_sec": 16.0,
-    "avg_view_pct": 35.2
+    "minutes_watched": 4.0,
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 34.7
   },
   "QJcPMzX1hSk": {
     "views": 31,
@@ -756,8 +756,8 @@
     "title": "Why ZIP Means Zone Improvement Plan",
     "date": "2026-09-21",
     "minutes_watched": 6.0,
-    "avg_view_sec": 115.0,
-    "avg_view_pct": 193.0
+    "avg_view_sec": 89.0,
+    "avg_view_pct": 149.4
   },
   "swJjTwNsUks": {
     "views": 140,
@@ -857,7 +857,7 @@
     "date": "2026-10-02",
     "minutes_watched": 8.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 30.9
+    "avg_view_pct": 31.6
   },
   "3kuyE8PRsYc": {
     "views": 38,
@@ -1010,7 +1010,7 @@
     "avg_view_pct": 33.5
   },
   "LpyTP-FUW2Q": {
-    "views": 44,
+    "views": 45,
     "likes": 0,
     "comments": 1,
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
@@ -1060,7 +1060,7 @@
     "avg_view_pct": 53.0
   },
   "9evQn_cPR-g": {
-    "views": 47,
+    "views": 50,
     "likes": 0,
     "comments": 1,
     "title": "Monopoly’s Anti‑Trust Roots: The 1903 Landlord’s Game",
@@ -1100,7 +1100,7 @@
     "avg_view_pct": 43.6
   },
   "bScrd2x4PeU": {
-    "views": 31,
+    "views": 32,
     "likes": 0,
     "comments": 1,
     "title": "Latte means milk, not a secret coffee code",
@@ -1114,20 +1114,30 @@
     "likes": 1,
     "comments": 1,
     "title": "Lightning Bolt Packs Insane Voltage",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 25.1
   },
   "Dn5LTP--ULY": {
-    "views": 22,
+    "views": 27,
     "likes": 0,
     "comments": 1,
     "title": "The Drag Queen Origin of “Spill the Tea”",
     "date": "2026-11-01"
   },
   "0efZWNgGrcY": {
-    "views": 839,
+    "views": 996,
     "likes": 5,
-    "comments": 0,
+    "comments": 1,
     "title": "PlayStation’s First Controller Had No Analog Sticks – 1996 Launch",
     "date": "2026-11-02"
+  },
+  "Kwsh779Cymc": {
+    "views": 13,
+    "likes": 0,
+    "comments": 0,
+    "title": "Why Elevators Skip the 4th Floor in Asian Buildings",
+    "date": "2026-11-03"
   }
 }
