@@ -70,7 +70,7 @@
     "avg_view_pct": 33.7
   },
   "rjAd7OGJvpw": {
-    "views": 57,
+    "views": 58,
     "likes": 1,
     "comments": 1,
     "title": "Library of Future",
@@ -550,7 +550,7 @@
     "avg_view_pct": 30.3
   },
   "bBYeXy90LzM": {
-    "views": 19,
+    "views": 20,
     "likes": 0,
     "comments": 1,
     "title": "Why US Dollar Bills Aren’t Paper But Cotton‑Linen Fabric",
@@ -560,7 +560,7 @@
     "avg_view_pct": 13.2
   },
   "XrGVcPMCsTQ": {
-    "views": 7,
+    "views": 8,
     "likes": 0,
     "comments": 1,
     "title": "Eiffel Tower’s 20‑Year Deadline",
@@ -695,9 +695,9 @@
     "comments": 1,
     "title": "Why the @ Symbol Is Literally an “At” Sign",
     "date": "2026-09-15",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 15.0,
-    "avg_view_pct": 34.7
+    "minutes_watched": 5.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 39.4
   },
   "QJcPMzX1hSk": {
     "views": 31,
@@ -820,7 +820,7 @@
     "avg_view_pct": 54.7
   },
   "_4Npf03XY9M": {
-    "views": 280,
+    "views": 281,
     "likes": 2,
     "comments": 1,
     "title": "Eiffel Tower Grows 6 Inches Every Summer",
@@ -840,7 +840,7 @@
     "avg_view_pct": 17.9
   },
   "ei9NYYhOdJs": {
-    "views": 759,
+    "views": 760,
     "likes": 8,
     "comments": 1,
     "title": "Bananas Emit Radioactivity Thanks to Potassium‑40",
@@ -920,7 +920,7 @@
     "avg_view_pct": 20.0
   },
   "NNrwRoixet8": {
-    "views": 177,
+    "views": 178,
     "likes": 3,
     "comments": 3,
     "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
@@ -1016,8 +1016,8 @@
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
     "date": "2026-10-21",
     "minutes_watched": 4.0,
-    "avg_view_sec": 27.0,
-    "avg_view_pct": 61.0
+    "avg_view_sec": 24.0,
+    "avg_view_pct": 55.1
   },
   "XOhpSzKFds0": {
     "views": 73,
@@ -1125,32 +1125,42 @@
     "comments": 1,
     "title": "The Drag Queen Origin of “Spill the Tea”",
     "date": "2026-11-01",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 13.0,
-    "avg_view_pct": 23.1
+    "minutes_watched": 2.0,
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 21.1
   },
   "0efZWNgGrcY": {
-    "views": 997,
+    "views": 996,
     "likes": 5,
     "comments": 1,
     "title": "PlayStation’s First Controller Had No Analog Sticks – 1996 Launch",
     "date": "2026-11-02",
     "minutes_watched": 43.0,
     "avg_view_sec": 28.0,
-    "avg_view_pct": 43.9
+    "avg_view_pct": 43.3
   },
   "Kwsh779Cymc": {
-    "views": 16,
+    "views": 17,
     "likes": 0,
     "comments": 1,
     "title": "Why Elevators Skip the 4th Floor in Asian Buildings",
-    "date": "2026-11-03"
+    "date": "2026-11-03",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 4.0,
+    "avg_view_pct": 8.3
   },
   "AliEslR7akM": {
-    "views": 7,
+    "views": 10,
     "likes": 1,
     "comments": 1,
     "title": "How a Navy Ban Spawned the \"Cup of Joe\"",
     "date": "2026-11-04"
+  },
+  "MMUBdp2g6hA": {
+    "views": 7,
+    "likes": 0,
+    "comments": 0,
+    "title": "120 Billion Disposable Coffee Cups – Enough to Fill a Pool",
+    "date": "2026-11-05"
   }
 }
