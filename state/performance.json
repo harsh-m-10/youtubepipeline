@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 327,
+    "views": 328,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -140,7 +140,7 @@
     "avg_view_pct": 46.1
   },
   "g6ZF3ZXni0I": {
-    "views": 48,
+    "views": 49,
     "likes": 1,
     "comments": 1,
     "title": "First Computer Music 1950",
@@ -650,7 +650,7 @@
     "avg_view_pct": 61.3
   },
   "R_lGy7tWZQQ": {
-    "views": 14,
+    "views": 15,
     "likes": 0,
     "comments": 1,
     "title": "Instant Coffee Packs Near‑Espresso Caffeine",
@@ -676,8 +676,8 @@
     "title": "Checkmate’s Persian Roots: The King Is Helpless",
     "date": "2026-09-13",
     "minutes_watched": 2.0,
-    "avg_view_sec": 18.0,
-    "avg_view_pct": 36.4
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 44.3
   },
   "KOBaJNVgJw4": {
     "views": 47,
@@ -810,7 +810,7 @@
     "avg_view_pct": 178.0
   },
   "QZcOtvOCwMc": {
-    "views": 41,
+    "views": 42,
     "likes": 1,
     "comments": 1,
     "title": "The 0.5‑inch Thumb Web that Revolutionized Baseball Gloves",
@@ -880,7 +880,7 @@
     "avg_view_pct": 57.8
   },
   "ZXgTP2enOjo": {
-    "views": 8,
+    "views": 9,
     "likes": 0,
     "comments": 1,
     "title": "The First Computer Password: MIT's Secret Word in the 1960s",
@@ -925,9 +925,9 @@
     "comments": 3,
     "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
     "date": "2026-10-11",
-    "minutes_watched": 13.0,
+    "minutes_watched": 14.0,
     "avg_view_sec": 15.0,
-    "avg_view_pct": 26.6
+    "avg_view_pct": 27.2
   },
   "d5nFT0IAfZ0": {
     "views": 43,
@@ -1030,7 +1030,7 @@
     "avg_view_pct": 36.7
   },
   "HTkWHwlSOqQ": {
-    "views": 20,
+    "views": 22,
     "likes": 0,
     "comments": 1,
     "title": "Coffee’s 100 mg Caffeine Punch Explained",
@@ -1050,7 +1050,7 @@
     "avg_view_pct": 30.1
   },
   "aseQqqFATd4": {
-    "views": 8,
+    "views": 9,
     "likes": 0,
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
@@ -1080,7 +1080,7 @@
     "avg_view_pct": 38.1
   },
   "q-xK19IkE_Q": {
-    "views": 25,
+    "views": 26,
     "likes": 0,
     "comments": 1,
     "title": "Ancient Holy‑Water Vending Machine by Hero of Alexandria",
@@ -1140,37 +1140,47 @@
     "avg_view_pct": 40.0
   },
   "Kwsh779Cymc": {
-    "views": 17,
+    "views": 18,
     "likes": 0,
     "comments": 1,
     "title": "Why Elevators Skip the 4th Floor in Asian Buildings",
     "date": "2026-11-03",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 5.0,
-    "avg_view_pct": 10.7
+    "minutes_watched": 1.0,
+    "avg_view_sec": 13.0,
+    "avg_view_pct": 25.1
   },
   "AliEslR7akM": {
-    "views": 13,
+    "views": 14,
     "likes": 1,
     "comments": 1,
     "title": "How a Navy Ban Spawned the \"Cup of Joe\"",
     "date": "2026-11-04",
-    "minutes_watched": 0.0,
-    "avg_view_sec": 9.0,
-    "avg_view_pct": 18.5
+    "minutes_watched": 1.0,
+    "avg_view_sec": 30.0,
+    "avg_view_pct": 60.7
   },
   "MMUBdp2g6hA": {
     "views": 9,
     "likes": 1,
     "comments": 1,
     "title": "120 Billion Disposable Coffee Cups – Enough to Fill a Pool",
-    "date": "2026-11-05"
+    "date": "2026-11-05",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "5BcPu-FOJ8s": {
-    "views": 22,
+    "views": 28,
     "likes": 2,
-    "comments": 0,
+    "comments": 1,
     "title": "Spilling Beans: Ancient Greek Voting with White and Black Beans",
     "date": "2026-11-06"
+  },
+  "dmasA728RsI": {
+    "views": 21,
+    "likes": 0,
+    "comments": 0,
+    "title": "The 2,200‑Acre Honey Fungus: Earth’s Biggest Living Thing",
+    "date": "2026-11-07"
   }
 }
