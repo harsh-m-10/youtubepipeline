@@ -217,7 +217,7 @@
     "date": "2026-07-06",
     "minutes_watched": 4.0,
     "avg_view_sec": 15.0,
-    "avg_view_pct": 23.7
+    "avg_view_pct": 22.7
   },
   "vT2UbZtkYNY": {
     "views": 9,
@@ -386,8 +386,8 @@
     "title": "The First :-) Posted in 1982",
     "date": "2026-07-25",
     "minutes_watched": 2.0,
-    "avg_view_sec": 24.0,
-    "avg_view_pct": 48.3
+    "avg_view_sec": 21.0,
+    "avg_view_pct": 42.0
   },
   "fF9TVIF8b2o": {
     "views": 19,
@@ -860,7 +860,7 @@
     "avg_view_pct": 31.6
   },
   "3kuyE8PRsYc": {
-    "views": 38,
+    "views": 39,
     "likes": 0,
     "comments": 2,
     "title": "The First Meme: Dawkins' 1976 Coinage",
@@ -940,7 +940,7 @@
     "avg_view_pct": 51.7
   },
   "1Kn6ULIu74A": {
-    "views": 42,
+    "views": 43,
     "likes": 1,
     "comments": 1,
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
@@ -1010,7 +1010,7 @@
     "avg_view_pct": 33.5
   },
   "LpyTP-FUW2Q": {
-    "views": 45,
+    "views": 46,
     "likes": 0,
     "comments": 1,
     "title": "PHP: From Personal Home Page to Hypertext Preprocessor",
@@ -1020,7 +1020,7 @@
     "avg_view_pct": 55.1
   },
   "XOhpSzKFds0": {
-    "views": 73,
+    "views": 74,
     "likes": 0,
     "comments": 1,
     "title": "How Heavy Is a Ream of A4 Paper? 2.5 kg Explained",
@@ -1135,12 +1135,12 @@
     "comments": 1,
     "title": "PlayStation’s First Controller Had No Analog Sticks – 1996 Launch",
     "date": "2026-11-02",
-    "minutes_watched": 49.0,
-    "avg_view_sec": 26.0,
-    "avg_view_pct": 40.0
+    "minutes_watched": 51.0,
+    "avg_view_sec": 27.0,
+    "avg_view_pct": 42.0
   },
   "Kwsh779Cymc": {
-    "views": 19,
+    "views": 18,
     "likes": 0,
     "comments": 1,
     "title": "Why Elevators Skip the 4th Floor in Asian Buildings",
@@ -1185,22 +1185,32 @@
     "comments": 1,
     "title": "The 2,200‑Acre Honey Fungus: Earth’s Biggest Living Thing",
     "date": "2026-11-07",
-    "minutes_watched": 4.0,
-    "avg_view_sec": 40.0,
-    "avg_view_pct": 82.2
+    "minutes_watched": 7.0,
+    "avg_view_sec": 37.0,
+    "avg_view_pct": 77.0
   },
   "T0B5yULVT2Q": {
     "views": 29,
     "likes": 0,
     "comments": 1,
     "title": "William Oughtred’s 1631 Birth of the × Multiplication Sign",
-    "date": "2026-11-08"
+    "date": "2026-11-08",
+    "minutes_watched": 3.0,
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 20.3
   },
   "DnI_jDIJKZc": {
-    "views": 1,
+    "views": 5,
     "likes": 0,
     "comments": 1,
     "title": "Why School Buses Are Neon Yellow: The Safety Color Choice",
     "date": "2026-11-09"
+  },
+  "ZWfN4dRYwY8": {
+    "views": 12,
+    "likes": 0,
+    "comments": 0,
+    "title": "The 1839 \"Oll Korrect\" Origin of OK",
+    "date": "2026-11-10"
   }
 }
