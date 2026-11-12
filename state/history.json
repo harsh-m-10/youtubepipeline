@@ -1158,5 +1158,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-11-12",
+    "belief": "The rubber band was originally invented in 1845 to keep newspapers from blowing away.",
+    "title": "The 1845 Rubber Band Invented for Newspapers",
+    "video_id": "M8vBauyLe9U",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
