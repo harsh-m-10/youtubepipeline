@@ -1167,5 +1167,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-11-13",
+    "belief": "The iconic \"smiley face\" was created in 1963 by a freelance graphic artist for a insurance company's internal communications.",
+    "title": "The 1963 Smiley Face Origin Story",
+    "video_id": "6qvFYQFwnWU",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 4.0
   }
 ]
