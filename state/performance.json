@@ -420,8 +420,8 @@
     "avg_view_pct": 33.4
   },
   "TdcXDyvSlgk": {
-    "views": 5,
-    "likes": 1,
+    "views": 6,
+    "likes": 2,
     "comments": 1,
     "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
     "date": "2026-07-30",
@@ -880,7 +880,7 @@
     "avg_view_pct": 57.8
   },
   "ZXgTP2enOjo": {
-    "views": 9,
+    "views": 10,
     "likes": 0,
     "comments": 1,
     "title": "The First Computer Password: MIT's Secret Word in the 1960s",
@@ -1040,7 +1040,7 @@
     "avg_view_pct": 44.8
   },
   "AVBFm4b1cUA": {
-    "views": 135,
+    "views": 136,
     "likes": 0,
     "comments": 1,
     "title": "How a 1947 Moth Made ‘Bug’ a Tech Term",
@@ -1140,7 +1140,7 @@
     "avg_view_pct": 42.0
   },
   "Kwsh779Cymc": {
-    "views": 19,
+    "views": 20,
     "likes": 0,
     "comments": 1,
     "title": "Why Elevators Skip the 4th Floor in Asian Buildings",
@@ -1190,28 +1190,34 @@
     "avg_view_pct": 77.0
   },
   "T0B5yULVT2Q": {
-    "views": 29,
+    "views": 31,
     "likes": 0,
     "comments": 1,
     "title": "William Oughtred’s 1631 Birth of the × Multiplication Sign",
     "date": "2026-11-08",
     "minutes_watched": 3.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 19.1
+    "avg_view_pct": 18.6
   },
   "DnI_jDIJKZc": {
     "views": 6,
     "likes": 0,
     "comments": 1,
     "title": "Why School Buses Are Neon Yellow: The Safety Color Choice",
-    "date": "2026-11-09"
+    "date": "2026-11-09",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "ZWfN4dRYwY8": {
-    "views": 17,
+    "views": 19,
     "likes": 0,
     "comments": 1,
     "title": "The 1839 \"Oll Korrect\" Origin of OK",
-    "date": "2026-11-10"
+    "date": "2026-11-10",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 35.0,
+    "avg_view_pct": 72.1
   },
   "vVX2bdVvkO8": {
     "views": 3,
@@ -1219,5 +1225,12 @@
     "comments": 1,
     "title": "Nike’s $35 Wing‑Shaped Swoosh Origin",
     "date": "2026-11-11"
+  },
+  "M8vBauyLe9U": {
+    "views": 3,
+    "likes": 0,
+    "comments": 1,
+    "title": "The 1845 Rubber Band Invented for Newspapers",
+    "date": "2026-11-12"
   }
 }
