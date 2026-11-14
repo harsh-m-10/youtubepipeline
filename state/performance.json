@@ -230,7 +230,7 @@
     "avg_view_pct": 16.5
   },
   "UhxskXsy4C8": {
-    "views": 27,
+    "views": 29,
     "likes": 1,
     "comments": 1,
     "title": "The Pocket Watch Pocket: How 1870s Jeans Got Their Tiny Timekeeper",
@@ -376,8 +376,8 @@
     "title": "85‑Letter Hill Name: The World’s Longest Place Name",
     "date": "2026-07-24",
     "minutes_watched": 1.0,
-    "avg_view_sec": 18.0,
-    "avg_view_pct": 37.4
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 31.2
   },
   "2SmA7fjX3MM": {
     "views": 18,
@@ -650,7 +650,7 @@
     "avg_view_pct": 61.3
   },
   "R_lGy7tWZQQ": {
-    "views": 15,
+    "views": 16,
     "likes": 0,
     "comments": 1,
     "title": "Instant Coffee Packs Near‑Espresso Caffeine",
@@ -660,7 +660,7 @@
     "avg_view_pct": 53.9
   },
   "gO6qYdTx54Y": {
-    "views": 290,
+    "views": 291,
     "likes": 0,
     "comments": 1,
     "title": "The Word “Nerd” First Appeared in a Dr. Seuss Book (1950)",
@@ -790,7 +790,7 @@
     "avg_view_pct": 679.0
   },
   "EgAO-A1llXw": {
-    "views": 96,
+    "views": 97,
     "likes": 10,
     "comments": 1,
     "title": "Cat Whiskers Match Body Width – The Built‑In Measuring Tape",
@@ -857,7 +857,7 @@
     "date": "2026-10-02",
     "minutes_watched": 8.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 31.6
+    "avg_view_pct": 31.2
   },
   "3kuyE8PRsYc": {
     "views": 39,
@@ -940,7 +940,7 @@
     "avg_view_pct": 51.7
   },
   "1Kn6ULIu74A": {
-    "views": 44,
+    "views": 45,
     "likes": 1,
     "comments": 1,
     "title": "15‑Inch Snowflake: The Giant Flake of 1887",
@@ -1180,7 +1180,7 @@
     "avg_view_pct": 53.4
   },
   "dmasA728RsI": {
-    "views": 28,
+    "views": 29,
     "likes": 0,
     "comments": 1,
     "title": "The 2,200‑Acre Honey Fungus: Earth’s Biggest Living Thing",
@@ -1206,31 +1206,41 @@
     "title": "Why School Buses Are Neon Yellow: The Safety Color Choice",
     "date": "2026-11-09",
     "minutes_watched": 0.0,
-    "avg_view_sec": 0.0,
-    "avg_view_pct": 0.0
+    "avg_view_sec": 2.0,
+    "avg_view_pct": 5.6
   },
   "ZWfN4dRYwY8": {
-    "views": 19,
+    "views": 18,
     "likes": 0,
     "comments": 1,
     "title": "The 1839 \"Oll Korrect\" Origin of OK",
     "date": "2026-11-10",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 35.0,
-    "avg_view_pct": 72.1
+    "minutes_watched": 2.0,
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 38.1
   },
   "vVX2bdVvkO8": {
-    "views": 3,
+    "views": 5,
     "likes": 0,
     "comments": 1,
     "title": "Nike’s $35 Wing‑Shaped Swoosh Origin",
-    "date": "2026-11-11"
+    "date": "2026-11-11",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "M8vBauyLe9U": {
-    "views": 3,
+    "views": 4,
     "likes": 0,
     "comments": 1,
     "title": "The 1845 Rubber Band Invented for Newspapers",
     "date": "2026-11-12"
+  },
+  "6qvFYQFwnWU": {
+    "views": 29,
+    "likes": 0,
+    "comments": 0,
+    "title": "The 1963 Smiley Face Origin Story",
+    "date": "2026-11-13"
   }
 }
