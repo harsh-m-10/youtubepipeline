@@ -120,7 +120,7 @@
     "avg_view_pct": 41.7
   },
   "I9flBu-uuV0": {
-    "views": 330,
+    "views": 331,
     "likes": 4,
     "comments": 1,
     "title": "Half-Life 2 in Browser",
@@ -1190,7 +1190,7 @@
     "avg_view_pct": 75.6
   },
   "T0B5yULVT2Q": {
-    "views": 33,
+    "views": 34,
     "likes": 0,
     "comments": 1,
     "title": "William Oughtred’s 1631 Birth of the × Multiplication Sign",
@@ -1240,12 +1240,12 @@
     "avg_view_pct": 0.0
   },
   "6qvFYQFwnWU": {
-    "views": 51,
+    "views": 52,
     "likes": 0,
     "comments": 1,
     "title": "The 1963 Smiley Face Origin Story",
     "date": "2026-11-13",
-    "minutes_watched": 18.0,
+    "minutes_watched": 17.0,
     "avg_view_sec": 63.0,
     "avg_view_pct": 122.2
   },
@@ -1255,7 +1255,7 @@
     "comments": 1,
     "title": "The Real Rabbit‑Hat Trick Originated in 1840s Scotland",
     "date": "2026-11-14",
-    "minutes_watched": 3.0,
+    "minutes_watched": 2.0,
     "avg_view_sec": 16.0,
     "avg_view_pct": 33.1
   },
@@ -1278,5 +1278,12 @@
     "minutes_watched": 0.0,
     "avg_view_sec": 0.0,
     "avg_view_pct": 0.0
+  },
+  "2D60B78MZRg": {
+    "views": 5,
+    "likes": 0,
+    "comments": 1,
+    "title": "How 16th‑Century Merchants Invented the @ Symbol",
+    "date": "2026-11-18"
   }
 }
