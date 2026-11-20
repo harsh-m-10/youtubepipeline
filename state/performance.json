@@ -520,7 +520,7 @@
     "avg_view_pct": 0.0
   },
   "vfLSCvviLyE": {
-    "views": 47,
+    "views": 48,
     "likes": 0,
     "comments": 1,
     "title": "The M in M&M's: Two Real Surnames",
@@ -796,8 +796,8 @@
     "title": "Cat Whiskers Match Body Width – The Built‑In Measuring Tape",
     "date": "2026-09-25",
     "minutes_watched": 17.0,
-    "avg_view_sec": 41.0,
-    "avg_view_pct": 66.5
+    "avg_view_sec": 39.0,
+    "avg_view_pct": 64.3
   },
   "J5j-AYIBpPM": {
     "views": 221,
@@ -1106,8 +1106,8 @@
     "title": "Latte means milk, not a secret coffee code",
     "date": "2026-10-30",
     "minutes_watched": 2.0,
-    "avg_view_sec": 20.0,
-    "avg_view_pct": 45.1
+    "avg_view_sec": 17.0,
+    "avg_view_pct": 39.4
   },
   "vizHSK1sIwQ": {
     "views": 14,
@@ -1196,8 +1196,8 @@
     "title": "William Oughtred’s 1631 Birth of the × Multiplication Sign",
     "date": "2026-11-08",
     "minutes_watched": 3.0,
-    "avg_view_sec": 13.0,
-    "avg_view_pct": 17.4
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 15.4
   },
   "DnI_jDIJKZc": {
     "views": 7,
@@ -1240,7 +1240,7 @@
     "avg_view_pct": 0.0
   },
   "6qvFYQFwnWU": {
-    "views": 52,
+    "views": 55,
     "likes": 0,
     "comments": 1,
     "title": "The 1963 Smiley Face Origin Story",
@@ -1255,9 +1255,9 @@
     "comments": 1,
     "title": "The Real Rabbit‑Hat Trick Originated in 1840s Scotland",
     "date": "2026-11-14",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 16.0,
-    "avg_view_pct": 33.1
+    "minutes_watched": 3.0,
+    "avg_view_sec": 19.0,
+    "avg_view_pct": 39.2
   },
   "-Eep2ke4g7s": {
     "views": 93,
@@ -1266,24 +1266,34 @@
     "title": "Deadly Prison Line Behind the Word “Deadline”",
     "date": "2026-11-15",
     "minutes_watched": 13.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 39.0
+    "avg_view_sec": 18.0,
+    "avg_view_pct": 37.5
   },
   "iFxsFrLB3a0": {
-    "views": 4,
+    "views": 7,
     "likes": 0,
     "comments": 1,
     "title": "How the Fruit Gave Us the Color Orange (first use 1512)",
     "date": "2026-11-16",
     "minutes_watched": 0.0,
-    "avg_view_sec": 0.0,
-    "avg_view_pct": 0.0
+    "avg_view_sec": 3.0,
+    "avg_view_pct": 8.5
   },
   "2D60B78MZRg": {
-    "views": 5,
+    "views": 10,
     "likes": 0,
     "comments": 1,
     "title": "How 16th‑Century Merchants Invented the @ Symbol",
-    "date": "2026-11-18"
+    "date": "2026-11-18",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 25.0,
+    "avg_view_pct": 52.3
+  },
+  "ajASh_mE-vs": {
+    "views": 6,
+    "likes": 0,
+    "comments": 1,
+    "title": "1937 Oklahoma Supermarket Invented the Shopping Cart",
+    "date": "2026-11-19"
   }
 }
