@@ -1228,7 +1228,7 @@
     "title": "How the Yellow Kid Invented Modern Speech Balloons",
     "video_id": "GdSQHNZ-Wy4",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
   },
   {
@@ -1237,7 +1237,16 @@
     "title": "How a 1920 Czech Play Invented the Word “Robot”",
     "video_id": "529E4FSNQgI",
     "ig_media_id": null,
-    "commented": false,
+    "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-11-22",
+    "belief": "The word \"goodbye\" originated from the phrase \"God be with ye\" in the 16th century.",
+    "title": "Goodbye was once “God be with ye”",
+    "video_id": "WLb1utlNpWc",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
