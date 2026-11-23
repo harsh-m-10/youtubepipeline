@@ -750,7 +750,7 @@
     "avg_view_pct": 30.9
   },
   "ddwtbMBZng8": {
-    "views": 20,
+    "views": 21,
     "likes": 0,
     "comments": 1,
     "title": "Why ZIP Means Zone Improvement Plan",
@@ -760,7 +760,7 @@
     "avg_view_pct": 143.8
   },
   "swJjTwNsUks": {
-    "views": 140,
+    "views": 141,
     "likes": 11,
     "comments": 1,
     "title": "The Nine‑Yard Ammo Belt Behind “Whole Nine Yards”",
@@ -976,8 +976,8 @@
     "title": "A Single LEGO Brick Holds 4,240 Newtons of Force",
     "date": "2026-10-17",
     "minutes_watched": 4.0,
-    "avg_view_sec": 21.0,
-    "avg_view_pct": 40.7
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 38.1
   },
   "5AbNKGJ5-jQ": {
     "views": 19,
@@ -1056,8 +1056,8 @@
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
     "date": "2026-10-25",
     "minutes_watched": 1.0,
-    "avg_view_sec": 19.0,
-    "avg_view_pct": 35.3
+    "avg_view_sec": 14.0,
+    "avg_view_pct": 27.0
   },
   "9evQn_cPR-g": {
     "views": 53,
@@ -1190,7 +1190,7 @@
     "avg_view_pct": 75.6
   },
   "T0B5yULVT2Q": {
-    "views": 34,
+    "views": 35,
     "likes": 0,
     "comments": 1,
     "title": "William Oughtred’s 1631 Birth of the × Multiplication Sign",
@@ -1230,7 +1230,7 @@
     "avg_view_pct": 0.0
   },
   "M8vBauyLe9U": {
-    "views": 6,
+    "views": 7,
     "likes": 0,
     "comments": 1,
     "title": "The 1845 Rubber Band Invented for Newspapers",
@@ -1260,7 +1260,7 @@
     "avg_view_pct": 32.7
   },
   "-Eep2ke4g7s": {
-    "views": 94,
+    "views": 95,
     "likes": 0,
     "comments": 1,
     "title": "Deadly Prison Line Behind the Word “Deadline”",
@@ -1285,7 +1285,7 @@
     "comments": 1,
     "title": "How 16th‑Century Merchants Invented the @ Symbol",
     "date": "2026-11-18",
-    "minutes_watched": 0.0,
+    "minutes_watched": 1.0,
     "avg_view_sec": 15.0,
     "avg_view_pct": 32.7
   },
@@ -1300,17 +1300,30 @@
     "avg_view_pct": 20.2
   },
   "GdSQHNZ-Wy4": {
-    "views": 11,
+    "views": 12,
     "likes": 0,
     "comments": 1,
     "title": "How the Yellow Kid Invented Modern Speech Balloons",
-    "date": "2026-11-20"
+    "date": "2026-11-20",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "529E4FSNQgI": {
-    "views": 5,
+    "views": 8,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "How a 1920 Czech Play Invented the Word “Robot”",
-    "date": "2026-11-21"
+    "date": "2026-11-21",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 10.0,
+    "avg_view_pct": 20.4
+  },
+  "WLb1utlNpWc": {
+    "views": 1,
+    "likes": 0,
+    "comments": 1,
+    "title": "Goodbye was once “God be with ye”",
+    "date": "2026-11-22"
   }
 }
