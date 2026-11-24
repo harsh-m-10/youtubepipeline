@@ -810,7 +810,7 @@
     "avg_view_pct": 172.6
   },
   "QZcOtvOCwMc": {
-    "views": 42,
+    "views": 44,
     "likes": 1,
     "comments": 1,
     "title": "The 0.5‑inch Thumb Web that Revolutionized Baseball Gloves",
@@ -850,7 +850,7 @@
     "avg_view_pct": 37.1
   },
   "qRguNgWZVRk": {
-    "views": 126,
+    "views": 127,
     "likes": 0,
     "comments": 1,
     "title": "12‑Day, 62‑Mile Traffic Jam on China’s Highway",
@@ -1050,7 +1050,7 @@
     "avg_view_pct": 32.2
   },
   "aseQqqFATd4": {
-    "views": 11,
+    "views": 12,
     "likes": 0,
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
@@ -1105,9 +1105,9 @@
     "comments": 1,
     "title": "Latte means milk, not a secret coffee code",
     "date": "2026-10-30",
-    "minutes_watched": 2.0,
-    "avg_view_sec": 17.0,
-    "avg_view_pct": 39.4
+    "minutes_watched": 3.0,
+    "avg_view_sec": 20.0,
+    "avg_view_pct": 45.5
   },
   "vizHSK1sIwQ": {
     "views": 14,
@@ -1300,7 +1300,7 @@
     "avg_view_pct": 20.2
   },
   "GdSQHNZ-Wy4": {
-    "views": 12,
+    "views": 13,
     "likes": 0,
     "comments": 1,
     "title": "How the Yellow Kid Invented Modern Speech Balloons",
@@ -1320,14 +1320,17 @@
     "avg_view_pct": 20.4
   },
   "WLb1utlNpWc": {
-    "views": 1,
+    "views": 4,
     "likes": 0,
     "comments": 1,
     "title": "Goodbye was once “God be with ye”",
-    "date": "2026-11-22"
+    "date": "2026-11-22",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
   },
   "p3ger7-j7oY": {
-    "views": 0,
+    "views": 2,
     "likes": 0,
     "comments": 1,
     "title": "Your Fridge Burns as Much Power as a 60‑W Lightbulb",

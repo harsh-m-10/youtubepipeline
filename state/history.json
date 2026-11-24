@@ -1257,5 +1257,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 5.0
+  },
+  {
+    "date": "2026-11-24",
+    "belief": "A single lightning bolt can reach temperatures of 30,000 °C, hotter than the surface of the Sun.",
+    "title": "Lightning Bolt Hits 30,000°C – Hotter Than the Sun",
+    "video_id": "a26OB7qViMU",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 8.0
   }
 ]
