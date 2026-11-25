@@ -230,7 +230,7 @@
     "avg_view_pct": 16.5
   },
   "UhxskXsy4C8": {
-    "views": 29,
+    "views": 30,
     "likes": 1,
     "comments": 1,
     "title": "The Pocket Watch Pocket: How 1870s Jeans Got Their Tiny Timekeeper",
@@ -756,8 +756,8 @@
     "title": "Why ZIP Means Zone Improvement Plan",
     "date": "2026-09-21",
     "minutes_watched": 7.0,
-    "avg_view_sec": 86.0,
-    "avg_view_pct": 143.8
+    "avg_view_sec": 74.0,
+    "avg_view_pct": 123.7
   },
   "swJjTwNsUks": {
     "views": 141,
@@ -920,7 +920,7 @@
     "avg_view_pct": 20.0
   },
   "NNrwRoixet8": {
-    "views": 183,
+    "views": 184,
     "likes": 3,
     "comments": 3,
     "title": "How Joseph Fry Invented the First Solid Chocolate Bar in 1847",
@@ -1190,7 +1190,7 @@
     "avg_view_pct": 75.6
   },
   "T0B5yULVT2Q": {
-    "views": 35,
+    "views": 36,
     "likes": 0,
     "comments": 1,
     "title": "William Oughtred’s 1631 Birth of the × Multiplication Sign",
@@ -1300,7 +1300,7 @@
     "avg_view_pct": 20.2
   },
   "GdSQHNZ-Wy4": {
-    "views": 13,
+    "views": 14,
     "likes": 0,
     "comments": 1,
     "title": "How the Yellow Kid Invented Modern Speech Balloons",
@@ -1334,6 +1334,16 @@
     "likes": 0,
     "comments": 1,
     "title": "Your Fridge Burns as Much Power as a 60‑W Lightbulb",
-    "date": "2026-11-23"
+    "date": "2026-11-23",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 0.0,
+    "avg_view_pct": 0.0
+  },
+  "a26OB7qViMU": {
+    "views": 5,
+    "likes": 0,
+    "comments": 0,
+    "title": "Lightning Bolt Hits 30,000°C – Hotter Than the Sun",
+    "date": "2026-11-24"
   }
 }
