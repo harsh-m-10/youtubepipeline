@@ -857,7 +857,7 @@
     "date": "2026-10-02",
     "minutes_watched": 8.0,
     "avg_view_sec": 14.0,
-    "avg_view_pct": 31.2
+    "avg_view_pct": 30.4
   },
   "3kuyE8PRsYc": {
     "views": 40,
@@ -927,7 +927,7 @@
     "date": "2026-10-11",
     "minutes_watched": 15.0,
     "avg_view_sec": 16.0,
-    "avg_view_pct": 28.8
+    "avg_view_pct": 28.7
   },
   "d5nFT0IAfZ0": {
     "views": 43,
@@ -1055,9 +1055,9 @@
     "comments": 1,
     "title": "1999 Japanese Carrier’s 176‑Emoji Pictogram Set",
     "date": "2026-10-25",
-    "minutes_watched": 1.0,
-    "avg_view_sec": 14.0,
-    "avg_view_pct": 27.0
+    "minutes_watched": 2.0,
+    "avg_view_sec": 22.0,
+    "avg_view_pct": 41.5
   },
   "9evQn_cPR-g": {
     "views": 53,
@@ -1326,8 +1326,8 @@
     "title": "Goodbye was once “God be with ye”",
     "date": "2026-11-22",
     "minutes_watched": 0.0,
-    "avg_view_sec": 0.0,
-    "avg_view_pct": 0.0
+    "avg_view_sec": 12.0,
+    "avg_view_pct": 23.0
   },
   "p3ger7-j7oY": {
     "views": 2,
@@ -1336,20 +1336,23 @@
     "title": "Your Fridge Burns as Much Power as a 60‑W Lightbulb",
     "date": "2026-11-23",
     "minutes_watched": 0.0,
-    "avg_view_sec": 0.0,
-    "avg_view_pct": 0.0
+    "avg_view_sec": 6.0,
+    "avg_view_pct": 12.8
   },
   "a26OB7qViMU": {
     "views": 5,
     "likes": 0,
     "comments": 1,
     "title": "Lightning Bolt Hits 30,000°C – Hotter Than the Sun",
-    "date": "2026-11-24"
+    "date": "2026-11-24",
+    "minutes_watched": 0.0,
+    "avg_view_sec": 10.0,
+    "avg_view_pct": 14.3
   },
   "_ixMxDduqV8": {
-    "views": 7,
+    "views": 8,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "Quarantine’s 40‑Day Origin Revealed",
     "date": "2026-11-25"
   }
