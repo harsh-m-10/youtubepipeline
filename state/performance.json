@@ -426,8 +426,8 @@
     "title": "1848 Spruce Sap: The First Commercial Chewing Gum",
     "date": "2026-07-30",
     "minutes_watched": 2.0,
-    "avg_view_sec": 34.0,
-    "avg_view_pct": 45.9
+    "avg_view_sec": 28.0,
+    "avg_view_pct": 37.5
   },
   "mVyGPr8owQs": {
     "views": 34,
@@ -1350,16 +1350,19 @@
     "avg_view_pct": 14.3
   },
   "_ixMxDduqV8": {
-    "views": 8,
+    "views": 9,
     "likes": 0,
     "comments": 1,
     "title": "Quarantine’s 40‑Day Origin Revealed",
-    "date": "2026-11-25"
+    "date": "2026-11-25",
+    "minutes_watched": 1.0,
+    "avg_view_sec": 15.0,
+    "avg_view_pct": 29.8
   },
   "NUlCN4U8EwU": {
     "views": 2,
     "likes": 0,
-    "comments": 0,
+    "comments": 1,
     "title": "China’s 2,200‑Year‑Old Lottery Built the Great Wall",
     "date": "2026-11-26"
   }
