@@ -1284,5 +1284,14 @@
     "ig_media_id": null,
     "commented": true,
     "score": 6.0
+  },
+  {
+    "date": "2026-11-27",
+    "belief": "The word \"sandwich\" was named after the 4th Earl of Sandwich, who asked for meat between two slices of bread so he could gamble without using utensils.",
+    "title": "How a Gambler Created the Sandwich",
+    "video_id": "cLtFJU-ANN4",
+    "ig_media_id": null,
+    "commented": false,
+    "score": 5.0
   }
 ]
